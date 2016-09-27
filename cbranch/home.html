@@ -1,33 +1,76 @@
-
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-<title>home</title>
+<title>categories</title>
 <style>
-/* Layout */
 
-* {box-sizing: border-box}
-
-/* flexbox1 */
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch; 
-}
-    
-/* flexbox2 */
-.container1 {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch; 
+.content {
+    background-color: #;
 }
 
-section {
-  width: 32%;
-  height: 50%;
+.row {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-box-orient: horizontal; 
+    -moz-box-orient: horizontal;
+    box-orient: horizontal;
+    flex-direction: row;
+
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    justify-content: center;
+
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;  
+    align-items: center;
+    padding-bottom: 2em;
+
 }
 
-/* other stuff*/
+.cell {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1px;
+    border: solid 1px aqua;
+    text-align: center;
+    height: 200px;
+    display: flex;
+    align-items: center;
+
+    box-sizing: content-box;
+}
+
+.cell1 {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1px;
+    border: solid 1px aqua;
+    text-align: center;
+    height: 1.5em;
+    display: flex;
+    align-items: center;
+    background-color: #007FFF;
+    box-sizing: content-box;
+}
+
+img {
+    margin: auto;
+    width: 100%;
+    max-width: 300px;
+    max-height:100%
+}
 
 body {
 	margin: 1em;
@@ -35,199 +78,81 @@ body {
 	font-family: "Century Gothic", helvetica, arial, sans-serif;
 	font-size: 1em;
 }
-section {
-	padding: 10px;
-	margin: 0;
-	border-radius: 1px;
-	color: #fff;
-}
-    
-/*the image boxes*/ 
-    
-.firstrow:nth-child(1) {    /*first*/ 
-    background:url("beach1.jpg");
-    background-size: cover;
-}
-.firstrow:nth-child(2) {   /*second*/ 
-  	background:url("beach2.jpg");
-    background-size: cover;
-}
-.firstrow:nth-child(3) {    /*third*/
-  	background:url("beach5.jpg");
-    background-size: cover;
-}
-.secondrow:nth-child(1) {   /*fourth*/ 
-  	background:url("beach4.jpg");
-    background-size: cover;
-}
-.secondrow:nth-child(2) {    /*fifth*/
-  	background:url("beach3.jpg");
-    background-size: cover;
-}
-.secondrow:nth-child(3) {    /*sixth*/
-    background:url("beach6.jpg");
-    background-size: cover;
-}
-.names {                      /*names*/
-    background-size: cover;
-    height: ;
-    background-color: navy;
-    padding-top: 0;
+
+.name{
+	margin: 1em;
+	color: white;
+	background: #;
+	font-family: "Century Gothic", helvetica, arial, sans-serif;
+	font-size: 1em;
 }
 
-.c {
-    position: relative;
-    }
-    
-.text {
-  position: relative;
-  top: -10%;
-  right: 100%
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-    
-    
-/*the view this villa buttons*/ 
-    
-.img_z {
-    position: fixed;
-    z-index: +3;
-    right: 0px;
-    left: 24%;
-    top: 5%;
-    transform: translate(-50%, -50%);
-    width: 15%;
-}
-    
-.img_u {
-    position: fixed;
-    z-index: +3;
-    right: 0px;
-    left: 57%;
-    top: 5%;
-    transform: translate(-50%, -50%);
-    width: 15%;
-}  
-    
-.img_o {
-    position: fixed;
-    z-index: +3;
-    right: 0px;
-    left: 90%;
-    top: 5%;
-    transform: translate(-50%, -50%);
-    width: 15%;
-}
-
-.img_n {
-    position: fixed;
-    z-index: +3;
-    right: 0px;
-    left: 24%;
-    top: 43%;
-    transform: translate(-50%, -50%);
-    width: 15%;
-}
-    
-.img_h {
-    position: fixed;
-    z-index: +3;
-    right: 0px;
-    left: 57%;
-    top: 43%;
-    transform: translate(-50%, -50%);
-    width: 15%;
-}  
-    
-.img_f {
-    position: fixed;
-    z-index: +3;
-    right: 0px;
-    left: 90%;
-    top: 40%;
-    transform: translate(-50%, -50%);
-    width: 15%;
-}
-    
 </style>
-</head>
 
 <body>
+<div class="content">
+  <div class="row">    
+      <div class="cell">    
+          <img src="beach1.jpg"/>
+      </div>
+      <div class="cell">    
+          <img src="beach2.jpg"/>
+      </div>
+      <div class="cell">    
+          <img src="beach3.jpg"/>
+      </div>
+  </div>
 
-<div class="container">
-<section class="firstrow">
-    <div class="c">    
+  <div class="row">    
+      <div class="cell1">    
+        <div class="name">Blue Lagoon</div>
+      </div>
+      <div class="cell1">    
+        <div class="name">Blue Lagoon</div>
+      </div>
+      <div class="cell1">    
+        <div class="name">Just in paradise</div>
+      </div>
+      <div class="cell1">    
+        <div class="name">Just in paradise</div>
+      </div>
+      <div class="cell1">    
+        <div class="name">Seacove</div>
+      </div>
+      <div class="cell1">    
+        <div class="name">Seacove</div>
+      </div>
+  </div>
 
-    </div>
-</section>
-<section class="firstrow">
-    <div class="c"> 
-     
-    </div>
-</section>
-<section class="firstrow">
-    <div class="c">  
+  <div class="row">    
+      <div class="cell">    
+          <img src="beach1.jpg"/>
+      </div>
+      <div class="cell">    
+          <img src="beach2.jpg"/>
+      </div>
+      <div class="cell">    
+          <img src="beach3.jpg"/>
+      </div>
+  </div>
 
-    </div>
-</section>
+  <div class="row">    
+      <div class="cell1">    
+        <div class="name">Gourmet delight</div>
+      </div>
+      <div class="cell1">    
+        <div class="name">Gourmet delight</div>
+      </div>
+      <div class="cell1">    
+        <div class="name">Paradise vill</div>
+      </div>
+  </div>
+
 </div>
-    
-<div class="container">
-<section class="names">
-   <span>Blue lagoon</span>
-    <br>
-<span class="text"><img src="view_button.jpg" class="img_z"></span>
-</section>
-<section class="names">
-   <span>Just in paradise</span>
-    <br>
 
-</section>
-<section class="names">
-   <span>Seacove</span>
-    <br>
 
-</section>
-</div>    
-    
 
-<br>
-    
-<div class="container">
-<section class="secondrow">
-    <div class="c" >    
-    </div>
-</section>
-<section class="secondrow">
-    <div class="c">    
-    </div>
-</section>
-<section class="secondrow">
-    <div class="c">    
-    </div>
-</section>
-</div>
-    
-<div class="container">
-<section class="names">
-<span>Gourmet delight</span>
-    <br>
 
-</section>
-<section class="names">
-    <span>Simple Oasis</span>
-    <br>
 
-</section>
-<section class="names">
-   <span>Paradise villa</span>
-    <br>
-
-</section>
-</div>  
-    
 </body>
-    
 </html>
