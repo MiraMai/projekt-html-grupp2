@@ -3,7 +3,8 @@
 <head>
   
 <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
-    
+
+  
 <title>categories</title>
     
     
@@ -16,12 +17,18 @@
   }
 img {
     margin: auto;
-    width: 100%;
+    min-height: 200px;
+    min-width:350px;
+    height: 23%;
+    width: 23%;
     display: block;
     max-width: 500px;
     max-height:500px;  
 }
-
+    
+ul li{
+  display: inline;
+}
   table {
     border: 1px solid #ccc;
     width: 100%;
@@ -48,6 +55,8 @@ img {
     background-color: aquamarine;
     color: white;
   }
+    
+.alnleft { text-align: left; }
 
   @media screen and (max-width: 600px) {
 
@@ -82,18 +91,22 @@ img {
       text-transform: uppercase;
       font-weight: bold;
     }
+    .alnleft {display: none; }
   }
+    
+.alnleft { text-align: left; }
 
+    
 </style>
 </head>
 <body>
-    
+ <h1>Categories </h1>  
 <table>
   <thead class="th">
     <tr>
-      <th >Blue Lagoon</th>
-      <th>Just in paradise</th>
-      <th>Seacove</th>
+      <th>Love nest</th>
+      <th>All inclusive</th>
+      <th>Beachfront</th>
     </tr>
   </thead>
   <tbody>
@@ -102,15 +115,28 @@ img {
       <td data-label="Just in paradise"><img src="beach2.jpg" width="100%"  alt=""/></td>
       <td data-label="Seacove"><img src="beach3.jpg" width="100%"  alt=""/></td>
     </tr>
+    <tr>
+      <td class='alnleft'>
+          7 BR, Terres Basses - Baie Rouge, St. Martin <br>8 Guests: $700 - $3,000 / night
+    <ul>
+	<li><a href=""><i class="fa fa-bed" aria-hidden="true">1</i></a></li> 
+    <li><a href=""><i class="icon2">2</i></a></li> 
+    <li><a href=""><i class="icon2"></i>3</a></li>  
+    <li><a href=""><i class="icon3"></i>4</a></li> 
+    </ul>
+      </td>
+      <td  class='alnleft'><h1>Just in paradise</h1>8 BR, Terres Basses - Baie Rouge, St. Martin <br> 6 Guests: $671 - $2,743 / night</td>
+      <td class='alnleft'><h1>Seacove</h1>10 BR, Little Harbor, Anguilla <br> 6 Guests: $743 - $3,257 / night</td>
+    </tr>
   </tbody>
 </table>
     <br>
 <table>
   <thead>
     <tr>
-      <th>Gourmet delight</th>
-      <th>Simple oasis</th>
-      <th>Paradise villa</th>
+      <th>Hidden escape</th>
+      <th>North coast</th>
+      <th>Economy</th>
     </tr>
   </thead>
   <tbody>
@@ -119,8 +145,14 @@ img {
       <td data-label="Simple oasis"><img src="beach5.jpg" width="100%"  alt=""/></td>
       <td data-label="Paradise villa"><img src="beach6.jpg" width="100%"  alt=""/></td>
     </tr>
+    <tr>
+      <td class='alnleft'><h1>Gourmet delight</h1> 7 BR, Terres Basses - Baie Rouge, St. Martin <br>8 Guests: $700 - $3,000 / night</td>
+      <td class='alnleft'><h1>Simple oasis</h1>8 BR, Terres Basses - Baie Rouge, St. Martin <br> 6 Guests: $671 - $2,743 / night</td>
+      <td class='alnleft'><h1>Paradise villa</h1>10 BR, Little Harbor, Anguilla <br> 6 Guests: $743 - $3,257 / night</td>
+    </tr>
   </tbody>
 </table>
+
     
 </body>
 </html>
