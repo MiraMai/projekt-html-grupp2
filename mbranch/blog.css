@@ -21,27 +21,24 @@
         flex-direction: column;
         display:block;
     }
-    .blogimg {
-    /*height:320px;*/
-    margin:0px;
-    display: block;
-    flex:1 1 auto;
-    }
-}
-
 /* själva artiklarna*/
 .container2-1 {
-    display:flex;
-    flex-direction:column;
+    display:inline-flex;
+    flex-direction:row;
     flex:1;
     /*height:420px;*/
     margin:10px;
     /*width:50%;*/
    /* border:3px solid pink;*/
 }
+@media (max-width:600px) {
+    .container2-1 {
+        flex-direction: column;
+    }
+}
 .container2-2 {
-    display:flex;
-    flex-direction:column;
+    display:inline-flex;
+    flex-direction:row;
     flex:1;
    /* height:420px;*/
     margin:10px;
@@ -49,39 +46,39 @@
     border-left: 1px solid lightgrey;
    /* border:3px solid pink;*/
 }
+@media (max-width:600px) {
+    .container2-2 {
+        flex-direction: column;
+    }
+}
+.blogimg {
+    /*height:320px;*/
+    margin:0px;
+    display: block;
+    flex:1 1 auto;
+    }
+}
+/* alla bilder i bloggen*/
+.blogimg {
+    flex:1;
+    /*height:320px;*/
+    margin:10px;
+    /*border:3px solid blue;*/
+}
+
+.container3 {
+    display: flex;
+    flex-direction: column;
+    flex:0.7;
+    
+}
+
 .blogh2 {
     flex:0.7;
    /* height: 50px;*/
     margin: 10px;
    /* border:3px dotted red;*/
 }
-.container3 {
-   /* height: 300px;*/
-    flex:1 1 auto;
-   /* border:3px solid aqua;*/
-    display: inline-flex;
-    flex-direction: row;
-}
-@media (max-width:600px) {
-    .container3 {
-        flex-direction: column;
-    }
-}
-.readme {
-    flex:0.3;
-   /* border:3px solid yellow;*/
-    height:30px;
-}
-
-
-/* alla bilder i bloggen*/
-.blogimg {
-    flex:0.7;
-    /*height:320px;*/
-    margin:10px;
-    /*border:3px solid blue;*/
-}
-
 .blogp {
     flex:1;
     /*height: 320px;*/
