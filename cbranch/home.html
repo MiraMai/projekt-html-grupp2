@@ -8,6 +8,12 @@
     background-color: #;
 }
 
+.table {
+   display: table;
+   width: 100%;
+   table-layout: fixed;
+}
+    
 .row {
     display: -webkit-box;
     display: -moz-box;
@@ -43,10 +49,11 @@
     border: solid 1px aqua;
     text-align: center;
     height: 200px;
+    max-width:300px;
     display: flex;
     align-items: center;
-
     box-sizing: content-box;
+    vertical-align:top;
 }
 
 .cell1 {
@@ -59,6 +66,7 @@
     border: solid 1px aqua;
     text-align: center;
     height: 1.5em;
+    max-width:300px;
     display: flex;
     align-items: center;
     background-color: #007FFF;
@@ -91,6 +99,8 @@ body {
 
 <body>
 <div class="content">
+<div class="table">
+  
   <div class="row">    
       <div class="cell">    
           <img src="beach1.jpg"/>
@@ -108,16 +118,7 @@ body {
         <div class="name">Blue Lagoon</div>
       </div>
       <div class="cell1">    
-        <div class="name">Blue Lagoon</div>
-      </div>
-      <div class="cell1">    
         <div class="name">Just in paradise</div>
-      </div>
-      <div class="cell1">    
-        <div class="name">Just in paradise</div>
-      </div>
-      <div class="cell1">    
-        <div class="name">Seacove</div>
       </div>
       <div class="cell1">    
         <div class="name">Seacove</div>
@@ -149,7 +150,7 @@ body {
   </div>
 
 </div>
-
+</div>
 
 
 
