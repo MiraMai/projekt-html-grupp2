@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>categories</title>
+  
+    
+<style>
+    
+//** FOR ALL the site**//
+body { 
+  background: url(fiji1.jpg) no-repeat center center fixed; 
+
+}
+    
+.Site {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* 1, 3 */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: url(fiji1.jpg) no-repeat center center fixed;
+    vertical-align: middle;
+}
+
+.Site-header,
+.Site-footer {
+  flex: none; /* 2 */
+}
+
+.Site-content {
+  flex: 1 0 auto; /* 2 */
+  padding: var(--space) var(--space) 0;
+  width: 100%;
+}
+.Site-content::after {
+  content: '\00a0'; /* &nbsp; */
+  display: block;
+  margin-top: var(--space);
+  height: 0px;
+  visibility: hidden;
+}
+@media (--break-lg) {
+  .Site-content {
+    padding-top: var(--space-lg);
+  }
+  .Site-content::after {
+    margin-top: var(--space-lg);
+  }
+}
+
+.Site-content--full {
+  padding: 0;
+}
+.Site-content--full::after {
+  content: none;
+}
+
+//**MAIN category part**//
+ body {
+     font-family: 'Slabo 27px', serif;
+     font-size: 14px;
+     font-weight: bold;
+  }
+img {
+    margin: auto;
+    min-height: 200px;
+    min-width:350px;
+    height: 23%;
+    width: 23%;
+    display: block;
+    max-width: 500px;
+    max-height:500px;  
+}
+    
+.logo {
+    margin: auto;
+    height: 50px;
+    width: 50px;
+    display: block;
+} 
+  
+ul li{
+  display: inline;
+}
+  table {
+    border: 1px solid #ccc;
+    width: 80%;
+    margin:0;
+    padding:0;
+    border-collapse: collapse;
+    border-spacing: 25;
+  }
+
+  table tr {
+    border: 1px solid #ddd;
+    padding: 5px;
+  }
+
+  table th, table td {
+    padding: 10px;
+    text-align: center;
+  }
+
+  table th {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background-color: aquamarine;
+    color: white;
+  }
+    
+.alnleft { text-align: left; }
+
+    
+.header{
+    position:relative;
+    width:80%;
+    left:10%;
+    right: 10%;
+}
+    
+.header2{
+    position:relative;
+    width:80%;
+    height: 100px;
+    left:10%;
+    right: 10%;
+}
+.category{
+    position:relative;
+    width:80%;
+    left:10%;
+    top:20%;
+    right: 10%;
+
+}
+.footer{
+    position:relative;
+    width:80%;
+    left:10%;
+    right: 10%;
+}
+
+  @media screen and (max-width: 600px) {
+
+    table {
+      border: 0;
+    }
+
+    table thead {
+      display: none;
+    }
+
+    table tr {
+      margin-bottom: 10px;
+      display: block;
+      border-bottom: 2px solid #ddd;
+    }
+
+    table td {
+      display: block;
+      text-align: right;
+      font-size: 13px;
+      border-bottom: 1px dotted #ccc;
+    }
+
+    table td:last-child {
+      border-bottom: 0;
+    }
+
+    table td:before {
+      content: attr(data-label);
+      float: left;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    .alnleft {display: none; }
+  }
+    
+.alnleft { text-align: left; }
+
+//** List stuff**//
+    
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;   
+}
+
+
+li a {
+    display: block;
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the color on hover on the menu */
+    
+ul:hover {
+    background-color: #658486;
+} 
+
+.menu a:hover { border-bottom:5px solid #345574;     
+ }
+    
+.left { float: left; }
+.right{ float: right; }
+
+.menu_bg {
+    background: #00ffff;    
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;}
+    
+.logo {
+    margin: auto;
+    height: 15%;
+    width: 25%;
+    display: block;
+}
+
+//** the category dropdown button in the menu*//
+    
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    background-color: #658486;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}    
+    
+</style>
+</head>
+
+<body class="Site">
+    
+<!-- load header -->
+<header>
+
+<div class="logo">
+    
+</div>
+    <br>
+<div class="menu_bg header">    
+    <ul class="menu">
+        <li class="right"><a href="about.asp">Contact</a></li>
+        <li class="right"><a href="news.asp">About us</a></li>
+        <li class="right"><a href="contact.asp">Our Vision</a></li>
+        <li class="right"><a href="about.asp">Blog</a></li>
+        <li class="right"><a href="default.asp">Home</a></li>
+        
+  <li class="dropdown left">
+    <a href="#" class="dropbtn" target="_blank">button</a>
+    <div class="dropdown-content">
+      <a href="categories.html" target="_blank">Categories</a>
+      <a href="#">C1</a>
+      <a href="#">C2</a>
+      <a href="#">C3</a>
+      <a href="#">C4</a>
+      <a href="#">C5</a>
+      <a href="#">C6</a>
+    </div>
+  </li>
+        
+    </ul>
+</div>
+
+</header>
+    
+<!-- load main -->
+<main class="Site-content">
+
+<div class="header2">
+<h3>Here goes some other stuff!</h3>    
+</div>
+    
+    
+<div class="category">
+    
+<table style="text-align:center;">
+  <thead class="th">
+    <tr>
+      <th>Love nest</th>
+      <th>All inclusive</th>
+      <th>Beachfront</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-label="Blue lagoon"><img src="beach1.jpg" width="100%"  alt=""/></td>
+      <td data-label="Just in paradise"><img src="beach2.jpg" width="100%"  alt=""/></td>
+      <td data-label="Seacove"><img src="beach3.jpg" width="100%"  alt=""/></td>
+    </tr>
+    <tr>
+      <td class='alnleft'>
+          7 BR, Terres Basses - Baie Rouge, St. Martin <br>8 Guests: $700 - $3,000 / night
+      </td>
+      <td  class='alnleft'><h1>Just in paradise</h1>8 BR, Terres Basses - Baie Rouge, St. Martin <br> 6 Guests: $671 - $2,743 / night</td>
+      <td class='alnleft'><h1>Seacove</h1>10 BR, Little Harbor, Anguilla <br> 6 Guests: $743 - $3,257 / night</td>
+    </tr>
+  </tbody>
+</table>
+    <br>
+<table>
+  <thead>
+    <tr>
+      <th>Hidden escape</th>
+      <th>North coast</th>
+      <th>Economy</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-label="Gourmet delight"><img src="beach4.jpg" width="100%"  alt=""/></td>
+      <td data-label="Simple oasis"><img src="beach5.jpg" width="100%"  alt=""/></td>
+      <td data-label="Paradise villa"><img src="beach6.jpg" width="100%"  alt=""/></td>
+    </tr>
+    <tr>
+      <td class='alnleft'><h1>Gourmet delight</h1> 7 BR, Terres Basses - Baie Rouge, St. Martin <br>8 Guests: $700 - $3,000 / night</td>
+      <td class='alnleft'><h1>Simple oasis</h1>8 BR, Terres Basses - Baie Rouge, St. Martin <br> 6 Guests: $671 - $2,743 / night</td>
+      <td class='alnleft'><h1>Paradise villa</h1>10 BR, Little Harbor, Anguilla <br> 6 Guests: $743 - $3,257 / night</td>
+    </tr>
+  </tbody>
+</table>
+    
+</div> 
+    
+</main>
+
+<!-- load footer -->
+<div class="footer">
+    
+<footer><h3> Here goes the footer</h3></footer>
+    
+</div>
+    
+</body>
+</html>
