@@ -6,124 +6,112 @@
 <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
 <style>
-
-.flex-container {
+#body {
+  background-color: white;
+  background-image: url(7h92di.jpg);
+  background-attachment:
+  font-family: sans-serif;
+  font-size: 1.4em;
+  
+}
+#flex-container {
   display: flex;
+  height: 500px;
   justify-content: center;
-  flex-wrap: wrap;
-  align-content: stretch;
+  flex-direction: row;
+  background-color: white;
+ 
 }
 .content {
+  width: 380px;
+  height: 100px;
   margin: 5px;
-  
 }
-.contact {
-  color: white; text-align: center;
+label {
+  float: left;
+  width: 120px;
+  text-align: right;
+  margin-top: 10px;
+  padding-right: 12px;
+}
+input, textarea {
+  margin-top: 6px;
+  padding: 22px;
+  border-radius: 5%;
+}
+ {
+  
 }
 
-}
-
-.maps {
-  width: 78px;
-  height: 172px;
-  color: white;
-  position: absolute;
-  left: 15px;
-  
-}
-
-.form {
-  margin: auto;
-  width: 400px;
-  border-radius: 10px;
-  border: 2px solid silver;
-  padding: 8px;
-  background-color: white;
-  color: black;
-}
-input, textarea{
-  font-family: sans-serif;
-  font-size: 1.5em;
-  border: 2px solid silver;
-  padding: 12px;
-    
-}
-.info {
-  color: white;
-}
-#body {
-  background-image: url(pexels-photo-108055.jpeg); 
-  background-repeat: no-repeat;
-  background-attachment:fixed;
-  background-position:center center;
-  font-size: 1.5 em;
-  font-family: arial;
-  
-}
-.all-content {
-  border: 2px solid silver;
-  margin: 10px;
-  padding: 12px;
-  background-color: #000080;
-  
-}
 
 </style>
 </head>
 <body id="body">
 
-<div class="all-content">
-<div class="contact">
-
-<h1>Contact</h1>
-
-</div>
-
-<!--location image-->
-<div class="flex-container">
-<section>
-  <div class="content">
-    <img src="Screenshot.jpg">
-	<p class="info"> Adress: Owen Roberts International airport. Cayman Islands</p>
-  </div>
-</section>
-
-<!--formulär-->
-<section>  
+<div id="flex-container"> <!--allt innehåll i contact us-->
  
-   <div class="content">
+  <div class="content">
+   <div class="top">
+     <h1>Contact Us</h1>
+     <p> We are here to answer any questions you may have about our combadi experiences. Reach out to us and we'll respond as soon as we can.</p>
+
+     <p>Even if there is something you have always wanted to experience and can't find it on cayman paradise, let us know and we promise we'll do our best to find it for you and send you there.</p>
+	</div>
+  
+  
+
+
     <form class="form">
-	  <input type="text" name="firstname" placeholder="firstname"/>
-	  <input type="text" name="lastname" placeholder="lastname"/>
-	  <input type="email" name="email" placeholder="email"/>
-	  <input type="text" name="phone" placeholder="phone"/>
-	  <textarea name="comments" rows="5" cols="30" placeholder="comments"></textarea>
-	  <input type="submit" name="send" value="send"/>
+	  <div>
+	    <label for="myname">Name:</label>
+	    <input type="text" name="firstname" placeholder="firstname"/>
+	  </div>
+	  
+	  <div>
+	    <label for="email">Email:</label>
+	    <input type="text" name="email" placeholder="email"/>
+	  </div>
+	  
+	  <div>
+	    <label for="Phone">Phone:</label>
+	    <input type="text" name="phone" placeholder="phone"/>
+	  </div>
+	  
+	  <div>
+	    <label for="comments">Comments:</label>
+	    <textarea name="comments" rows="5" cols="50" placeholder="comments"></textarea>
+	  </div>
+	  
+	  <div id="submit">
+	    <input type="submit" name="send" value="send"/>
+	  </div>
 	</form>
    </div>
-     
-</section>
-<!--info-->
-<section>
-<div class="content">
+  
+  <div class="content">
+  
   <div class="info">
-   <h3>we are also available at.</h3>
+   <h3>Telephone</h3>
    <p>Office Telephone: +1.200.300.4000</p>
-   <p>Office fax: +1.200.300.4000</p>
+   <h3>email</h3>
    <p>Email: Info.paradise@caymanparadise.com</p>
+   <h3>mail</h3>
    <p>Mail: P.O. Box 12308 KYI-1212 Cayman Islands</p>
-   <p>The Cayman paradise Skype service is available between 7am and 10pm all week.<i class="fa fa-skype"></i></p>
+   <h3>Adress</h3>
+   <p>Owen Roberts International airport. Cayman Islands.</p>
+   <h3>Skype</h3>
+   <p>caymanparadise</p>
+   <i class="fa fa-skye"></i>
   </div>
+ 
+  </div> 
+   <div class="content">
+     <div class="img"><img src="Screenshot.jpg"></div>
+   </div>
+ 
+ </div>
 
-</div>
-
-</section>
-
-</div>
-</div>
-
-
-
+ 
 
 
 </body>
