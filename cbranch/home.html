@@ -3,6 +3,8 @@
 <head>
 <title>Home</title>
 <link rel="stylesheet" href="header.css">
+<link rel="stylesheet" href="category.css">
+    
 <meta charset="UTF-8">
 </head>
 <body>
@@ -41,16 +43,176 @@
       				<a href="#">C6</a>
     			</div>
   	</li><!-- END dropdown menu--> 
-    
-    
-
-</li>
 </ul>
 </nav>
 <!--div med header img-->
  <div id="box1"> 
 <img src="header31.jpg" width="100%" height="296">
-    </div>     
+</div>  
+    
+<!-- load main-->    
+<div id="box2"> 
 
+<!-- load main -->
+<main class="Site-content">
+    
+<div class="category">
+<!-- START Category-->
+
+<p><strong>Categories</strong></p>
+
+
+<form class="form1">
+    <legend> <p> <strong>Search options</p> </strong></legend>
+
+<label for="stay">Where do you want to stay?</label>
+<select name="stay">
+  <option value="volvo">Northern island</option>
+  <option value="saab">Western island</option>
+  <option value="fiat">Eastern island</option>
+  <option value="audi">Southern island</option>
+</select>
+
+<label for="adate">Arrival:</label>
+  <input type="date" name="adate">
+
+<label for="ddate">Departure:</label>
+  <input type="date" name="ddate">
+
+
+Guests:
+<label for="adult">Adults:</label>
+<select name="adult">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+</select>
+<label for="child">Children:</label>
+<select name="child">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+</select>
+
+<label for="guests">Rooms:</label>
+<select name="gusts">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+</select>
+<button type="button" onclick="alert('Hello World!')">Update</button>
+    
+</form>
+    
+<table style="text-align:center;">
+<!-- START Category TABLE 1-->
+
+  <thead class="th">
+  <!-- table header-->
+    <tr>
+      <th>Love nest</th>
+      <th>All inclusive</th>
+      <th>Beachfront</th>
+    </tr>
+  </thead>
+  <tbody>
+  <!-- table body-->
+    <tr>
+      <td data-label="Blue lagoon"><img src="beach1.jpg" min-width="100%"  alt=""/></td>
+      <td data-label="Just in paradise"><img src="beach2.jpg" width="100%"  alt=""/></td>
+      <td data-label="Seacove"><img src="beach3.jpg" width="100%"  alt=""/></td>
+    </tr>
+    <tr>
+      <td class='alnleft'>
+      	7 BR, Terres Basses - Baie Rouge, St. Martin 
+      	<br>8 Guests: $700 - $3,000 / night
+      </td>
+      <td class='alnleft'>
+	<h1>Just in paradise</h1>8 BR, Terres Basses - Baie Rouge, St. Martin 
+	<br>6 Guests: $671 -$2,743 / night
+     </td>
+     <td class='alnleft'>
+     	<h1>Seacove</h1>10 BR, Little Harbor, Anguilla 
+	<br>6 Guests: $743 - $3,257 / night
+     </td>
+    </tr>
+  </tbody>
+</table>
+<!-- END Category TABLE 1-->
+
+<br>
+
+<table>
+<!-- START Category TABLE 2-->
+
+  <thead>
+  <!-- table header-->
+    <tr>
+      <th>Hidden escape</th>
+      <th>North coast</th>
+      <th>Economy</th>
+    </tr>
+  </thead>
+  <tbody>
+  <!-- table body-->
+    <tr>
+      <td data-label="Gourmet delight"><img src="beach4.jpg" width="100%"  alt=""/></td>
+      <td data-label="Simple oasis"><img src="beach5.jpg" width="100%"  alt=""/></td>
+      <td data-label="Paradise villa"><img src="beach6.jpg" width="100%"  alt=""/></td>
+    </tr>
+    <tr>
+      <td class='alnleft'>
+	<h1>Gourmet delight</h1> 7 BR, Terres Basses - Baie Rouge, St. Martin 
+	<br>8 Guests: $700 - $3,000 / night
+      </td>
+      <td class='alnleft'>
+	<h1>Simple oasis</h1>8 BR, Terres Basses - Baie Rouge, St. Martin 
+	<br> 6 Guests: $671 - $2,743 / night
+      </td>
+      <td class='alnleft'>
+	<h1>Paradise villa</h1>10 BR, Little Harbor, Anguilla 
+	<br> 6 Guests: $743 - $3,257 / night
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!-- END Category TABLE-->   
+ 
+</div> 
+    
+</main>    
+    
+    
+    
+</div> 
+
+    
+<!-- load footer -->
+<div id="box3">    
+    <footer>
+        <div class="alignright">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</i></a>
+            <a href="#">Linedin</i></a>
+            <a href="#">Github</i></a>
+        </div>
+        <div class="alignleft">
+            <p>
+             <a href="#">Home</a>
+            ·<a href="#">Blog</a>
+            ·<a href="#">Our vision</a>
+            ·<a href="#">About us</a>
+            ·<a href="#">Categories</a>
+            ·<a href="#">Contact</a>
+            </p>
+            <p>Cayman Paradise &copy; 2016</p>
+        </div>  		
+    </footer>
+<!-- END footer -->
+</div>
+    
 </body>
 </html>
