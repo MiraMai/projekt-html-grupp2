@@ -1,5 +1,29 @@
 .form1
-{background-color:aquamarine; width:80%; min-width: 320px;}
+{background-color:#009999; width:80%; min-width: 320px;}
+  
+**//Footer**//
+
+.footer{   
+}
+
+.site-footer {
+  background: #009999;
+  z-index:1;
+  min-height: 5em;
+  padding: 10px;
+}
+
+#footer1{
+margin-left:2%;
+float:right;
+
+}
+#footer2{
+margin-right:2%;
+float:left;
+}
+
+**//table**//
 
   table {
     border: 1px solid #ccc;
@@ -23,7 +47,7 @@
     text-transform: uppercase;
     font-size: 14px;
     letter-spacing: 1px;
-    background-color: aquamarine;
+    background-color: #009999;
     color: white;
   }
     
