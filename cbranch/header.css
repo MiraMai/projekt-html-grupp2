@@ -1,0 +1,99 @@
+/* egenskaper för body */
+body {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 16px;
+color: #3c3c3c;
+}
+/*hur menyn ska se ut*/
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+/*det gör att länkarna som är i menyn är alltid svarta*/
+.nav a {
+	color: black;
+    font-weight: 550;
+}
+
+/*gör att menyn visas horisonellt*/
+li {
+    float: left;
+}
+
+/*gör att menyn visas i en box som fortsätter ända längst bort, svarta bokstäver, ingen decoration*/
+li a, .dropbtn {
+    display: inline-block;
+    border-radius: 7%;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/*meny länken blir grön när man är med musen ovanför*/
+li a:hover, .dropdown:hover .dropbtn {
+    background-color:#009999;
+    color: white;
+}
+/*dropdown boxen*/
+li.dropdown {
+    display: inline-block;
+}
+/*dropdown boxens egenskaper*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: red;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     z-index:1000; //**fixes menu behind content problem**//
+}
+/* hur dropdown boxens text ska se ut*/
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+/* bakgrungfärg när man är med musen över en länk i dropdown menyn*/
+.dropdown-content a:hover {
+	background-color: #b3b3b3;
+	}
+/* om man tar bort det här kommandot så visas dropdown menyn inte*/
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/*meny-länken som är öppen i webbläsaren blir grön*/
+.active {
+    background-color: #4CAF50;
+}
+
+/* för header bilden inte ska se konstig ut*/
+img {
+display: block;
+margin: auto;
+max-width: 100%;
+height: auto;
+position: relative;
+left: 0px;	
+}
+
+/*box med logo*/
+#box {
+    width:100%;
+    height: auto;
+    display: block;
+}
+
+/*box som ska innehålla websidans bild*/
+#box1 {
+width: 100%;
+height: auto;
+padding: 0px;
+border: 0px;
+background-size: 100%;
+}
+
+

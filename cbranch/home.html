@@ -1,158 +1,56 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<html lang="en">
 <head>
-  
-<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
-
-  
-<title>categories</title>
-    
-    
-<style>
-    
- body {
-    font-family: 'Slabo 27px', serif;
-     font-size: 14px;
-     font-weight: bold;
-  }
-img {
-    margin: auto;
-    min-height: 200px;
-    min-width:350px;
-    height: 23%;
-    width: 23%;
-    display: block;
-    max-width: 500px;
-    max-height:500px;  
-}
-    
-ul li{
-  display: inline;
-}
-  table {
-    border: 1px solid #ccc;
-    width: 100%;
-    margin:0;
-    padding:0;
-    border-collapse: collapse;
-    border-spacing: 0;
-  }
-
-  table tr {
-    border: 1px solid #ddd;
-    padding: 5px;
-  }
-
-  table th, table td {
-    padding: 10px;
-    text-align: center;
-  }
-
-  table th {
-    text-transform: uppercase;
-    font-size: 14px;
-    letter-spacing: 1px;
-    background-color: aquamarine;
-    color: white;
-  }
-    
-.alnleft { text-align: left; }
-
-  @media screen and (max-width: 600px) {
-
-    table {
-      border: 0;
-    }
-
-    table thead {
-      display: none;
-    }
-
-    table tr {
-      margin-bottom: 10px;
-      display: block;
-      border-bottom: 2px solid #ddd;
-    }
-
-    table td {
-      display: block;
-      text-align: right;
-      font-size: 13px;
-      border-bottom: 1px dotted #ccc;
-    }
-
-    table td:last-child {
-      border-bottom: 0;
-    }
-
-    table td:before {
-      content: attr(data-label);
-      float: left;
-      text-transform: uppercase;
-      font-weight: bold;
-    }
-    .alnleft {display: none; }
-  }
-    
-.alnleft { text-align: left; }
-
-    
-</style>
+<title>Home</title>
+<link rel="stylesheet" href="header.css">
+<meta charset="UTF-8">
 </head>
 <body>
- <h1>Categories </h1>  
-<table>
-  <thead class="th">
-    <tr>
-      <th>Love nest</th>
-      <th>All inclusive</th>
-      <th>Beachfront</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td data-label="Blue lagoon"><img src="beach1.jpg" width="100%"  alt=""/></td>
-      <td data-label="Just in paradise"><img src="beach2.jpg" width="100%"  alt=""/></td>
-      <td data-label="Seacove"><img src="beach3.jpg" width="100%"  alt=""/></td>
-    </tr>
-    <tr>
-      <td class='alnleft'>
-          7 BR, Terres Basses - Baie Rouge, St. Martin <br>8 Guests: $700 - $3,000 / night
-    <ul>
-	<li><a href=""><i class="fa fa-bed" aria-hidden="true">1</i></a></li> 
-    <li><a href=""><i class="icon2">2</i></a></li> 
-    <li><a href=""><i class="icon2"></i>3</a></li>  
-    <li><a href=""><i class="icon3"></i>4</a></li> 
-    </ul>
-      </td>
-      <td  class='alnleft'><h1>Just in paradise</h1>8 BR, Terres Basses - Baie Rouge, St. Martin <br> 6 Guests: $671 - $2,743 / night</td>
-      <td class='alnleft'><h1>Seacove</h1>10 BR, Little Harbor, Anguilla <br> 6 Guests: $743 - $3,257 / night</td>
-    </tr>
-  </tbody>
-</table>
-    <br>
-<table>
-  <thead>
-    <tr>
-      <th>Hidden escape</th>
-      <th>North coast</th>
-      <th>Economy</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td data-label="Gourmet delight"><img src="beach4.jpg" width="100%"  alt=""/></td>
-      <td data-label="Simple oasis"><img src="beach5.jpg" width="100%"  alt=""/></td>
-      <td data-label="Paradise villa"><img src="beach6.jpg" width="100%"  alt=""/></td>
-    </tr>
-    <tr>
-      <td class='alnleft'><h1>Gourmet delight</h1> 7 BR, Terres Basses - Baie Rouge, St. Martin <br>8 Guests: $700 - $3,000 / night</td>
-      <td class='alnleft'><h1>Simple oasis</h1>8 BR, Terres Basses - Baie Rouge, St. Martin <br> 6 Guests: $671 - $2,743 / night</td>
-      <td class='alnleft'><h1>Paradise villa</h1>10 BR, Little Harbor, Anguilla <br> 6 Guests: $743 - $3,257 / night</td>
-    </tr>
-  </tbody>
-</table>
-
+<!--logo -->
+    <div id="box"><img src="logo_test.gif"/></div>
     
+<!--menyn-->
+<nav class="nav">
+<ul>
+    
+    <li style="float:right">
+<form action="search.php" method="get">
+  <div style="overflow: hidden; padding-top:0.6em; padding-right: .3em; width:5em;">
+    <input type="text" name="term" style="width: 100%;" placeholder="Search"/>
+   </div>
+</form>
+    
+<li style="float:right"><a href="#">Contact us</a></li>
+<li style="float:right" class="dropdown"><a href="#" class="dropbtn">About us</a>
+    <div class="dropdown-content">
+      <a href="#">Our vision</a>
+	  </div></li>
+<li style="float:right"><a href="#">Blog</a></li>
+<li style="float:right"><a href="#blog">Home</a></li>
+    
+    <li class="dropdown left">
+	<!-- here goes the dropdown menu-->
+    		<a href="#" class="dropbtn" target="_blank"><img src="cat_b.gif"></a>
+    			<div class="dropdown-content iefix">
+      				<a href="categories.html" target="_blank">Categories</a>
+     				<a href="#">C1</a>
+      				<a href="#">C2</a>
+      				<a href="#">C3</a>
+      				<a href="#">C4</a>
+      				<a href="#">C5</a>
+      				<a href="#">C6</a>
+    			</div>
+  	</li><!-- END dropdown menu--> 
+    
+    
+
+</li>
+</ul>
+</nav>
+<!--div med header img-->
+ <div id="box1"> 
+<img src="header31.jpg" width="100%" height="296">
+    </div>     
+
 </body>
 </html>
