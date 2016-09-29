@@ -338,7 +338,10 @@ li.dropdown {
 		line-height: 1.8;
 	}
 }
-    
+ 
+/* Formular  category*/
+
+
 </style>
 </head>
 
@@ -396,6 +399,55 @@ li.dropdown {
     
 <div class="category">
 <!-- START Category-->
+
+<p><strong>Categories</strong></p>
+<p>Search options</p>
+
+<form>
+
+<label for="stay">Where do you want to stay?</label>
+<select name="stay">
+  <option value="volvo">Northern island</option>
+  <option value="saab">Western island</option>
+  <option value="fiat">Eastern island</option>
+  <option value="audi">Southern island</option>
+</select>
+
+<label for="adate">Arrival:</label>
+  <input type="date" name="adate">
+
+<label for="ddate">Departure:</label>
+  <input type="date" name="ddate">
+
+
+Guests:
+<label for="adult">Adults:</label>
+<select name="adult">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+</select>
+<label for="child">Children:</label>
+<select name="child">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+</select>
+
+<label for="guests">Rooms:</label>
+<select name="gusts">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+</select>
+<button type="button" onclick="alert('Hello World!')">Update</button>
+
+
+
+</form>
     
 <table style="text-align:center;">
 <!-- START Category TABLE 1-->
