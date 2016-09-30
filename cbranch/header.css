@@ -117,21 +117,3 @@ background-size: 100%;
 
 }
 
-/*float left - menu categories*/
-.left { float: left; }
-
-
-//**THE FOOTER!!**//
- 
-.footer{
-    background-color:red;
-}
-
-
-
-.alignleft {
-	float: left;
-}
-.alignright {
-	float: right;
-}

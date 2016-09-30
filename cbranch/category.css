@@ -14,7 +14,6 @@ body {color:white;}
 .flex-container1 {                  //**for search options**//
     display: -webkit-flex;
     display: flex;
-    width: 100%;
 
     background-color: #009999;
 
@@ -27,13 +26,19 @@ body {color:white;}
 //**Category rows**//
 
 //**row 1**//
-              
-.flex-item {   //**template**//
+
+.empty {    background-image: url('');     //**empty**//
     background-size: cover;
     width: 23%;
     min-height: 10em;
+}
+
+
+.flex-item100 {    
+    background-color: #009999;
+    width: 23%;
+    min-height: 1em;
     margin: 10px;
-    padding: 10px;
 }
         
 .flex-item1 { 
@@ -64,11 +69,7 @@ body {color:white;}
         
 //**row 2**//
               
-.flex-item { 
-    background-size: cover;
-    width: 23%;
-    min-height: 11em;
-    margin: 10px;
+.flex-itemx { 
 }
         
 .flex-item4 { 
@@ -93,7 +94,62 @@ body {color:white;}
     min-height: 11em;
     margin: 10px;
 }
+
+ //**row 3**//
+              
+.flex-itemx { 
+}
+        
+.flex-item7 { 
+    background-image: url('beach7.jpg');
+    background-size: cover;
+    width: 23%;
+    min-height: 11em;
+    margin: 10px;
+}
  
+.flex-item8 { 
+    background-image: url('beach8.jpg');
+    background-size: cover;
+    width: 23%;
+    min-height: 11em;
+    margin: 10px;
+}
+.flex-item9 { 
+    background-image: url('beach9.jpg');
+    background-size: cover;
+    width: 23%;
+    min-height: 11em;
+    margin: 10px;
+}
+
+ //**row 4**//
+              
+.flex-itemx { 
+}
+        
+.flex-item10 { 
+    background-image: url('beach10.jpg');
+    background-size: cover;
+    width: 23%;
+    min-height: 11em;
+    margin: 10px;
+}
+ 
+.flex-item11 { 
+    background-image: url('beach11.jpg');
+    background-size: cover;
+    width: 23%;
+    min-height: 11em;
+    margin: 10px;
+}
+.flex-item12 { 
+    background-image: url('beach12.jpg');
+    background-size: cover;
+    width: 23%;
+    min-height: 11em;
+    margin: 10px;
+}
 /////////////////////////////////////////////////////**/////////////////////////////////////////////////////////////////////////////////////////**////////////////////////////////////////
 
 //**inside the picture boxes**//
@@ -113,8 +169,8 @@ body {color:white;}
     color: white;
     margin-top:10em ;
     padding: 3px;
-    
-        }
+    margin-left: 11em;
+}
         
 .button {
     background-color:#009999;
@@ -132,8 +188,22 @@ body {color:white;}
 
 //**Search formular**//
 
-.form1{margin: 0px auto; max-width: 69%;}
-  
+.form1{
+    margin: 0px auto; 
+    max-width: 100%;
+}
+
+form ul {
+    list-style-type: none;
+    margin: 2;
+    padding: 2;
+    overflow: hidden;
+}
+
+.form_box {
+    margin-top:10em ;
+    padding: 3px;
+}
 
 /////////////////////////////////////////////////////**/////////////////////////////////////////////////////////////////////////////////////////**////////////////////////////////////////
 
@@ -164,17 +234,5 @@ float:left;
 .left { float: left; }
 
 
-//**THE FOOTER!!**//
- 
-.footer{
-    background-color:red;
-}
-
-
-
-.alignleft {
-	float: left;
-}
-.alignright {
-	float: right;
-}
+/*float right*/
+.right { float: left; }
