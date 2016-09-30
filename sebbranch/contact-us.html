@@ -8,41 +8,45 @@
 <style>
 #body {
   background-color: white;
-  background-image: url(7h92di.jpg);
-  background-attachment:
+  background-image: url(background1.jpg);
   font-family: sans-serif;
-  font-size: 1.4em;
   
 }
 #flex-container {
   display: flex;
-  height: 500px;
-  justify-content: center;
   flex-direction: row;
-  background-color: white;
+  justify-content: center;
+  
  
 }
 .content {
-  width: 380px;
-  height: 100px;
-  margin: 5px;
+  margin: 15px;
+  flex:1;
 }
 label {
-  float: left;
-  width: 120px;
+  padding: 10px;
   text-align: right;
   margin-top: 10px;
-  padding-right: 12px;
+
 }
 input, textarea {
   margin-top: 6px;
   padding: 22px;
   border-radius: 5%;
 }
- {
-  
+.info {
+ font-size: 130%;
+ font-weight: bold;
+ color: white;
+ 
 }
 
+.submit {
+  border-radius: 4%;
+  padding: 5px;
+ 
+  
+}
 
 </style>
 </head>
@@ -50,67 +54,71 @@ input, textarea {
 
 <div id="flex-container"> <!--allt innehåll i contact us-->
  
-  <div class="content">
+  
+   <div class="content"> <!--här börjar screenshot-->
+     <div class="img"><img src="Screenshot.jpg"></div>
+   </div>
+   
+ 
+   <div class="content"> <!--rubrik för contact us och text-->
    <div class="top">
      <h1>Contact Us</h1>
-     <p> We are here to answer any questions you may have about our combadi experiences. Reach out to us and we'll respond as soon as we can.</p>
+     <p> We are here to answer any questions you may have about our Cayman Paradise experiences. Reach out to us and we'll respond as soon as we can.</p>
 
      <p>Even if there is something you have always wanted to experience and can't find it on cayman paradise, let us know and we promise we'll do our best to find it for you and send you there.</p>
 	</div>
   
   
 
-
-    <form class="form">
+ 
+    <form class="form"> <!--formulär -->
 	  <div>
-	    <label for="myname">Name:</label>
-	    <input type="text" name="firstname" placeholder="firstname"/>
+	    <label>Name:</label>
+	    <input type="text" name="firstname" placeholder="Firstname"/>
 	  </div>
 	  
 	  <div>
-	    <label for="email">Email:</label>
-	    <input type="text" name="email" placeholder="email"/>
+	    <label>Email:</label>
+	    <input type="text" name="email" placeholder="Email"/>
 	  </div>
 	  
 	  <div>
-	    <label for="Phone">Phone:</label>
-	    <input type="text" name="phone" placeholder="phone"/>
+	    <label>Phone:</label>
+	    <input type="text" name="phone" placeholder="Phone"/>
 	  </div>
 	  
 	  <div>
-	    <label for="comments">Comments:</label>
-	    <textarea name="comments" rows="5" cols="50" placeholder="comments"></textarea>
+	    <label>Comments:</label>
+	    <textarea name="comments" rows="5" cols="50" placeholder="Comments"></textarea>
 	  </div>
 	  
-	  <div id="submit">
-	    <input type="submit" name="send" value="send"/>
+	  <div class="submit">
+	    <input type="Submit" name="send" value="send"/>
 	  </div>
 	</form>
    </div>
   
-  <div class="content">
+  <div class="content"> <!-- info för contact med företaget-->
   
-  <div class="info">
-   <h3>Telephone</h3>
+  <div>
+  
+   <p class="info">Telephone</p>
    <p>Office Telephone: +1.200.300.4000</p>
-   <h3>email</h3>
+   <p class="info">Email</p>
    <p>Email: Info.paradise@caymanparadise.com</p>
-   <h3>mail</h3>
+   <p class="info">Mail</p>
    <p>Mail: P.O. Box 12308 KYI-1212 Cayman Islands</p>
-   <h3>Adress</h3>
-   <p>Owen Roberts International airport. Cayman Islands.</p>
-   <h3>Skype</h3>
+   <p class="info">Adress</p>
+   <p>Lincoln drive, George Town, Cayman Islands.</p>
+   <p class="info">Skype</p>
    <p>caymanparadise</p>
-   <i class="fa fa-skye"></i>
+   
   </div>
  
-  </div> 
-   <div class="content">
-     <div class="img"><img src="Screenshot.jpg"></div>
-   </div>
+  </div>
  
- </div>
-
+  
+</div>
  
 
 
