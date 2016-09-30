@@ -25,6 +25,41 @@ body {color:white;}
 
 //**Category rows**//
 
+ //**row specials**//
+              
+.flex-itemx { 
+}
+        
+.flex-item01 { 
+    background-image: url('beachfront.jpg');
+    background-size: cover;
+    width: 20%;
+    min-height: 11em;
+    margin: 10px;
+}
+ 
+.flex-item02 { 
+    background-image: url('beachview.jpg');
+    background-size: cover;
+    width: 20%;
+    min-height: 11em;
+    margin: 10px;
+}
+.flex-item03 { 
+    background-image: url('acrossfrombeach.jpg');
+    background-size: cover;
+    width: 20%;
+    min-height: 11em;
+    margin: 10px;
+}
+.flex-item04 { 
+    background-image: url('luxuryhome.jpg');
+    background-size: cover;
+    width: 20%;
+    min-height: 11em;
+    margin: 10px;
+}
+
 //**row 1**//
 
 .empty {    background-image: url('');     //**empty**//
@@ -154,35 +189,48 @@ body {color:white;}
 
 //**inside the picture boxes**//
 
+.test{}
+
+.category_header{
+    color: black; 
+    width: 100%;
+    margin-bottom: 1em;
+    margin-top: 1em;
+
+    text-align: center; 
+    border:1px solid black;
+    font-size: 2em;
+    padding: 3px;
+    }
+
 .name {
     background-color: #009999; 
     color: white; 
     opacity: 0.6; 
     text-align: left; 
-     border: 2px solid #4CAF50;
-    font-size: 1.5em;
+    border: 1px solid black;
+    font-size: 1.2em;
     padding: 3px;
+    
 } 
-        
-.button_box {
-    background-color: ; 
-    color: white;
-    margin-top:10em ;
-    padding: 3px;
-    margin-left: 11em;
+
+.name1 {
+     background-color: #009999; 
+    color: white; 
+    opacity: 0.6; 
+    text-align: center; 
+    border: 1px solid black;
+    font-size: 1.2em;
+    padding: 3px; 
 }
         
-.button {
-    background-color:#009999;
-    border: 2px solid #4CAF50;
-    border-radius: 2px;
-    color: white;
-    padding: 5px 5px;
-    text-align: center;
-    text-decoration:inherit;
-    display: inline-block;
-    font-size: 1em;
-}
+.view:hover {
+    background: url('view_button.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 10;
+}     
 
 /////////////////////////////////////////////////////**/////////////////////////////////////////////////////////////////////////////////////////**////////////////////////////////////////
 
