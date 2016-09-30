@@ -203,6 +203,22 @@ body {color:white;}
     padding: 3px;
     }
 
+.searchbar{
+    color: black; 
+    width: 100%;
+    text-align: center; 
+    border:1px solid black;
+    font-size: 0.9em;
+    }
+
+.search_name{
+    color: black; 
+    text-align: center; 
+    font-weight: bold;
+    font-size: 1em;
+    
+}
+
 .name {
     background-color: #009999; 
     color: white; 
@@ -215,7 +231,7 @@ body {color:white;}
 } 
 
 .name1 {
-     background-color: #009999; 
+    background-color: #009999; 
     color: white; 
     opacity: 0.6; 
     text-align: center; 
@@ -239,6 +255,8 @@ body {color:white;}
 .form1{
     margin: 0px auto; 
     max-width: 100%;
+    padding: 1px;
+    
 }
 
 form ul {
@@ -252,6 +270,8 @@ form ul {
     margin-top:10em ;
     padding: 3px;
 }
+
+.formspace {margin: 8px;}
 
 /////////////////////////////////////////////////////**/////////////////////////////////////////////////////////////////////////////////////////**////////////////////////////////////////
 
@@ -284,3 +304,6 @@ float:left;
 
 /*float right*/
 .right { float: left; }
+
+/*float center*/
+.center{ margin-left: 20em; margin-right: 20em;}
