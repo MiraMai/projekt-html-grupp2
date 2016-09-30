@@ -59,132 +59,116 @@
 <div class="category">
 <!-- START Category-->
 
-<p><strong>Categories</strong></p>
-
-
-<form class="form1">
-    <legend> <p> <strong>Search options</p> </strong></legend>
-
-<label for="stay">Where do you want to stay?</label>
-<select name="stay">
-  <option value="volvo">Northern island</option>
-  <option value="saab">Western island</option>
-  <option value="fiat">Eastern island</option>
-  <option value="audi">Southern island</option>
-</select>
-
-<label for="adate">Arrival:</label>
-  <input type="date" name="adate">
-
-<label for="ddate">Departure:</label>
-  <input type="date" name="ddate">
-
-
-Guests:
-<label for="adult">Adults:</label>
-<select name="adult">
-  <option value="1">1</option>
-  <option value="2">2</option>
-  <option value="3">3</option>
-  <option value="4">4</option>
-</select>
-<label for="child">Children:</label>
-<select name="child">
-  <option value="1">1</option>
-  <option value="2">2</option>
-  <option value="3">3</option>
-  <option value="4">4</option>
-</select>
-
-<label for="guests">Rooms:</label>
-<select name="gusts">
-  <option value="1">1</option>
-  <option value="2">2</option>
-  <option value="3">3</option>
-  <option value="4">4</option>
-</select>
-<button type="button" onclick="alert('Hello World!')">Update</button>
+<div class="flex-container1"> <!-- row #1 the container that holds the SEARCH options-->
     
-</form>
+    <div class="flex-item"><!-- picture container 1 -->
+    </div> 
     
-<table style="text-align:center;">
-<!-- START Category TABLE 1-->
+    <div class="form1">
+    <form id="divContainer">
+        <legend>Search options</legend>
 
-  <thead class="th">
-  <!-- table header-->
-    <tr>
-      <th>Love nest</th>
-      <th>All inclusive</th>
-      <th>Beachfront</th>
-    </tr>
-  </thead>
-  <tbody>
-  <!-- table body-->
-    <tr>
-      <td data-label="Blue lagoon"><img src="beach1.jpg" min-width="100%"  alt=""/></td>
-      <td data-label="Just in paradise"><img src="beach2.jpg" width="100%"  alt=""/></td>
-      <td data-label="Seacove"><img src="beach3.jpg" width="100%"  alt=""/></td>
-    </tr>
-    <tr>
-      <td class='alnleft'>
-      	7 BR, Terres Basses - Baie Rouge, St. Martin 
-      	<br>8 Guests: $700 - $3,000 / night
-      </td>
-      <td class='alnleft'>
-	<h1>Just in paradise</h1>8 BR, Terres Basses - Baie Rouge, St. Martin 
-	<br>6 Guests: $671 -$2,743 / night
-     </td>
-     <td class='alnleft'>
-     	<h1>Seacove</h1>10 BR, Little Harbor, Anguilla 
-	<br>6 Guests: $743 - $3,257 / night
-     </td>
-    </tr>
-  </tbody>
-</table>
-<!-- END Category TABLE 1-->
+            <label for="stay">Where do you want to stay?</label>
+                <select name="stay">
+                  <option value="volvo">Northern island</option>
+                  <option value="saab">Western island</option>
+                  <option value="fiat">Eastern island</option>
+                  <option value="audi">Southern island</option>
+                </select>
 
-<br>
+            <label for="adate">Arrival:</label>
+                <input type="date" name="adate">
 
-<table>
-<!-- START Category TABLE 2-->
+            <label for="ddate">Departure:</label>
+                <input type="date" name="ddate">
 
-  <thead>
-  <!-- table header-->
-    <tr>
-      <th>Hidden escape</th>
-      <th>North coast</th>
-      <th>Economy</th>
-    </tr>
-  </thead>
-  <tbody>
-  <!-- table body-->
-    <tr>
-      <td data-label="Gourmet delight"><img src="beach4.jpg" width="100%"  alt=""/></td>
-      <td data-label="Simple oasis"><img src="beach5.jpg" width="100%"  alt=""/></td>
-      <td data-label="Paradise villa"><img src="beach6.jpg" width="100%"  alt=""/></td>
-    </tr>
-    <tr>
-      <td class='alnleft'>
-	<h1>Gourmet delight</h1> 7 BR, Terres Basses - Baie Rouge, St. Martin 
-	<br>8 Guests: $700 - $3,000 / night
-      </td>
-      <td class='alnleft'>
-	<h1>Simple oasis</h1>8 BR, Terres Basses - Baie Rouge, St. Martin 
-	<br> 6 Guests: $671 - $2,743 / night
-      </td>
-      <td class='alnleft'>
-	<h1>Paradise villa</h1>10 BR, Little Harbor, Anguilla 
-	<br> 6 Guests: $743 - $3,257 / night
-      </td>
-    </tr>
-  </tbody>
-</table>
-<!-- END Category TABLE-->   
- 
-</div> 
 
-</div> 
+            Guests:
+            <label for="adult">Adults:</label>
+                <select name="adult">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+            <label for="child">Children:</label>
+                <select name="child">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+            </select>
 
+            <label for="guests">Rooms:</label>
+                <select name="gusts">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+            <button type="button" onclick="alert('Hello World!')">Update</button>
+        </form>
+   </div>
+    
+    <div class="flex-item"><!-- picture container 1 -->
+    </div> 
+    
+</div>
+    
+<div class="flex-container"> <!-- row #2 the container that holds all the stuff-->
+    
+    <div class="flex-item1"><!-- picture container 1 -->
+    
+        <div class="name">Blue Lagoon</div><!-- name for house 1 -->
+        <div class="button_box"><button class="button">View more</button></div><!-- name for house 1 -->
+    
+    </div> 
+    
+    <div class="flex-item2"><!-- picture container 2 -->
+        
+        <div class="name">Just in Paradise</div><!-- name for house 2 -->
+        <div class="button_box"><button class="button">View more</button></div><!-- name for house 2 -->
+        
+    </div> 
+    
+    <div class="flex-item3 "><!-- picture container 3 -->
+        
+        <div class="name">Seacove</div><!-- name for house 3 -->
+        <div class="button_box"><button class="button">View more</button></div><!-- name for house 3 -->
+    </div>   
+</div>
+
+<div class="flex-container"> <!-- row #3 the container that holds all the stuff-->
+    
+    <div class="flex-item4"><!-- picture container 4 -->
+        
+        <div class="name">Simple Oasis</div><!-- name for house 4 -->
+        <div class="button_box"><button class="button">View more</button></div><!-- name for house 4 -->
+        
+    </div> 
+    
+    <div class="flex-item5"><!-- picture container 5 -->
+        
+        <div class="name">Villa Delight</div><!-- name for house 5 -->
+        <div class="button_box"><button class="button">View more</button></div><!-- name for house 5 -->
+        
+    </div> 
+    
+    <div class="flex-item6 "><!-- picture container 6 -->
+        
+        <div class="name">Paradise Villa</div><!-- name for house 6 -->
+        <div class="button_box"><button class="button">View more</button></div><!-- name for house 6 -->
+        
+    </div> 
+    
+</div>
+    
+
+</div>
+<!-- END Category-->
+    
+</main>
+<!-- END main -->
     
 <!-- load footer -->
     
