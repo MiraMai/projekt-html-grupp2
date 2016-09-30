@@ -1,0 +1,143 @@
+/* allt innehål i sidan*/
+.section {
+    display:flex;
+    flex-direction:column;
+}
+/* inehåller två divar som ligger i toppen av sidan (stages, line) */
+.status {
+    display:flex;
+    flex-direction: column;
+    flex:1 1 auto;
+    width:90%;
+    margin: auto;
+}
+/* linjen högst upp. Den inehåller fyra divar*/
+.line {
+    display: flex;
+    flex-direction: row;    
+    flex: 1 1 auto;
+    height: 6px;
+    background-color: #99ffff;
+}
+/* alla numrerade line ligger i line-diven*/
+.line1 {
+    flex:1;
+}
+.line2 {
+    flex:1;
+}
+.line3 {
+    flex:1;
+}
+.line4{
+    flex:1;
+}
+/* id som man anger när man vill att färgen ska va mörkare*/
+#active {
+    background-color: #009999;
+}
+/* den första diven på sidan högst upp. Innehåller 4 divar */
+.stages {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+}
+/* 4 divar som ligger i stages */
+.choices {
+    flex:1;
+}
+.book {
+    flex: 1;
+}
+.confirm {
+    flex: 1;
+}
+.pay {
+    flex: 1;
+}
+.table {
+    margin: auto;
+    margin-top: 70px;
+    width:95%;
+}
+/* rubriken "My preferences" */
+caption {
+    text-align: left;
+    font-size: 150%;
+    padding: 20px;
+    border-bottom: 2px solid gray;
+    margin-bottom: 25px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #737373;
+}
+/* alla header på tabellen */
+th {
+    font-size: 105%;
+}
+
+/* tabell body */
+td {
+    width:35%;
+    border-top: 1px solid lightgray;
+    border-right: 0.5px dotted   #d9d9d9;
+    padding-top: 8px;
+
+}
+/* alla bilder i tabellen*/
+.divimg {
+    width: 100%;
+    height:100%;
+    display: block;
+    object-fit: scale-down;
+    border-radius: 2%;
+}
+
+/* fonts, color och align till all text utom caption */
+p,th,td,button {
+    text-align: center;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #737373;
+    
+}
+
+/* text som ska vara betonad. Högsta raden som är ett p element som har parent en div, och caption*/
+div>p,caption {
+    font-weight: bold;
+}
+/* size för all text i tabellen */
+td {
+    font-size: 0.85em;
+}
+/* fonts size och style för 3e row i tabellen */
+td:nth-child(3) {
+    font-style: italic;
+    font-size: 0.9em;
+}
+/* bold text för 1a row i tabellen */
+td:first-child {
+    font-weight: 800;    
+}
+/*egenskaper för next button*/
+.button {
+    display: block;
+    text-align-last: right;
+    width: 95%;
+    margin-top: 2%;    
+
+}
+button {
+    border-radius:10%;
+    border: 2px solid gray;
+    background-color: #009999;
+   
+}
+/* hur täxten i button ska se ut a(det är ju en länk)*/
+a {
+    text-align: center;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 105%;
+}
+

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="myselections.css">
+    <meta charset="utf-8">
+    <title>Booking</title>
+</head>
+<body>
+<!-- div med all innehåll av sidan-->
+    <div class="section">
+        
+<!-- div med 2 divar som ligger högst upp på sidan-->           
+        <div class="status">
+<!--1a div som inehåller 4 divar-->
+            <div class="stages">
+                <div class="choices"><p>My preferances</p></div>
+                <div class="book"><p>Book</p></div>
+                <div class="confirm"><p>Confirm</p></div>
+                <div class="pay"><p>Payment</p></div>
+            </div>
+<!--2a div som inehåller 4 divar-->            
+            <div class="line">
+                <div class="line1" id="active"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+                <div class="line4"></div>
+            </div>
+        </div>
+        
+<!--här börjar tabellen-->        
+<div class="table"> 
+<table>
+<!-- tabellens titel-->
+   <caption>My preferences</caption>
+<!--tabellens headers-->
+        <thead>
+            <tr>
+                <th>Accommondation</th>
+                <th>Date</th>
+                <th>Specifications</th>
+                <th>Persons</th>
+                <th>Accessibility</th>
+                <th>Extras</th>
+                <th>Price</th>
+                <th>Choose</th>
+            </tr>
+        </thead>
+    
+<!--tabellens body-->
+        <tbody>
+            <tr>
+<!--1a row med bild och text-->                
+                <td><img src="house1.jpg"/>Casa Coyaba</td>
+<!--2a row med dates-->
+                <td><b>From:</b> 2016-08-06<br> 
+                    <b>To:</b> 2016-08-26</td>
+<!--3e row med specifications-->
+                <td>4 Bedrooms<br>
+                    <span style="font-size:85%;">*2 double beds<br>
+                    *4 single beds</span><br>
+                    3 Bathrooms<br>
+                    Swiming pool<br>
+                    Grill</td>
+<!--4e row med people-->
+                <td>Adults <input type="number"><br>
+                    Children <input type="number">
+                </td>
+<!--5e row med accessibilities-->                
+                <td>
+                <label for="allergy">Allergy-friendly</label>
+                <input type="checkbox" id="allergy"/><br>
+                <label for="wheelchair">Wheelchair-adapted</label>
+                <input type="checkbox" id="wheelchair"></td>
+<!--6e row med extras-->                
+                <td>
+                <label for="crib">Crib</label>
+                <input type="radio" id="crib"/><br>
+                <label for="buttler">Buttler</label><input type="radio" id="buttler"/><br><label for="honeymoon">Honeymoon</label><input type="radio" id="honeymoon"/></td>
+<!--7e row med price-->
+                <td>$ 3000/day
+                </td>
+<!--8e row med checkboxen-->
+                <td><input type="checkbox">
+                </td>
+            </tr> 
+<!--här börjar 2a column-->
+            <tr>
+<!--row 1-->
+                <td><img src="house2.jpg"/>Villa Rosa
+                </td>
+<!--row 2-->
+                <td><b>From:</b> 2016-08-06<br> 
+                    <b>To:</b> 2016-08-26</td>
+<!--row 3-->                
+                <td>3 Bedrooms<br>
+                    <span style="font-size:85%;">*2 double beds<br>
+                    *4 single beds</span><br>
+                    2 Bathrooms<br>
+                    Swiming pool<br>
+                    Grill</td>
+<!--row 4-->
+                <td>Adults <input type="number"/><br>
+                    Children <input type="number"/>
+                   </td>
+<!--row 5-->
+                <td><label for="allergy">Allergy-friendly</label>
+                <input type="checkbox" id="allergy"/><br><label for="wheelchair">Wheelchair-adapted</label>
+                <input type="checkbox" id="wheelchair"/></td>
+<!--row 6-->                
+                <td><label for="crib">Crib</label>
+                <input type="radio" id="crib"/><br>
+                <label for="buttler">Buttler</label>
+                <input type="radio" id="buttler"/><br><label for="honeymoon">Honeymoon</label><input type="radio" id="honeymoon"/></td>
+<!--row 7-->                
+                <td>$ 2500
+                </td>
+<!--row 6-->                
+                <td><input type="checkbox">
+                </td>
+            </tr>
+<!-- här börjar column 3-->            
+            <tr>
+<!--row 1-->                
+                <td><img src="house3.jpg"/>Villa Paradiso</td>
+<!--row 2-->                
+                <td><b>From:</b> 2016-08-06<br> 
+                    <b>To:</b> 2016-08-26</td>
+<!--row 3-->                
+                <td>5 Bedrooms<br>
+                    <span style="font-size:85%;">*3 double beds<br>
+                    *6 single beds</span><br>
+                    4 Bathrooms<br>
+                    Swiming pool<br>
+                    Grill</td>
+<!--row 4-->                
+                <td>Adults<input type="number"/><br>         
+                    Children<input type="number"/></td>
+<!--row 5-->                
+               <td>                   
+                <label for="allergy">Allergy-friendly</label>
+                <input type="checkbox" id="allergy"/><br>
+                <label for="wheelchair">Wheelchair-adapted</label>
+                <input type="checkbox" id="wheelchair"></td>
+<!--row 6-->                
+                <td>
+                <label for="crib">Crib</label>
+                <input type="radio" id="crib"/><br>
+                <label for="buttler">Buttler</label><input type="radio" id="buttler"/><br><label for="honeymoon">Honeymoon</label><input type="radio" id="honeymoon"/></td>
+<!--row 7-->                
+                <td>$ 3500/day
+                </td>
+<!--row 8-->                
+                <td><input type="checkbox">
+                </td>
+            </tr>            
+        </tbody>
+    </table>
+        
+        </div>
+<!--next button-->        
+    <div class="button"><button><a href="booking1.html" target="_blank">Next >></a></button></div>
+    
+    </div>
+         
+    </body>
+</html>
