@@ -15,7 +15,7 @@ body {color:white;}
     display: -webkit-flex;
     display: flex;
 
-    background-color: #009999;
+    background-color: ;
 
     -webkit-justify-content: center;
     justify-content: center;
@@ -82,7 +82,6 @@ body {color:white;}
     width: 23%;
     min-height: 11em;
     margin: 10px;
-
 }
  
 .flex-item2 { 
