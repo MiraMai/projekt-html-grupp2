@@ -194,12 +194,24 @@ body {color:white;}
 .category_header{
     color: black; 
     width: 100%;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
     margin-top: 1em;
 
     text-align: center; 
     border:1px solid black;
     font-size: 2em;
+    padding: 3px;
+    }
+
+.category_header2{
+    color: black; 
+    width: 100%;
+    margin-bottom: 3em;
+    margin-top: em;
+
+    text-align: center; 
+    border:0px solid black;
+    font-size: 1em;
     padding: 3px;
     }
 
@@ -305,5 +317,7 @@ float:left;
 /*float right*/
 .right { float: left; }
 
-/*float center*/
-.center{ margin-left: 20em; margin-right: 20em;}
+/*text left*/
+.left_text {
+    text-align: left;
+}
