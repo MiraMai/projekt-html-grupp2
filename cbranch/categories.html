@@ -6,108 +6,178 @@
 <link rel="stylesheet" href="category.css">
 	<meta charset="utf-8">
 	<title>categories</title>
-<body>
-    <div class="category">
-<!-- START Category-->
+
+        <link rel="stylesheet" href="category.css">
+    </head>
+<style>
+    
+body { margin: 0;}
+
+div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+a {
+  display: inline-block;
+  margin-bottom: 8px;
+  width: calc(50% - 4px);
+  margin-right: 8px;
+  text-decoration: none;
+  color: black;
+}
+
+a:nth-of-type(2n) {
+  margin-right: 0;
+}
+
+@media screen and (min-width: 50em) {
+  a {
+    width: calc(25% - 6px);
+  }
   
-<div class="flex-container"> <!-- row #2 the container that holds all the stuff-->
+  a:nth-of-type(2n) {
+    margin-right: 8px;
+  }
+  
+  a:nth-of-type(4n) {
+    margin-right: 0;
+  }
+}
+
+a:hover img {
+  transform: scale(1.10);  //** makes the image BIGGER on hover**//
+}
+
+figure {
+  margin: 0;
+  overflow: hidden;
+}
+
+figcaption {
+  margin-top: 15px;
+}
+
+img {
+  border: none;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  background: #ccc;
+  transition: transform .2s ease-in-out;
+}
+
+.p a {
+  display: inline;
+  font-size: 13px;
+  margin: 0;
+  text-decoration: underline;
+  color: blue;
+}
+
+.p {
+  text-align: center;
+  font-size: 13px;
+  padding-top: 100px;
+} 
     
-    <div class="flex-item1"><!-- picture container 1 -->
-    
-        <div class="name">Blue Lagoon</div><!-- name for house 1 -->
-        <div class="button_box"><button class="button">View more</button></div><!-- name for house 1 -->
-    
-    </div> 
-    
-    <div class="flex-item2"><!-- picture container 2 -->
-        
-        <div class="name">Just in Paradise</div><!-- name for house 2 -->
-        <div class="button_box"><button class="button">View more</button></div><!-- name for house 2 -->
-        
-    </div> 
-    
-    <div class="flex-item3 "><!-- picture container 3 -->
-        
-        <div class="name">Seacove</div><!-- name for house 3 -->
-        <div class="button_box"><button class="button">View more</button></div><!-- name for house 3 -->
-    </div>   
+</style>
+
+<body>
+
+<main>
+
+<div class="flex-container"> <!-- caption-->
+   <div class="category_header">Categories</div> 
+</div>
+   
+
+<div>
+  <a href="#">
+    <figure>
+      <img src="beach1.jpg" alt="">
+      <figcaption>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+      </figcaption>
+    </figure>
+  </a>
+  <a href="#">
+    <figure>
+      <img src="beach2.jpg" alt="">
+      <figcaption>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, ut labore et dolore magna aliqua
+      </figcaption>
+    </figure>
+  </a>
+  <a href="#">
+    <figure>
+      <img src="beach3.jpg" alt="">
+      <figcaption>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, ut labore et dolore magna aliqua
+      </figcaption>
+    </figure>
+  </a>
+  <a href="#">
+    <figure>
+      <img src="beach4.jpg" alt="">
+      <figcaption>
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </figcaption>
+    </figure>
+  </a>
+  <a href="#">
+    <figure>
+      <img src="beach5.jpg" alt="">
+      <figcaption>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, ut labore et dolore magna aliqua
+      </figcaption>
+    </figure>
+  </a>
+  <a href="#">
+    <figure>
+      <img src="beach6.jpg" alt="">
+      <figcaption>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+      </figcaption>
+    </figure>
+  </a>
+  <a href="#">
+    <figure>
+      <img src="beach7.jpg" alt="">
+       <figcaption>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, ut labore et dolore magna aliqua
+      </figcaption>
+    </figure>
+  </a>
+  <a href="#">
+    <figure>
+      <img src="beach8.jpg" alt="">
+      <figcaption>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+      </figcaption>
+    </figure>
+  </a>
+  <a href="#">
+    <figure>
+      <img src="beach9.jpg" alt="">
+      <figcaption>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+      </figcaption>
+    </figure>
+  </a>
+  <a href="#">
+    <figure>
+      <img src="beach10.jpg" alt="">
+      <figcaption>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+      </figcaption>
+    </figure>
+  </a>
 </div>
 
-<div class="flex-container"> <!-- row #3 the container that holds all the stuff-->
-    
-    <div class="flex-item4"><!-- picture container 4 -->
-        
-        <div class="name">Simple Oasis</div><!-- name for house 4 -->
-        <div class="button_box"><button class="button">View more</button></div><!-- name for house 4 -->
-        
-    </div> 
-    
-    <div class="flex-item5"><!-- picture container 5 -->
-        
-        <div class="name">Villa Delight</div><!-- name for house 5 -->
-        <div class="button_box"><button class="button">View more</button></div><!-- name for house 5 -->
-        
-    </div> 
-    
-    <div class="flex-item6 "><!-- picture container 6 -->
-        
-        <div class="name">Paradise Villa</div><!-- name for house 6 -->
-        <div class="button_box"><button class="button">View more</button></div><!-- name for house 6 -->
-        
-    </div> 
-    
-</div>
-    
-<div class="flex-container"> <!-- row #2 the container that holds all the stuff-->
-    
-    <div class="flex-item7"><!-- picture container 7 -->
-    
-        <div class="name">Blue Lagoon</div><!-- name for house 1 -->
-        <div class="button_box"><button class="button">View more</button></div><!-- name for house 1 -->
-    
-    </div> 
-    
-    <div class="flex-item8"><!-- picture container 8 -->
-        
-        <div class="name">Just in Paradise</div><!-- name for house 2 -->
-        <div class="button_box"><button class="button">View more</button></div><!-- name for house 2 -->
-        
-    </div> 
-    
-    <div class="flex-item9 "><!-- picture container 9 -->
-        
-        <div class="name">Seacove</div><!-- name for house 3 -->
-        <div class="button_box"><button class="button">View more</button></div><!-- name for house 3 -->
-    </div>   
-</div>
 
-<div class="flex-container"> <!-- row #3 the container that holds all the stuff-->
-    
-    <div class="flex-item10"><!-- picture container 10 -->
-        
-        <div class="name">Simple Oasis</div><!-- name for house 4 -->
-        <div class="button_box"><button class="button">View more</button></div><!-- name for house 4 -->
-        
-    </div> 
-    
-    <div class="flex-item11"><!-- picture container 11 -->
-        
-        <div class="name">Villa Delight</div><!-- name for house 5 -->
-        <div class="button_box"><button class="button">View more</button></div><!-- name for house 5 -->
-        
-    </div> 
-    
-    <div class="flex-item12 "><!-- picture container 12 -->
-        
-        <div class="name">Paradise Villa</div><!-- name for house 6 -->
-        <div class="button_box"><button class="button">View more</button></div><!-- name for house 6 -->
-        
-    </div> 
-    
-</div>
-</div>
-<!-- END Category-->
-
+</main>
     
 </body>
-</html> 
+
+</html>
