@@ -1,0 +1,164 @@
+/* allt innehål i sidan*/
+.section {
+    display:flex;
+    flex-direction:column;
+}
+/* inehåller två divar som ligger i toppen av sidan (stages, line) */
+.status {
+    display:flex;
+    flex-direction: column;
+    flex:1 1 auto;
+    width:90%;
+    margin: auto;
+}
+/* linjen högst upp. Den inehåller fyra divar*/
+.line {
+    display: flex;
+    flex-direction: row;    
+    flex: 1 1 auto;
+    height: 6px;
+    background-color: #99ffff;
+}
+/* alla numrerade line ligger i line-diven*/
+.line1 {
+    flex:1;
+}
+.line2 {
+    flex:1;
+}
+.line3 {
+    flex:1;
+}
+.line4{
+    flex:1;
+}
+/* id som man anger när man vill att färgen ska va mörkare*/
+#active {
+    background-color: #009999;
+}
+/* diven i status */
+.stages {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+}
+/* 4 divar som ligger i stages */
+.choices {
+    flex:1;
+}
+.book {
+    flex: 1;
+}
+.confirm {
+    flex: 1;
+}
+.pay {
+    flex: 1;
+}
+/*hur täxten längst upp ska se ut*/
+p {
+    text-align: center;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #737373;
+    font-weight: bold;
+}
+/*titlarna ovanför alla fält*/
+label {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #737373;
+}
+/*titlen "confirm"*/
+.title {
+    text-align: left;
+    font-size: 150%;
+    font-weight: bold;
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+    margin-top: 70px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #737373;
+}
+/* linjen under titlen "confirm"*/
+.titleline {
+    display: block;
+    width:90%;
+    margin: auto;
+    border-bottom: 2px solid gray;
+    margin-bottom: 25px;
+}
+.main {
+    display: column;
+    flex-direction: row;
+}
+.villa {
+    flex:1 1 auto;
+}
+.description {
+    flex:1 1 auto;
+}
+img {
+  border: none;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  background: #ccc;
+  transition: transform .2s ease-in-out;
+}
+.item { 
+    background-image: url('confirm.jpg');
+    background-size: cover;
+   /* width: 20%;*/
+   /* min-height: 11em;*/
+   /* margin: 10px;*/
+}
+.table {
+    display:table;
+	margin: auto auto 50px auto;
+	padding:30px;
+    width: 90%;
+    
+    
+}
+.table > div {
+	display:table-row;
+    border:3px solid black
+
+}
+.table > div > div {
+	display:table-cell;
+	padding:10px;
+	text-align:center;
+    border-right: 1px solid lightgray;
+    vertical-align: middle;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    
+}
+.table > div > div:nth-child(7) {
+    font-weight: bold;
+    font-size: 120%;
+
+}
+.button {
+    display: block;
+    text-align-last: right;
+    width: 95%;
+    margin-top: 2%;    
+
+}
+button {
+    border-radius:10%;
+    border: 2px solid gray;
+    background-color: #009999;
+   
+}
+/* hur täxten i button ska se ut a(det är ju en länk)*/
+a {
+    text-align: center;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 105%;
+}
+
