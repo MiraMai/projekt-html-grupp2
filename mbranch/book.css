@@ -125,4 +125,14 @@ button {
     background-color: #009999;
    
 }
+/* hur täxten i button ska se ut a(det är ju en länk)*/
+a {
+    text-align: center;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 105%;
+}
+
 
