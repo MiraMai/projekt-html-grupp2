@@ -22,7 +22,22 @@
 	flex: 1 1 auto;
 	flex-direction: column;
 }
-.pimg {width: 200px; height: 200px;}
+@media (max-width:600px) {
+    .container1 {
+        flex-direction: column;
+    }
+}
+@media (max-width:600px) {
+    .container2 {
+        flex-direction: column;
+    }
+}
+@media (max-width:600px) {
+    .container3 {
+        flex-direction: column;
+    }
+}
+.pimg {width: 250px; height: 200px;}
 .img {
 	width: auto;
 	height: 250px;
@@ -51,3 +66,4 @@ h1 {
 	color: #009999;
 	text-align: center;
 }
+p {font-family: sans-serif; font-style: italic;}
