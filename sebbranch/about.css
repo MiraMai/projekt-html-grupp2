@@ -1,0 +1,52 @@
+#section {
+	display: flex;
+	flex-direction:column;
+    border:3px solid #009999;
+    width:95%;
+    margin:auto;
+}
+.container1 {
+	font-size: 19px;
+	display: flex; 1 1 auto;
+	margin-bottom: 50px;
+	
+}
+.container2 {
+	font-size: 19px;
+	display: flex;
+	flex: 1 1 auto;
+	height: auto;
+}
+.content1 {
+	display: flex;
+	flex: 1 1 auto;
+	flex-direction: column;
+}
+.img {
+	width: auto;
+	height: 250px;
+	padding: 5px;
+	margin: 10px;
+	
+}
+.names {
+	color: #009999;
+	font-size: 30px;
+}
+.text1 {
+	background-color: red;
+	
+}
+.text2 {
+	background-color: lightgray;
+	
+}
+.text3 {
+	background-color: Aquamarine;	
+	
+}
+img {height:200px;}
+h1 {
+	color: #009999;
+	text-align: center;
+}
