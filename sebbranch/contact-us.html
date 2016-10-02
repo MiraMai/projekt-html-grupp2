@@ -23,16 +23,17 @@
   margin: 15px;
   flex:1;
 }
-label {
-  padding: 10px;
-  text-align: right;
-  margin-top: 10px;
+
 
 }
-input, textarea {
-  margin-top: 6px;
-  padding: 22px;
-  border-radius: 5%;
+input [type=text] {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: 19px;
+  background-color: white;
+}
 }
 .info {
  font-size: 130%;
@@ -41,12 +42,7 @@ input, textarea {
  
 }
 
-.submit {
-  border-radius: 4%;
-  padding: 5px;
- 
-  
-}
+
 
 </style>
 </head>
@@ -70,21 +66,21 @@ input, textarea {
   
   
 
- 
-    <form class="form"> <!--formulär -->
+   <div>
+    <form action="#" method="get"> <!--formulär -->
 	  <div>
-	    <label>Name:</label>
-	    <input type="text" name="firstname" placeholder="Firstname"/>
+	    <label for="fname">Name:</label>
+	    <input type="text" id="fname" name="input2"/>
 	  </div>
 	  
 	  <div>
 	    <label>Email:</label>
-	    <input type="text" name="email" placeholder="Email"/>
+	    <input type="text" id="email" name="input2"/>
 	  </div>
 	  
 	  <div>
 	    <label>Phone:</label>
-	    <input type="text" name="phone" placeholder="Phone"/>
+	    <input type="text" id="phone" name="input2" />
 	  </div>
 	  
 	  <div>
@@ -92,7 +88,7 @@ input, textarea {
 	    <textarea name="comments" rows="5" cols="50" placeholder="Comments"></textarea>
 	  </div>
 	  
-	  <div class="submit">
+	  <div>
 	    <input type="Submit" name="send" value="send"/>
 	  </div>
 	</form>
@@ -120,7 +116,7 @@ input, textarea {
   
 </div>
  
-
+</div>
 
 </body>
 </html>
