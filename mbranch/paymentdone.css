@@ -1,0 +1,23 @@
+.main { 
+    width:60%;
+    margin: auto;
+}
+p {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+     color: #737373;
+    font-weight: bold;
+    font-size: 150%;
+    text-align: center;
+    margin: auto;
+    
+}
+.info {
+    font-style: italic;
+}
+a {
+    color:#009999;
+}
+
+.thankyou {
+    font-size: 200%;
+}
