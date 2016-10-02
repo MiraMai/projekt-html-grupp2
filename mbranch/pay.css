@@ -1,0 +1,190 @@
+/* allt innehål i sidan*/
+.section {
+    display:flex;
+    flex-direction:column;
+}
+/* inehåller två divar som ligger i toppen av sidan (stages, line) */
+.status {
+    display:flex;
+    flex-direction: column;
+    flex:1 1 auto;
+    width:90%;
+    margin: auto;
+}
+/* linjen högst upp. Den inehåller fyra divar*/
+.line {
+    display: flex;
+    flex-direction: row;    
+    flex: 1 1 auto;
+    height: 6px;
+    background-color: #99ffff;
+}
+/* alla numrerade line ligger i line-diven*/
+.line1 {
+    flex:1;
+}
+.line2 {
+    flex:1;
+}
+.line3 {
+    flex:1;
+}
+.line4{
+    flex:1;
+}
+/* id som man anger när man vill att färgen ska va mörkare*/
+#active {
+    background-color: #009999;
+}
+/* diven i status */
+.stages {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+}
+/* 4 divar som ligger i stages */
+.choices {
+    flex:1;
+}
+.book {
+    flex: 1;
+}
+.confirm {
+    flex: 1;
+}
+.pay {
+    flex: 1;
+}
+/*hur täxten längst upp ska se ut*/
+p {
+    text-align: center;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #737373;
+    font-weight: bold;
+}
+/*titlarna ovanför alla fält*/
+label {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #737373;
+}
+/*titlen "book"*/
+.title {
+    text-align: left;
+    font-size: 150%;
+    font-weight: bold;
+    padding: 20px;
+    width: 95%;
+    margin: auto;
+    margin-top: 70px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #737373;
+}
+/* linjen under titlen "book"*/
+.titleline {
+    display: block;
+    width:95%;
+    margin: auto;
+    border-bottom: 2px solid gray;
+    margin-bottom: 25px;
+}
+/*alla input boxars utseende*/
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+	border-radius: 4px;
+	background-color: #f8f8f8;
+    font-size: 19px;
+}
+input[type=text]:focus {
+    border: 2px solid #99ffff;
+}
+input[type=submit] {
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/*hela formuläret*/
+form {
+    margin:auto;
+    width:30%
+}
+@media (max-width:500px){
+   form {
+      width:100%;
+    }
+}
+@media (min-width:501px) and (max-width:700px) {
+   form {
+      width:80%;  
+    }
+}
+@media (min-width:701px) and (max-width:900px) {
+   form {
+      width:60%;  
+    }
+}
+@media (min-width:901px) and (max-width:1100px) {
+   form {
+      width:50%;  
+    }
+}
+@media (min-width:1101px) and (max-width:1300px) {
+   form {
+      width:40%;  
+    }
+}
+
+.table {
+    display:table;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.table > div {
+	display:table-row;
+
+}
+.table > div > div {
+	display: table-cell;
+	text-align:center;
+    vertical-align: middle;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+@media (max-width:400px){
+    .table > div > div{
+        display: block;
+    }
+}
+form>p {
+    text-align: center;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #737373;
+    font-weight: normal;
+}
+/*egenskaper för next button*/
+.button {
+    display: block;
+    text-align-last: right;
+    width: 95%;
+    margin-top: 2%;    
+
+}
+button {
+    border-radius:10%;
+    border: 2px solid gray;
+    background-color: #009999;
+   
+}
+/* hur täxten i button ska se ut a(det är ju en länk)*/
+a {
+    text-align: center;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 105%;
+}
+
+
+
