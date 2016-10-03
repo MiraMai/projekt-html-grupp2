@@ -22,6 +22,24 @@
     border-bottom: 3px solid #009999;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
+.tabel-2 {
+	display: flex;
+	padding: 10px;
+	width: 95%;
+	
+}
+.table-2 > div {
+	display: flex;
+	flex: 1 1 auto;
+	flex-direction: column;
+	
+}
+.images {
+	margin: 11px;
+	border: 1px solid white;
+	height: 100px;
+	width: auto;
+}
 img {
 	height: 300px;
 	width:  100%;
@@ -29,14 +47,17 @@ img {
 .cimg {
 	background-image: url (me.jpg);
 	background-size: cover;
+	margin-top: 5px;
 }
 .simg {
 	background-image: url (profil.jpg);
 	background-size: cover;
+	margin-top: 5px;
 }
 .mimg {
 	background-image: url(mira.jpg);
 	background-size: cover;
+	margin-top: 5px;
 }
 p {
 	font-style: italic;
@@ -55,13 +76,13 @@ h2 {
 	text-align: center;
 }
 .table > div > div:first-child,.table > div > div:nth-child(3) {
-    width:30%;
+    width:20%;
 }
 .table > div > div {
         display: block;
-        padding: 0px;
+        padding: 5px;
     }
-}
+
 @media (max-width:800px) {
     .table > div > div:first-child,.table > div > div:nth-child(3) {
         width:auto;
