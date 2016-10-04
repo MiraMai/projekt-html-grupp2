@@ -252,7 +252,7 @@ body {color:white;}
 }
         
 .view:hover {
-    background: url('view_button.gif');
+    background: url('view_button.gif'); //**this changes the picture on hover**//
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
