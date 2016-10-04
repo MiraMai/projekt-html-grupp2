@@ -1,158 +1,283 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<html lang="en">
 <head>
-  
-<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
-
-  
-<title>categories</title>
+<title>Home</title>
+<link rel="stylesheet" href="header.css">
+<link rel="stylesheet" href="category.css">
     
+<link rel="stylesheet" href="/css/style-1466013973018.min.css">
     
-<style>
-    
- body {
-    font-family: 'Slabo 27px', serif;
-     font-size: 14px;
-     font-weight: bold;
-  }
-img {
-    margin: auto;
-    min-height: 200px;
-    min-width:350px;
-    height: 23%;
-    width: 23%;
-    display: block;
-    max-width: 500px;
-    max-height:500px;  
-}
-    
-ul li{
-  display: inline;
-}
-  table {
-    border: 1px solid #ccc;
-    width: 100%;
-    margin:0;
-    padding:0;
-    border-collapse: collapse;
-    border-spacing: 0;
-  }
-
-  table tr {
-    border: 1px solid #ddd;
-    padding: 5px;
-  }
-
-  table th, table td {
-    padding: 10px;
-    text-align: center;
-  }
-
-  table th {
-    text-transform: uppercase;
-    font-size: 14px;
-    letter-spacing: 1px;
-    background-color: aquamarine;
-    color: white;
-  }
-    
-.alnleft { text-align: left; }
-
-  @media screen and (max-width: 600px) {
-
-    table {
-      border: 0;
-    }
-
-    table thead {
-      display: none;
-    }
-
-    table tr {
-      margin-bottom: 10px;
-      display: block;
-      border-bottom: 2px solid #ddd;
-    }
-
-    table td {
-      display: block;
-      text-align: right;
-      font-size: 13px;
-      border-bottom: 1px dotted #ccc;
-    }
-
-    table td:last-child {
-      border-bottom: 0;
-    }
-
-    table td:before {
-      content: attr(data-label);
-      float: left;
-      text-transform: uppercase;
-      font-weight: bold;
-    }
-    .alnleft {display: none; }
-  }
-    
-.alnleft { text-align: left; }
-
-    
-</style>
+<meta charset="UTF-8">
 </head>
 <body>
- <h1>Categories </h1>  
-<table>
-  <thead class="th">
-    <tr>
-      <th>Love nest</th>
-      <th>All inclusive</th>
-      <th>Beachfront</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td data-label="Blue lagoon"><img src="beach1.jpg" width="100%"  alt=""/></td>
-      <td data-label="Just in paradise"><img src="beach2.jpg" width="100%"  alt=""/></td>
-      <td data-label="Seacove"><img src="beach3.jpg" width="100%"  alt=""/></td>
-    </tr>
-    <tr>
-      <td class='alnleft'>
-          7 BR, Terres Basses - Baie Rouge, St. Martin <br>8 Guests: $700 - $3,000 / night
-    <ul>
-	<li><a href=""><i class="fa fa-bed" aria-hidden="true">1</i></a></li> 
-    <li><a href=""><i class="icon2">2</i></a></li> 
-    <li><a href=""><i class="icon2"></i>3</a></li>  
-    <li><a href=""><i class="icon3"></i>4</a></li> 
-    </ul>
-      </td>
-      <td  class='alnleft'><h1>Just in paradise</h1>8 BR, Terres Basses - Baie Rouge, St. Martin <br> 6 Guests: $671 - $2,743 / night</td>
-      <td class='alnleft'><h1>Seacove</h1>10 BR, Little Harbor, Anguilla <br> 6 Guests: $743 - $3,257 / night</td>
-    </tr>
-  </tbody>
-</table>
-    <br>
-<table>
-  <thead>
-    <tr>
-      <th>Hidden escape</th>
-      <th>North coast</th>
-      <th>Economy</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td data-label="Gourmet delight"><img src="beach4.jpg" width="100%"  alt=""/></td>
-      <td data-label="Simple oasis"><img src="beach5.jpg" width="100%"  alt=""/></td>
-      <td data-label="Paradise villa"><img src="beach6.jpg" width="100%"  alt=""/></td>
-    </tr>
-    <tr>
-      <td class='alnleft'><h1>Gourmet delight</h1> 7 BR, Terres Basses - Baie Rouge, St. Martin <br>8 Guests: $700 - $3,000 / night</td>
-      <td class='alnleft'><h1>Simple oasis</h1>8 BR, Terres Basses - Baie Rouge, St. Martin <br> 6 Guests: $671 - $2,743 / night</td>
-      <td class='alnleft'><h1>Paradise villa</h1>10 BR, Little Harbor, Anguilla <br> 6 Guests: $743 - $3,257 / night</td>
-    </tr>
-  </tbody>
-</table>
+
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<link rel="stylesheet" href="header.css">
+<link rel="stylesheet" href="category.css">
+    
+<meta charset="UTF-8">
+</head>
+<body>
+<!--logo -->
+    <div id="box"><img src="logo_test.gif"/></div>
+    
+<!--menyn-->
+<nav class="nav">
+<ul>
+    
+    <li style="float:right">
+<form action="search.php" method="get">
+  <div style="overflow: hidden; padding-top:0.6em; padding-right: .3em; width:5em;">
+    <input type="text" name="term" style="width: 100%;" placeholder="Search"/>
+   </div>
+</form>
+    
+<li style="float:right"><a href="#">Contact us</a></li>
+<li style="float:right" class="dropdown"><a href="#" class="dropbtn">About us</a>
+    <div class="dropdown-content">
+      <a href="#">Our vision</a>
+	  </div></li>
+<li style="float:right"><a href="#">Blog</a></li>
+<li style="float:right"><a href="#blog">Home</a></li>
+    
+    <li class="dropdown left">
+	<!-- here goes the dropdown menu-->
+    		<a href="#" class="dropbtn" target="_blank"><img src="cat_b.gif"></a>
+    			<div class="dropdown-content iefix">
+      				<a href="categories.html" target="_blank">All Categories</a>
+     				<a href="#">Beachfront</a>
+      				<a href="#">Luxury homes</a>
+      				<a href="#">Family friendly</a>
+      				<a href="#">Honeymoon</a>
+      				<a href="#">Pet friendly</a>
+      				<a href="#">Private cottages</a>
+    			</div>
+  	</li><!-- END dropdown menu--> 
+</ul>
+</nav>
+<!--div med header img-->
+ <div id="box1"> 
+<img src="header31.jpg" width="100%" height="296">
+</div>  
+    
+<!-- load main-->    
+<div id="box2"> 
+
+<!-- load main -->
+<main class="Site-content">
+    
+<div class="category">
+<!-- START Category-->
+    
+<div class="flex-container"> <!-- caption-->
+   <div class="category_header">Special offers</div> 
+</div>
+
+<div class="flex-container"> <!-- row #1 the container that holds the specials-->
+    
+    <div class="flex-item01 view"><!-- picture container 1 -->
+    
+        <div class="name1 ">BEACHFRONT</div><!-- name for house 1 -->
+    
+    </div> 
+    
+    <div class="flex-item02 view"><!-- picture container 2 -->
+        
+        <div class="name1">BEACHVIEW</div><!-- name for house 2 -->
+        
+    </div> 
+    
+    <div class="flex-item03 view"><!-- picture container 3 -->
+        
+        <div class="name1">ACROSS FROM BEACH</div><!-- name for house 3 -->
+    </div>  
+    
+       <div class="flex-item03 view"><!-- picture container 3 -->
+        
+        <div class="name1">LUXYRY HOMES</div><!-- name for house 3 -->
+    </div> 
+</div>
+    
+    
+    
+<div class="flex-container"> <!-- caption-->
+   <div class="category_header">Categories</div> 
+</div>
+    
+    
+    
+    
+<div class="flex-container"> <!-- Search bar-->
+   <div class="searchbar">
+
+            <div class="center"> <span class="search_name">SEARCH </span>
+                <form class="form1">
+                
+                <ul>
+
+                    <li> 
+                        <label for="stay">Destination:</label>
+                            <select name="stay" class="formspace">
+                              <option value="Northern island">Northern island</option>
+                              <option value="Western island">Western island</option>
+                              <option value="Eastern island">Eastern island</option>
+                              <option value="Southern island">Southern island</option>
+                            </select>
+                    </li>
+    
+                    <li>
+                        <label for="adate">Arrival:</label>
+                            <input type="date" name="adate" class="formspace">
+                    </li>
+                    
+                    <li>
+                        <label for="adate">Departure:</label>
+                            <input type="date" name="adate" class="formspace">
+                    </li>
+                
+                    <li>
+                        <label for="adult">Adults:</label>
+                            <select name="adult" class="formspace">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                            </select>
+                    </li>
+                    <li>
+                        <label for="adult">Children:</label>
+                            <select name="adult" class="formspace">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                            </select>
+                    </li>
+                 
+                    <li>
+                        <button type="submit" class="formspace">Search</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        
+    </div>      
+    </div>
+  </div>   
+    
+    
+<div class="flex-container"> <!-- row #2 the container that holds all the stuff-->
+    
+    <div class="flex-item1 view"><!-- picture container 1 -->
+    
+        <div class="name">Blue Lagoon</div><!-- name for house 1 -->
+     
+    
+    </div> 
+    
+    <div class="flex-item2 view"><!-- picture container 2 -->
+        
+        <div class="name">Just in Paradise</div><!-- name for house 2 -->
+        
+        
+    </div> 
+    
+    <div class="flex-item3 view"><!-- picture container 3 -->
+        
+        <div class="name">Seacove</div><!-- name for house 3 -->
+        
+    </div>   
+</div>
+
+<div class="flex-container"> <!-- row #3 the container that holds all the stuff-->
+    
+    <div class="flex-item4 view"><!-- picture container 4 -->
+        
+        <div class="name">Simple Oasis</div><!-- name for house 4 -->
+     
+        
+    </div> 
+    
+    <div class="flex-item5 view"><!-- picture container 5 -->
+        
+        <div class="name">Villa Delight</div><!-- name for house 5 -->
+        
+        
+    </div> 
+    
+    <div class="flex-item6 view"><!-- picture container 6 -->
+        
+        <div class="name">Paradise Villa</div><!-- name for house 6 -->
+        
+        
+    </div> 
+    
+</div>
+<div class="flex-container"> <!-- row #3 the container that holds all the stuff-->
+    
+    <div class="flex-item7 view"><!-- picture container 7 -->
+        
+        <div class="name">Simple Oasis</div><!-- name for house 7 -->
+     
+        
+    </div> 
+    
+    <div class="flex-item8 view"><!-- picture container 8 -->
+        
+        <div class="name">Villa Delight</div><!-- name for house 8 -->
+        
+        
+    </div> 
+    
+    <div class="flex-item9 view"><!-- picture container 9 -->
+        
+        <div class="name">Paradise Villa</div><!-- name for house 9 -->
+        
+        
+    </div> 
+    
+</div>
+<!-- END Category-->
+    
+</main>
+<!-- END main -->
+    
+<!-- load footer -->
+    
+<div id="box3">   
+    
+<footer class="site-footer">
+<div id="footer1">
+        <div class="alignright">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</i></a>
+            <a href="#">Linedin</i></a>
+            <a href="#">Github</i></a>
+        </div>
+</div>
+<div id="footer2">
+     <div class="alignleft">
+            <p>
+             <a href="#">Home</a>
+            ·<a href="#">Blog</a>
+            ·<a href="#">Our vision</a>
+            ·<a href="#">About us</a>
+            ·<a href="#">Categories</a>
+            ·<a href="#">Contact</a>
+            </p>
+            <p>Cayman Paradise &copy; 2016</p>
+</div>
+
+</footer>
+<!-- END footer -->
+</div>
+    
 
     
 </body>
-</html>
+</html>    
+

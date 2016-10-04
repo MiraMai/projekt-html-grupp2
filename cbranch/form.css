@@ -1,0 +1,73 @@
+body {
+  color: #fff;
+  padding: 5px 0;
+}
+
+.container {
+  width: 34,5%;
+  margin-top: 50px;
+}
+
+.container * {
+  box-sizing: border-box;
+}
+
+.flex-outer,
+.flex-inner {
+  list-style-type: none;
+  padding: 0;
+}
+
+.flex-outer {
+  margin: 0 auto;
+}
+
+.flex-outer li,
+.flex-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.flex-inner {
+  padding: 0 8px;
+  justify-content: space-between;  
+}
+
+.flex-outer > li:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.flex-outer li label,  //**spacing between the li in all directions**//
+.flex-outer li p {
+  padding: 5px;
+}
+
+.flex-outer > li > label, //** distance between the fields vertically**//
+.flex-outer li p {
+  flex: 1 0 50px;
+}
+
+.flex-outer > li > label + *,  //**how far between label and box-textfield**//
+.flex-inner {
+  flex: 1 0 50px;
+}
+
+.flex-outer li p {
+  margin: 0;
+}
+
+.flex-outer li input:not([type='checkbox']),
+.flex-outer li textarea {
+  padding: 1px;
+  border: none;
+}
+
+.flex-outer li button {
+  margin-left: auto;
+  padding: 1px 10px;
+  background: blue;
+  color: white;
+  border-radius: 1px;
+}
+

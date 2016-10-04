@@ -2,53 +2,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+<link rel="stylesheet" href="category.css">
 	<meta charset="utf-8">
 	<title>categories</title>
+
+        <link rel="stylesheet" href="category.css">
+    </head>
 <style>
-body { margin: 0; background: #333; }
-header { 
-  padding: .5vw;
-  font-size: 0;
-  display: -ms-flexbox;
-  -ms-flex-wrap: wrap;
-  -ms-flex-direction: column;
-  -webkit-flex-flow: row wrap; 
-  flex-flow: row wrap; 
-  display: -webkit-box;
-  display: flex;
-}
-header div { 
-  -webkit-box-flex: auto;
-  -ms-flex: auto;
-  flex: auto; 
-  width: 200px; 
-  margin: .5vw; 
-}
-header div img { 
-  width: 100%; 
-  height: auto; 
-}
-@media screen and (max-width: 400px) {
-  header div { margin: 0; }
-  header { padding: 0; }
-  
-}
-</style>
-</head>
-<body>
     
-<header>
-<div><img src="beach1.jpg" alt></div>
-<div><img src="beach2.jpg" alt></div>
-<div><img src="beach3.jpg" alt></div>
-<div><img src="beach4.jpg" alt></div>
-<div><img src="beach5.jpg" alt></div>
-<div><img src="beach6.jpg" alt></div>
-<div><img src="beach7.jpg" alt></div>
-<div><img src="beach8.jpg" alt></div>
-<div><img src="beach9.jpg" alt></div>
-<div><img src="beach10.jpg" alt></div>
-</header>
+body { margin: 0;}
+    
+
+
+div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+a {
+  display: inline-block;
+  margin-bottom: 8px;
+  width: calc(50% - 4px);
+  margin-right: 8px;
+  text-decoration: none;
+  color: black;
+}
+
+a:nth-of-type(2n) {
+  margin-right: 0;
+}
+
+@media screen and (min-width: 50em) {
+  a {
+    width: calc(25% - 6px);
+  }
+  
+  a:nth-of-type(2n) {
+    margin-right: 8px;
+  }
+  
+  a:nth-of-type(4n) {
+    margin-right: 0;
+  }
+}
+
+a:hover img {
+  transform: scale(1.10);  //** makes the image BIGGER on hover**//
+}
+
+figure {
+  margin: 0;
+  overflow: hidden;
+}
+
+figcaption {
+  margin-top: 15px;
+}
+
+img {
+  border: none;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  background: #ccc;
+  transition: transform .2s ease-in-out;
+}
+
+.p a {
+  display: inline;
+  font-size: 13px;
+  margin: 0;
+  text-decoration: underline;
+  color: blue;
+}
+
+.p {
+  text-align: center;
+  font-size: 13px;
+  padding-top: 100px;
+} 
+    
+</style>
+
+<body>
+
+<main>
+
+<div class="flex-container"> <!-- The caption -->
+    
+    <span class="category_header">
+        <span class="category_header1">
+           Categories
+        </span>
+        <br>
+    </span> 
+</div>
+
+   
+<div class="flex-container"> <!-- The caption -->
+    
+    <span>
+<img src="luxuryhome1.jpg">
+    </span> 
+</div>
+   <br> 
+  <div class="flex-container" style="margin-bottom: 10px;"> <!-- The caption -->
+    
+    <span style="color:black; font-size:1em; font-family: Calibri; align:left; margin-bottom: 5px;">
+    
+Find your perfect destination property: 
+Please choose from one of these luxury real estate destinations to begin your journey to find your dream vacation.
+        </span> 
+</div>
+    
+<div>
+  <a href="#">
+    <figure>
+      <img src="beach1.jpg" alt="">
+      <figcaption>
+       THE ELEGANCE<br>
+          <p style="font-size:1em; font-family: Calibri;">This is an intimate and secluded villa category offering fullside ocean views over the Gulf. Although there is no private pool in this villa category, guests can enjoy intimate meals either inside the villa or on the terrace.</p>
+      </figcaption>
+    </figure>
+  </a>
+  <a href="#">
+    <figure>
+      <img src="beach2.jpg" alt="">
+      <figcaption>
+       THE SIXTH SENSE<br>
+          <p style="font-size:1em; font-family: Calibri;">The Ocean View Pool Villas are located throughout the resort and offer splendid views over the Gulf of southern Cayman island. Guests enjoy a spacious bathroom with oversize bathtub, double vanities and an outdoor shower.</p>
+      </figcaption>
+    </figure>
+  </a>
+  <a href="#">
+    <figure>
+      <img src="beach3.jpg" alt="">
+      <figcaption>
+        DELUXE BUNGALOW<br>
+          <p style="font-size:1em; font-family: Calibri;">Bungalow is in the garden and close to the beach with private terrace. Bathroom with shower separately from bathtub. Bedding configuration is double or twin. Maximum occupancy</p>
+      </figcaption>
+    </figure>
+  </a>
+  <a href="#">
+    <figure>
+      <img src="beach4.jpg" alt="">
+      <figcaption>
+        1001 NIGHT<br>
+          <p style="font-size:1em; font-family: Calibri;">This unique villa inspired by Andalusian, Persian, Art Deco and Berber art epitomize refined, personalized luxury.
+              As you soak in the sunlight at the edge of the private pool, a dedicated Butler is on hand to ensureyour stay is the stuff of dreams.</p>
+      </figcaption>
+    </figure>
+  </a>
+  <a href="#">
+    <figure>
+      <img src="beach5.jpg" alt="">
+      <figcaption>
+        MAHARAJA’S VILLA<br>
+          <p style="font-size:1em; font-family: Calibri;">Nestled in lush vegetation, this palatial Indian-style villa is fit for a Maharajah, with a four-poster bed, bronze statues, mirrors inlaid with semi-precious stones, and a wrought-copper handrail. Lord Ganesha, protector of the family, watches over the villa.</p>
+      </figcaption>
+    </figure>
+  </a>
+  <a href="#">
+    <figure>
+      <img src="beach6.jpg" alt="">
+      <figcaption>
+         FAMILY LUXURY<br>
+          <p style="font-size:1em; font-family: Calibri;">The Family Villa is a veritable authentic oriental palace, adorned with fine drapery, a four-poster bed, a plaster lacework dome and Murano chandeliers. Pillars punctuate the space and the pool in a heart shape so as to preserve the nearby cluster of palm trees.</p>
+      </figcaption>
+    </figure>
+  </a>
+  <a href="#">
+    <figure>
+      <img src="beach7.jpg" alt="">
+       <figcaption>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, ut labore et dolore magna aliqua
+      </figcaption>
+    </figure>
+  </a>
+  <a href="#">
+    <figure>
+      <img src="beach8.jpg" alt="">
+      <figcaption>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+      </figcaption>
+    </figure>
+  </a>
+  <a href="#">
+    <figure>
+      <img src="beach9.jpg" alt="">
+      <figcaption>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+      </figcaption>
+    </figure>
+  </a>
+  <a href="#">
+    <figure>
+      <img src="beach10.jpg" alt="">
+      <figcaption>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+      </figcaption>
+    </figure>
+  </a>
+</div>
+
+
+</main>
     
 </body>
-</html> 
+
+</html>
