@@ -292,6 +292,14 @@ form ul {
 .footer{   
 }
 
+#whitelink a {
+	color:white;
+	}
+
+#whitemenu a {
+	color:white;
+	}
+
 .site-footer {
   background: #009999;
   z-index:1;
