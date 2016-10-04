@@ -67,8 +67,7 @@
 .text {
 	background-color: #ffcc66;
 	font-size: 100%;
-	padding: 8px;
-	
+	padding: 8px;	
 	font-weight: bold;
 }
 
@@ -101,8 +100,8 @@ img {
 	background-image: url ('bild5.jpg');
 	background-size: cover;	
 }
-.images7 {
-	background-image: url ('bild4.jpg');
+.images3 {
+	background-image: url ('bild3.jpg');
 	background-size: cover;
 }
 .cimg {
