@@ -6,81 +6,124 @@
 .table {
 	 display: table;
 	 padding: 10px;
-     width: 95%;	
+     width: 60%;
+     margin: auto;
+    	 
 }
 
 .table > div {
 	display:table-row;	
+	border: 2px solid white;
 }
+
 
 .table > div > div {
     flex:1 1 auto;
 	display:table-cell;
-    padding: 20px;
 	text-align:left;
     vertical-align: middle;
-    border-bottom: 3px solid #009999;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	width: 50%;
+	padding: 5px;
+	border-bottom: 3px solid gray;
+
+}
+@media (max-width:1000px) {
+	.table > div > div {
+	width: 90%;
+    margin: auto;	
+	}
 }
 .table > div > div > div {
 	display: table-row;
-	
-}
-.tabel-2 {
-	display: flex;
-	padding: 10px;
-	width: 95%;
 	border: 3px solid white;
-	
+	margin: 4px;
+
+}
+.table-2 {
+	 display: table;
+	 padding: 10px;
+     width: 75%;
+     margin: auto;
 }
 .table-2 > div {
-	display: flex;
-	flex: 1 1 auto;
-	flex-direction: column;
-	
+	display:table-row;	
+	width: 33%;
+	border: 2px solid white;
 }
-.table-2 > div > div > img{
-	margin-top: 5px;
+.table-2 > div > div {
+    flex:1 1 auto;
+	display:table-cell;
+	text-align:left;
+    vertical-align: middle;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	width: 33%;
+	border: 3px solid white;
 }
-.images6, .images3 {
-	height: 150px;	
-	margin-left: 10px;
-	display: block;
+.table-2 > div > div > div {
+	display: table-row;
+	border: 3px solid white;
+
 }
 .text {
-	background-color: #ffcc99;
-	width: auto;
-	height: 300px;
-	border: 2px solid white;
-	margin: auto;
-	padding: 5px;
-	margin-left: 5px;
-	text-align: center;
+	background-color: #ffcc66;
+	font-size: 100%;
+	padding: 8px;
+	
+	font-weight: bold;
 }
+
 
 img {
 	height: auto;
 	width:  100%;
 }
+.images8 {
+	background-image: url ('bild6.jpg');
+	background-size: cover;
+}
+.images1 {
+	background-image: url ('bild1.jpg');
+	background-size: cover;
+} 
+.images6 {	
+	background-size: cover;
+	background-image: url ('bild3.jpg') 
+}
+.images2 {
+	background-image: url ('bild2.jpg');
+	background-size: cover;
+}
+.images9 {
+	background-image: url ('bild9.jpeg');
+	background-size: cover;
+}
+.images10 {
+	background-image: url ('bild5.jpg');
+	background-size: cover;	
+}
+.images7 {
+	background-image: url ('bild4.jpg');
+	background-size: cover;
+}
 .cimg {
-	background-image: url (me.jpg);
+	background-image: url ('me.jpg');
 	background-size: cover;
 	
 }
 .simg {
-	background-image: url (profil.jpg);
+	background-image: url ('profil.jpg');
 	background-size: cover;
 
 }
 .mimg {
-	background-image: url(mira.jpg);
+	background-image: url('mira.jpg');
 	background-size: cover;
 
 }
 p {
 	font-style: italic;
 	font-family: sans-serif;
-	
+	font-size: 1.5em;
 }
 h1 {
 	color: #009999;
@@ -93,20 +136,24 @@ h2 {
 	color: #009999;
 	text-align: center;
 }
+/*
 @media (max-width:1000px) {
 	.table-2 > div > div {
 	width: auto;	
 	}
 }
+
 @media (max-width:1000px) {
 	.table-2 > div > div:first-child,.table > div > div:nth-child(3){
 	width: 20%;	
 	}
 }
+*/
 .table > div > div:first-child,.table > div > div:nth-child(3) {
     width:20%;
 }
-@media (max-width:1000px) {
+
+@media (max-width:800px) {
 	.table > div > div {
 		display: block;
 		padding: 0px;
@@ -114,17 +161,15 @@ h2 {
 	
 }
 
-}
+
+
 @media (max-width:1000px) {
-    .table > div > div:first-child,.table > div > div:nth-child(3) {
-        width:auto;
+    .table > div > div:first-child,.table > div > div:nth-child(2) {
+        width: 80%;
+		margin: auto;
     }
 }
-@media (max-width:1000px) {
-    .table > div > div:first-child,.table > div >div:nth-child(3) {
-        border-bottom: none;
-    }
-}
+
 body {
 	font-family: sans-serif;
 }
