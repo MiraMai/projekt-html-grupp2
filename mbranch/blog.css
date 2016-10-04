@@ -2,7 +2,7 @@
 .section {
     width:auto;
     margin:auto;
-}
+}*/f
 /* gör att bilden sträcker sig ut i hela boxen och annpassar sig*/
 img {
     width: 100%;
@@ -42,15 +42,16 @@ p {
 h1 {
         font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
         color: #737373;
-        text-align: center;
+        border-radius: 5px;
+        border:2px solid #737373;
+    
     
 }
 h2 {
         font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
         color: #737373;
-    
+       
 }
-
 /*gör att diven visas som en table*/
 .table {
     display:table;
@@ -108,12 +109,13 @@ h2 {
 /*gör att alla cells med bilder sträcker sig maximalt*/
 @media (max-width:1000px) {
     .table > div > div:first-child,.table > div > div:nth-child(3) {
-        width:auto;
+        width:80%;
+        margin: auto;
     }
 }
 /*border i slutet av varje artikel*/ 
 .table > div > div:nth-child(2) {
-     border-right: 1px solid #009999;
+     border-right: 1px dotted   #bfbfbf;
 }
 @media (max-width:1000px) {
     .table > div > div:nth-child(2) {
