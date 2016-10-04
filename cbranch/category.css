@@ -237,9 +237,11 @@ body {color:white;}
     text-align: left; 
     border: 1px solid black;
     font-size: 1.2em;
-    padding: 3px;
-    
+    padding: 3px;  
 } 
+
+.heart { 
+}
 
 .name1 {
     background-color: #009999; 
