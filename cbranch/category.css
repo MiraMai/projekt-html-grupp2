@@ -294,12 +294,18 @@ form ul {
 
 #whitelink a {
 	color:white;
+    text-decoration: none;
+    
 	}
 
 #whitemenu a {
 	color:white;
+    text-decoration: none;
 	}
 
+#whitemenu a:hover {
+    color:black;
+}
 .site-footer {
   background: #009999;
   z-index:1;
