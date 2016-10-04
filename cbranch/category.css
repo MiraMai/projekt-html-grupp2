@@ -322,7 +322,10 @@ float:left;
 
 
 /*float right*/
-.right { float: left; }
+.right { float: right; }
+
+/*float center*/
+.center { margin-left:120px; margin-right:120px;}
 
 /*text left*/
 .left_text {
