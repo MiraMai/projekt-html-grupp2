@@ -29,45 +29,58 @@
 	margin: 4px;
 
 }
-/*
+
 @media (max-width:1000px) {
     .table > div > div:first-child,.table > div > div:nth-child(2) {
         width: 80%;
 		margin: auto;
     }
 }
-*/
-img {
-	height: auto;
-	width:  100%;
+
+
+	
 }
 .vision1 {
 	background-image: url ('vision1.jpg');
 	background-size: cover;
+	height: auto;
+	width:  100%;
 }
 .vision2 {
 	background-image: url ('vision2.jpg');
 	background-size: cover;
+	height: auto;
+	width:  100%;
 } 
 .vision3 {	
 	background-size: cover;
-	background-image: url ('vision3.jpg') 
+	background-image: url ('vision3.jpg');
+    height: auto;
+	width:  100%;	
 }
 .vision4 {
 	background-image: url ('vision4.jpg');
 	background-size: cover;
+	height: auto;
+	width:  100%;
 }
 .vision5 {
 	background-image: url ('vision5.jpeg');
 	background-size: cover;
+	height: auto;
+	width:  100%;
 }
 .vision6 {
 	background-image: url ('vision6.jpg');
-	background-size: cover;	
+	background-size: cover;
+    height: auto;
+	width:  100%;	
 }
 .vision7 {
 	background-image: url ('vision7.jpg');
 	background-size: cover;	
+	height: auto;
+	width:  100%;
 }
 .text {
 	font-weight: bold;

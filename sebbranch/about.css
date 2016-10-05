@@ -1,4 +1,4 @@
-#secton {
+#section {
 	width: auto;
 	margin: auto;	
 }
@@ -72,51 +72,67 @@
 }
 
 
-img {
-	height: auto;
-	width:  100%;
-}
 .images8 {
 	background-image: url ('bild6.jpg');
 	background-size: cover;
+	width: 100%;
+	height: auto;
 }
 .images1 {
 	background-image: url ('bild1.jpg');
 	background-size: cover;
+	width: 100%;
+	height: auto;
 } 
 .images6 {	
 	background-size: cover;
-	background-image: url ('bild3.jpg') 
+	background-image: url ('bild3.jpg');
+    width: 100%;
+	height: auto;	
 }
 .images2 {
 	background-image: url ('bild2.jpg');
 	background-size: cover;
+	width: 100%;
+	height: auto;
 }
 .images9 {
 	background-image: url ('bild9.jpeg');
 	background-size: cover;
+	width: 100%;
+	height: auto;
 }
 .images10 {
 	background-image: url ('bild5.jpg');
 	background-size: cover;	
+	width: 100%;
+	height: auto;
 }
 .images3 {
 	background-image: url ('bild3.jpg');
 	background-size: cover;
+	width: 100%;
+	height: auto;
 }
 .cimg {
 	background-image: url ('me.jpg');
 	background-size: cover;
+	width: 100%;
+	height: auto;
 	
 }
 .simg {
 	background-image: url ('profil.jpg');
 	background-size: cover;
+	width: 100%;
+	height: auto;
 
 }
 .mimg {
 	background-image: url('mira.jpg');
 	background-size: cover;
+	width: 100%;
+	height: auto;
 
 }
 p {
