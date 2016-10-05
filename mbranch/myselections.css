@@ -54,6 +54,7 @@
     margin: auto;
     margin-top: 70px;
     width:95%;
+    border-collapse: collapse;
 }
 /* rubriken "My preferences" */
 caption {
@@ -62,11 +63,12 @@ caption {
     padding: 20px;
     border-bottom: 2px solid gray;
     margin-bottom: 25px;
-    color: #737373;
+    color: #4d4d4d;
 }
 /* alla header på tabellen */
 th {
     font-size: 1.3em;
+    color: #4d4d4d;
 }
 
 /* tabell body */
@@ -89,7 +91,6 @@ td {
 /* fonts, color och align till all text utom caption */
 p,th,td,button {
     text-align: center;
-    color: #737373;
     
 }
 
@@ -97,6 +98,7 @@ p,th,td,button {
 div>p,caption {
     font-weight: bold;
     font-size:1.4em;
+    color: #4d4d4d;
 }
 /* size för all text i tabellen */
 td {
@@ -125,4 +127,9 @@ button {
     border-top: 1px solid gray;
     margin:20px;
     padding-top:10px;
+}
+@media (max-width:800px) {
+    div>.one {
+        display:block;
+    }
 }
