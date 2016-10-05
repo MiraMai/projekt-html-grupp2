@@ -14,6 +14,7 @@
 .table > div {
 	display:table-row;	
 	border: 2px solid white;
+	
 }
 
 
@@ -23,7 +24,7 @@
 	text-align:left;
     vertical-align: middle;
 	width: 50%;
-	padding: 5px;
+    padding: 7px;
 	border-bottom: 3px solid gray;
 
 }
@@ -36,7 +37,7 @@
 .table > div > div > div {
 	display: table-row;
 	border: 3px solid white;
-	margin: 4px;
+	padding: 5px;
 
 }
 .table-2 {
@@ -129,7 +130,7 @@
 
 }
 .mimg {
-	background-image: url('mira.jpg');
+	background-image: url('DSC_0091.JPG');
 	background-size: cover;
 	width: 100%;
 	height: auto;
@@ -151,19 +152,19 @@ h2 {
 	color: #4d4d4d ;
 	text-align: center;
 }
-/*
-@media (max-width:1000px) {
+
+@media (max-width:800px) {
 	.table-2 > div > div {
 	width: auto;	
 	}
 }
 
-@media (max-width:1000px) {
+@media (max-width:800px) {
 	.table-2 > div > div:first-child,.table > div > div:nth-child(3){
 	width: 20%;	
 	}
 }
-*/
+
 .table > div > div:first-child,.table > div > div:nth-child(3) {
     width:20%;
 }
@@ -175,10 +176,7 @@ h2 {
 	}
 	
 }
-
-
-
-@media (max-width:1000px) {
+@media (max-width:800px) {
     .table > div > div:first-child,.table > div > div:nth-child(2) {
         width: 80%;
 		margin: auto;
@@ -186,5 +184,5 @@ h2 {
 }
 
 body {
-	font-family: sans-serif;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }

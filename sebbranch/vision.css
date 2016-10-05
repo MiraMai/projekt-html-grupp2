@@ -4,9 +4,10 @@
 }
 .table {
 	 display: table;
-	 padding: 10px;
+	 padding: 5px;
      width: 70%;
      margin: auto;
+	 margin-top: 12px;
     	 
 }
 .table > div {
@@ -20,6 +21,7 @@
     vertical-align: middle;
 	width: 33%;
 	padding: 5px;
+	margin-top: 9px;
 
 
 }
@@ -83,20 +85,30 @@
 	width:  100%;
 }
 .text {
-	font-weight: bold;
-	border: 3px solid gray;
+	font-weight: bold;	
 	text-align: center;
 	font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-	font-size: 1.3em;
+	font-size: 1.2em;
 	color: black;
+	padding: 0;
 }
-@media all and (max-width: 800px) {
+@media all and (max-width: 600px) {
 
 .navigation {flex-direction: space-around;}
 .content {flex-direction: space-around;}
-.container-fluid {flex-direction: space-around;}
+.main {flex-direction:space-around;}
 .flex-container { flex-direction: space-around;}
 .flex-container1 { flex-direction:space-around;}
+.table {flex-direction:space-around;}
 #box { flex-direction: space-around;}
 }
-
+@media all and (max-width: 500px) {
+/ On small screens, we are no longer using row direction but column /
+.navigation {flex-direction: column; }
+.main {flex-direction: column;}
+.content {flex-direction:column;}
+.table {flex-direction:column;}
+.flex-container { flex-direction: column;}
+.flex-container1 { flex-direction: column;}
+#box { flex-direction: column;}
+}
