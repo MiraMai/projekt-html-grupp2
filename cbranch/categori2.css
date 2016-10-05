@@ -1,16 +1,11 @@
-//**_----------------------------------------------------**//
-//**categori sidan**//
 
     
 body { margin: 0;}
     
-
-
 div {
   display: flex;
   flex-wrap: wrap;
 }
-
 a {
   display: inline-block;
   margin-bottom: 8px;
@@ -19,12 +14,9 @@ a {
   text-decoration: none;
   color: black;
 }
-
 a:nth-of-type(2n) {
   margin-right: 0;
 }
-
-.noline 
 @media screen and (min-width: 50em) {
   a {
     width: calc(25% - 6px);
@@ -38,20 +30,16 @@ a:nth-of-type(2n) {
     margin-right: 0;
   }
 }
-
 a:hover img {
   transform: scale(1.10);  //** makes the image BIGGER on hover**//
 }
-
 figure {
   margin: 0;
   overflow: hidden;
 }
-
 figcaption {
   margin-top: 15px;
 }
-
 img {
   border: none;
   max-width: 100%;
@@ -60,7 +48,6 @@ img {
   background: #ccc;
   transition: transform .2s ease-in-out;
 }
-
 .p a {
   display: inline;
   font-size: 13px;
@@ -68,7 +55,6 @@ img {
   text-decoration: underline;
   color: blue;
 }
-
 .p {
   text-align: center;
   font-size: 13px;
