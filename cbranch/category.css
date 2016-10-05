@@ -122,7 +122,7 @@ body {color:white;}
     margin: 10px;
 }
 .flex-item6 { 
-    background-image: url('beach14.jpg');
+    background-image: url('beach6.jpg');
     background-size: cover;
     width: 23%;
     min-height: 11em;
@@ -237,14 +237,9 @@ body {color:white;}
     text-align: left; 
     border: 1px solid black;
     font-size: 1.2em;
-    padding: 3px;  
+    padding: 3px;
+    
 } 
-
-.heart { 
-margin-left:200px;
-margin-top:200x;
-z-index: -1;
-}
 
 .name1 {
     background-color: #009999; 
@@ -297,20 +292,6 @@ form ul {
 .footer{   
 }
 
-#whitelink a {
-	color:white;
-    text-decoration: none;
-    
-	}
-
-#whitemenu a {
-	color:white;
-    text-decoration: none;
-	}
-
-#whitemenu a:hover {
-    color:black;
-}
 .site-footer {
   background: #009999;
   z-index:1;
@@ -333,33 +314,9 @@ float:left;
 
 
 /*float right*/
-.right { float: right; }
-
-/*float center*/
-.center { margin-left:120px; margin-right:120px;}
+.right { float: left; }
 
 /*text left*/
 .left_text {
     text-align: left;
-}
-
-
-
-
-
-/* för header bilden inte ska se konstig ut*/
-img {
-display: block;
-margin: auto;
-max-width: 100%;
-height: auto;
-position: relative;
-left: 0px;	
-}
-
-/*box med logo*/
-#box {
-    width:100%;
-    height: auto;
-    display: block;
 }
