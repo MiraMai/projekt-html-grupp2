@@ -3,26 +3,24 @@
 	display: flex;
 	width: 95%;
 	margin: auto;
+	color: black;
 }
 .content1 {
-	margin-top: 15px;
+	
 	flex: 1 1 auto;
 	flex-direction:column;
 	
 }
 .content2 {
 	margin-left: 12px;
-	margin-top: 10px;
+	margin-top: 4px;
 }
 .img1 {
 	background-image: url (background1.jpg);
     height: 400px;
 		
 }
-.info {
-	font-size: 1.2em;
-	
-}
+
 h2 {
 	color: #4d4d4d;
 	margin-left: 40px;
@@ -71,6 +69,7 @@ i {
 .submit {
 	margin-left: 150px;
 	padding: 15px;
+	color: black;
 	
 }
 .img1, .img2 {
@@ -78,8 +77,9 @@ i {
 	
 }
 .p {
-	color: font-family:Arial, Helvetica, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
 	margin-left: 20px; 
+	color: black;
 }
 .contact-info {
 	width: 100%;

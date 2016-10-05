@@ -86,8 +86,17 @@
 	font-weight: bold;
 	border: 3px solid gray;
 	text-align: center;
-}
-p {
 	font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-	font-size: 1.4em;
+	font-size: 1.3em;
+	color: black;
 }
+@media all and (max-width: 800px) {
+
+.navigation {flex-direction: space-around;}
+.content {flex-direction: space-around;}
+.container-fluid {flex-direction: space-around;}
+.flex-container { flex-direction: space-around;}
+.flex-container1 { flex-direction:space-around;}
+#box { flex-direction: space-around;}
+}
+
