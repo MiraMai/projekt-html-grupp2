@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+
+<title>menu</title>
+    
+<style>
+
+html { 
+  background: url(fiji1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+//* flexbox stuff*//
+    
+.relative{
+    position:relative;
+    top:100px;
+    left:100px;
+    width:500px;
+    height:500px;
+    background:blue;
+}
+
+
+.absolute{
+    position:absolute;
+    width:100px;
+    height:100px;
+    background:red;
+    top:30px;
+    left:50px;
+}
+
+//** List stuff**//
+    
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;   
+}
+
+
+li a {
+    display: block;
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the color on hover on the menu */
+    
+ul:hover {
+    background-color: #658486;
+} 
+
+.menu a:hover { border-bottom:5px solid #345574;     
+ }
+    
+.left { float: left; }
+.right{ float: right; }
+
+.menu_bg {
+    background: #00ffff;    
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;}
+    
+.logo {
+    margin: auto;
+    height: 15%;
+    width: 25%;
+    display: block;
+}
+
+//** the category dropdown button in the menu*//
+    
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    background-color: #658486;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}  
+</style>   
+</head>
+    
+<body id="HomePage">
+
+<div class="logo">
+    <img src="logo_test.gif" width="100%"  alt=""/>
+</div>
+    <br>
+<div class=menu_bg>    
+    <ul class="menu">
+        <li class="right"><a href="about.asp">Contact</a></li>
+        <li class="right"><a href="news.asp">About us</a></li>
+        <li class="right"><a href="contact.asp">Our Vision</a></li>
+        <li class="right"><a href="about.asp">Blog</a></li>
+        <li class="right"><a href="default.asp">Home</a></li>
+        
+  <li class="dropdown left">
+    <a href="#" class="dropbtn" target="_blank"><img src="cat_b.gif"></a>
+    <div class="dropdown-content">
+      <a href="categories.html" target="_blank">Categories</a>
+      <a href="#">C1</a>
+      <a href="#">C2</a>
+      <a href="#">C3</a>
+      <a href="#">C4</a>
+      <a href="#">C5</a>
+      <a href="#">C6</a>
+    </div>
+  </li>
+        
+    </ul>
+</div>
+
+</body>
+</html>
