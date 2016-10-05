@@ -2,14 +2,17 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="myselections.css">
+    <link rel="stylesheet" href="header.css">
     <script src="https://use.fontawesome.com/83ed0fc410.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <meta charset="utf-8">
     <title>Booking</title>
 </head>
 <body>
 <!-- div med all innehåll av sidan-->
     <div class="container-fluid">
+   <!--logo -->
+    <div id="box"><img src="logo06.jpg"/></div>
         
 <!-- div med 2 divar som ligger högst upp på sidan-->           
         <div class="status">
@@ -34,7 +37,7 @@
 <div class="table"> 
 <table>
 <!-- tabellens titel-->
-    <caption>My preferences</caption>
+   <caption>My preferences</caption>
 <!--tabellens headers-->
         <thead>
             <tr>
@@ -51,21 +54,21 @@
     
 <!--tabellens body-->
         <tbody>
-            <tr>
+            <tr><div class="row">
 <!--1a row med bild och text-->                
-              <div class="one">  <td>Casa Coyaba<img src="house1.jpg"/></td>
+                <td class="col-lg-1 col-md-1  col-sm-6 col-xs-6">Casa Coyaba<img src="house1.jpg"/></td>
 <!--2a row med dates-->
-                <td><b>From:</b> 2016-08-06<br> 
-                    <b>To:</b> 2016-08-26</td></div>
+                <td class="col-lg-1 col-md-1  col-sm-6 col-xs-6"><b>From:</b> 2016-08-06<br> 
+                    <b>To:</b> 2016-08-26</td>
 <!--3e row med specifications-->
-                <td>4 Bedrooms<br>
+                <td class="col-lg-1 col-md-1  col-sm-6 col-xs-6">4 Bedrooms<br>
                     <span style="font-size:85%;">*2 double beds<br>
                     *4 single beds</span><br>
                     3 Bathrooms<br>
                     Swiming pool<br>
                     Grill</td>
 <!--4e bootstrap input-->
-                <td><form>
+                <td class="col-lg-1 col-md-1  col-sm-6 col-xs-6"><form>
     <div class="form-group">
       <label for="sel1">Adults:</label>
       <select class="form-control" id="sel1">
@@ -248,6 +251,7 @@
         </tbody>
     </table>
         
+        </div>
     <!--submit button bootstrap-->
     <button type="submit" class="btn btn-default">Submit</button><br><br><br>
     <a href="book.html"><button class="btn btn-info">Next >></button></a><br><br><br>
