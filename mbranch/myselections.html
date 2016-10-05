@@ -2,16 +2,19 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="myselections.css">
+    <script src="https://use.fontawesome.com/83ed0fc410.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <meta charset="utf-8">
     <title>Booking</title>
 </head>
 <body>
 <!-- div med all innehåll av sidan-->
-    <div class="section">
+    <div class="container-fluid">
         
 <!-- div med 2 divar som ligger högst upp på sidan-->           
         <div class="status">
 <!--1a div som inehåller 4 divar-->
+            <br><br>
             <div class="stages">
                 <div class="choices"><p>My preferances</p></div>
                 <div class="book"><p>Book</p></div>
@@ -31,18 +34,18 @@
 <div class="table"> 
 <table>
 <!-- tabellens titel-->
-   <caption>My preferences</caption>
+    <caption>My preferences</caption>
 <!--tabellens headers-->
         <thead>
             <tr>
-                <th>Accommondation</th>
-                <th>Date</th>
-                <th>Specifications</th>
-                <th>Persons</th>
-                <th>Accessibility</th>
-                <th>Extras</th>
-                <th>Price</th>
-                <th>Choose</th>
+                <th class="text-center">Accommondation</th>
+                <th class="text-center">Date</th>
+                <th class="text-center">Specifications</th>
+                <th class="text-center">Persons</th>
+                <th class="text-center">Accessibility</th>
+                <th class="text-center">Extras</th>
+                <th class="text-center">Price</th>
+                <th class="text-center">Choose</th>
             </tr>
         </thead>
     
@@ -50,10 +53,10 @@
         <tbody>
             <tr>
 <!--1a row med bild och text-->                
-                <td><img src="house1.jpg"/>Casa Coyaba</td>
+              <div class="one">  <td>Casa Coyaba<img src="house1.jpg"/></td>
 <!--2a row med dates-->
                 <td><b>From:</b> 2016-08-06<br> 
-                    <b>To:</b> 2016-08-26</td>
+                    <b>To:</b> 2016-08-26</td></div>
 <!--3e row med specifications-->
                 <td>4 Bedrooms<br>
                     <span style="font-size:85%;">*2 double beds<br>
@@ -61,21 +64,49 @@
                     3 Bathrooms<br>
                     Swiming pool<br>
                     Grill</td>
-<!--4e row med people-->
-                <td>Adults <input type="number"><br>
-                    Children <input type="number">
-                </td>
+<!--4e bootstrap input-->
+                <td><form>
+    <div class="form-group">
+      <label for="sel1">Adults:</label>
+      <select class="form-control" id="sel1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        </select></div>
+        <div class="form-group">
+      <label for="sel1">Children:</label>
+      <select class="form-control" id="sel1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+      </select>
+        </div>
+        </td>
 <!--5e row med accessibilities-->                
-                <td>
-                <label for="allergy">Allergy-friendly</label>
+                <td class="col-lg-1 col-md-1  col-sm-6 col-xs-6">
+                <label for="allergy"><i class="fa fa-envira fa-2x" aria-hidden="true"></i>
+</label>
                 <input type="checkbox" id="allergy"/><br>
-                <label for="wheelchair">Wheelchair-adapted</label>
+                <label for="wheelchair"><i class="fa fa-wheelchair fa-2x" aria-hidden="true"></i>
+</label>
                 <input type="checkbox" id="wheelchair"></td>
 <!--6e row med extras-->                
-                <td>
+                <td class="col-lg-1 col-md-1  col-sm-6 col-xs-6">
                 <label for="crib">Crib</label>
                 <input type="radio" id="crib"/><br>
-                <label for="buttler">Buttler</label><input type="radio" id="buttler"/><br><label for="honeymoon">Honeymoon</label><input type="radio" id="honeymoon"/></td>
+                    <label for="buttler">Buttler</label><input type="radio" id="buttler"/><br><label for="honeymoon">Honeymoon</label><input type="radio" id="honeymoon"/></td></div>
 <!--7e row med price-->
                 <td>$ 3000/day
                 </td>
@@ -86,7 +117,7 @@
 <!--här börjar 2a column-->
             <tr>
 <!--row 1-->
-                <td><img src="house2.jpg"/>Villa Rosa
+                <td>Villa de Rosa<img src="house2.jpg"/>
                 </td>
 <!--row 2-->
                 <td><b>From:</b> 2016-08-06<br> 
@@ -98,13 +129,41 @@
                     2 Bathrooms<br>
                     Swiming pool<br>
                     Grill</td>
-<!--row 4-->
-                <td>Adults <input type="number"/><br>
-                    Children <input type="number"/>
-                   </td>
+<!--row 4 bootstrap input-->
+                <td>
+    <div class="form-group">
+      <label for="sel1">Adults:</label>
+      <select class="form-control" id="sel1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        </select></div>
+        <div class="form-group">
+      <label for="sel1">Children:</label>
+      <select class="form-control" id="sel1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+      </select>
+        </div>
+        </td>
 <!--row 5-->
-                <td><label for="allergy">Allergy-friendly</label>
-                <input type="checkbox" id="allergy"/><br><label for="wheelchair">Wheelchair-adapted</label>
+                <td><label for="allergy"><i class="fa fa-envira fa-2x" aria-hidden="true"></i>
+</label>
+                <input type="checkbox" id="allergy"/><br><label for="wheelchair"><i class="fa fa-wheelchair fa-2x" aria-hidden="true"></i>
+</label>
                 <input type="checkbox" id="wheelchair"/></td>
 <!--row 6-->                
                 <td><label for="crib">Crib</label>
@@ -121,7 +180,7 @@
 <!-- här börjar column 3-->            
             <tr>
 <!--row 1-->                
-                <td><img src="house3.jpg"/>Villa Paradiso</td>
+                <td>Villa Paradiso<img src="house3.jpg"/></td>
 <!--row 2-->                
                 <td><b>From:</b> 2016-08-06<br> 
                     <b>To:</b> 2016-08-26</td>
@@ -132,14 +191,47 @@
                     4 Bathrooms<br>
                     Swiming pool<br>
                     Grill</td>
-<!--row 4-->                
-                <td>Adults<input type="number"/><br>         
-                    Children<input type="number"/></td>
+<!--row 4 bootstrap input-->      
+                
+     <td>
+    <div class="form-group">
+      <label for="sel1">Adults:</label>
+      <select class="form-control" id="sel1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        </select></div>
+        <div class="form-group">
+      <label for="sel1">Children:</label>
+      <select class="form-control" id="sel1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+      </select>
+        </div>
+        </td>
+                    </form>
+                <!--<td>Adults<input type="number"/><br>         
+                    Children<input type="number"/></td>-->
 <!--row 5-->                
                <td>                   
-                <label for="allergy">Allergy-friendly</label>
+                <label for="allergy"><i class="fa fa-envira fa-2x" aria-hidden="true"></i>
+</label>
                 <input type="checkbox" id="allergy"/><br>
-                <label for="wheelchair">Wheelchair-adapted</label>
+                <label for="wheelchair"><i class="fa fa-wheelchair fa-2x" aria-hidden="true"></i>
+</label>
                 <input type="checkbox" id="wheelchair"></td>
 <!--row 6-->                
                 <td>
@@ -156,11 +248,15 @@
         </tbody>
     </table>
         
-        </div>
-<!--next button-->        
-    <div class="button"><button><a href="book.html">Next >></a></button></div>
-    
+    <!--submit button bootstrap-->
+    <button type="submit" class="btn btn-default">Submit</button><br><br><br>
+    <a href="book.html"><button class="btn btn-info">Next >></button></a><br><br><br>
+
+<!--ikoner längst ner på sidan-->
+    <div class="extra">*<i class="fa fa-envira fa-lg" aria-hidden="true"></i>= allergy-friendly<br>
+        *<i class="fa fa-wheelchair fa-lg" aria-hidden="true"> = wheelchair-adapted
+        </i>
     </div>
-         
+    </div>   
     </body>
 </html>
