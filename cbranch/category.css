@@ -34,7 +34,7 @@ body {color:white;}
     background-image: url('beachfront.jpg');
     background-size: cover;
     width: 20%;
-    min-height: 11em;
+    min-height: 15em;
     margin: 10px;
 }
  
@@ -42,21 +42,21 @@ body {color:white;}
     background-image: url('beachview.jpg');
     background-size: cover;
     width: 20%;
-    min-height: 11em;
+    min-height: 15em;
     margin: 10px;
 }
 .flex-item03 { 
     background-image: url('acrossfrombeach.jpg');
     background-size: cover;
     width: 20%;
-    min-height: 11em;
+    min-height: 15em;
     margin: 10px;
 }
 .flex-item04 { 
     background-image: url('luxuryhome.jpg');
     background-size: cover;
     width: 20%;
-    min-height: 11em;
+    min-height: 15em;
     margin: 10px;
 }
 
@@ -80,7 +80,7 @@ body {color:white;}
     background-image: url('beach1.jpg');
     background-size: cover;
     width: 23%;
-    min-height: 11em;
+    min-height: 15em;
     margin: 10px;
 }
  
@@ -88,7 +88,7 @@ body {color:white;}
     background-image: url('beach2.jpg');
     background-size: cover;
     width: 23%;
-    min-height: 11em;
+    min-height: 15em;
     margin: 10px;
 }
         
@@ -96,7 +96,7 @@ body {color:white;}
     background-image: url('beach3.jpg');
     background-size: cover;
     width: 23%;
-    min-height: 11em;
+    min-height: 15em;
     margin: 10px;
 }
   
@@ -110,7 +110,7 @@ body {color:white;}
     background-image: url('beach4.jpg');
     background-size: cover;
     width: 23%;
-    min-height: 11em;
+    min-height: 15em;
     margin: 10px;
 }
  
@@ -118,14 +118,14 @@ body {color:white;}
     background-image: url('beach5.jpg');
     background-size: cover;
     width: 23%;
-    min-height: 11em;
+    min-height: 15em;
     margin: 10px;
 }
 .flex-item6 { 
     background-image: url('beach14.jpg');
     background-size: cover;
     width: 23%;
-    min-height: 11em;
+    min-height: 15em;
     margin: 10px;
 }
 
@@ -138,7 +138,7 @@ body {color:white;}
     background-image: url('beach7.jpg');
     background-size: cover;
     width: 23%;
-    min-height: 11em;
+    min-height: 15em;
     margin: 10px;
 }
  
@@ -146,14 +146,14 @@ body {color:white;}
     background-image: url('beach8.jpg');
     background-size: cover;
     width: 23%;
-    min-height: 11em;
+    min-height: 15em;
     margin: 10px;
 }
 .flex-item9 { 
     background-image: url('beach9.jpg');
     background-size: cover;
     width: 23%;
-    min-height: 11em;
+    min-height: 15em;
     margin: 10px;
 }
 
@@ -166,7 +166,7 @@ body {color:white;}
     background-image: url('beach10.jpg');
     background-size: cover;
     width: 23%;
-    min-height: 11em;
+    min-height: 15em;
     margin: 10px;
 }
  
@@ -174,14 +174,14 @@ body {color:white;}
     background-image: url('beach11.jpg');
     background-size: cover;
     width: 23%;
-    min-height: 11em;
+    min-height: 15em;
     margin: 10px;
 }
 .flex-item12 { 
     background-image: url('beach12.jpg');
     background-size: cover;
     width: 23%;
-    min-height: 11em;
+    min-height: 15em;
     margin: 10px;
 }
 /////////////////////////////////////////////////////**/////////////////////////////////////////////////////////////////////////////////////////**////////////////////////////////////////
@@ -240,12 +240,6 @@ body {color:white;}
     padding: 3px;  
 } 
 
-.heart { 
-margin-left:200px;
-margin-top:200x;
-z-index: -1;
-}
-
 .name1 {
     background-color: #009999; 
     color: white; 
@@ -255,14 +249,34 @@ z-index: -1;
     font-size: 1.2em;
     padding: 3px; 
 }
+
+/*VIEW text over The pictures on hover*/
         
-.view:hover {
-    background: url('view_button.gif'); //**this changes the picture on hover**//
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    z-index: 10;
-}     
+.text{
+	width:100%;
+	height:50%;
+    
+	background:#009999;
+	opacity:0;
+    margin-top: 10px;
+    
+}
+.view:hover .text
+{
+	opacity:0.6;
+	text-align:center;
+    vertical-align: middle;
+	color: white;
+	font-size:35px;
+	font-family:"Times New Roman", Times, serif;
+	
+}  
+
+.heart img {
+    margin-left: 85%;
+    margin-top: 5%;
+    
+}
 
 /////////////////////////////////////////////////////**/////////////////////////////////////////////////////////////////////////////////////////**////////////////////////////////////////
 
@@ -363,3 +377,4 @@ left: 0px;
     height: auto;
     display: block;
 }
+
