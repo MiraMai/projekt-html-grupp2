@@ -122,7 +122,7 @@ body {color:white;}
     margin: 10px;
 }
 .flex-item6 { 
-    background-image: url('beach6.jpg');
+    background-image: url('beach14.jpg');
     background-size: cover;
     width: 23%;
     min-height: 11em;
@@ -241,6 +241,9 @@ body {color:white;}
 } 
 
 .heart { 
+margin-left:200px;
+margin-top:200x;
+z-index: -1;
 }
 
 .name1 {
@@ -338,4 +341,25 @@ float:left;
 /*text left*/
 .left_text {
     text-align: left;
+}
+
+
+
+
+
+/* för header bilden inte ska se konstig ut*/
+img {
+display: block;
+margin: auto;
+max-width: 100%;
+height: auto;
+position: relative;
+left: 0px;	
+}
+
+/*box med logo*/
+#box {
+    width:100%;
+    height: auto;
+    display: block;
 }
