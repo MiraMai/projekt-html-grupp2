@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="pay.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/83ed0fc410.js"></script>
+    <meta charset="utf-8">
+    <title>Book</title>
+</head>
+<body>
+<!--all didans inehåll-->
+    <div class="container-fluid">
+        <!--logo -->
+    <div id="box"><img src="logo06.jpg" alt="logo"/></div>
+<!--div som innehåller 2 divar-->         
+        <div class="status">
+  <!--1a div i status som innehåller 4 divar-->
+            <div class="stages">
+     <!--4 divar i stages-->
+                <div class="choices"><h3>My selections</h3></div>
+                <div class="book"><h3>Book</h3></div>
+                <div class="confirm"><h3>Confirm</h3></div>
+                <div class="pay"><h3>Payment</h3></div>
+            </div>
+ <!--2a div i status som inehåller 4 divar-->            
+            <div class="line">
+  <!--4 divar i line-->                
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+                <div class="line4" id="active"></div>
+            </div>
+        </div></div>
+<!--div som inehåller titeln-book och linjet under-->
+     <div class="special1"><h3>Payment >></h3></div>
+        <h4>Payment</h4>
+<!-- början av formuläret-->  
+    <form action="#" method="get">
+        <p>Payment options:</p>
+        <div class="table">
+    <div>
+<!--radio button1-->
+       <div> <input type="radio" id="card1" name="input4"/>   
+<!--ikonen1 som label-->
+           <label for="card1"><i class="fa fa-cc-mastercard fa-3x" aria-hidden="true"></i></label></div>
+<!--radio button2-->
+        <div><input type="radio" id="card2" name="input4"/>
+<!--ikonen2 som label-->
+            <label for="card2"><i class="fa fa-cc-amex fa-3x" aria-hidden="true"></i></label></div>
+<!--radio button3-->
+       <div><input type="radio" id="card3" name="input4"/>
+<!--ikonen3 som label-->
+           <label for="card3"><i class="fa fa-cc-visa fa-3x" aria-hidden="true"></i></label></div>
+<!--radio button4-->
+       <div><input type="radio" id="card4" name="input4"/>
+<!--ikonen4 som label-->
+           <label for="card4"><i class="fa fa-cc-paypal fa-3x" aria-hidden="true"></i></label> </div>
+        </div> 
+    
+
+    </div>
+        
+    <!--formulär som ska skickas till en annan webbsida (back-end)--> 
+<div>        
+    <p>Cardholder's information:<br>
+        <span style="font-size:80%;"><i>*just recuired if it's different from the booking information</i></span><br>
+<!--första input med sin titel-->    
+  <label for="fname">First name</label>
+  <input type="text" id="fname" name="input5" placeholder="Write your first name here..."/>
+<!--2a input med sin titel-->    
+  <label for="lname">Last name</label>
+  <input type="text" id="lname" name="input5" placeholder="Write your lastname here..."/>
+<!--3e input med sin titel-->
+    <label for="email">email</label>
+    <input type="text" id="email" name="input5" placeholder="Write your email here..."/>
+<!--4e input med sin titel-->
+    <label for="phone">phonenumber</label>
+    <input type="text" id="phone" name="input5" placeholder="Write your phonenumber here..."/>
+<!--5e input med sin titel-->
+    <label for="land">State/country of residence</label> 
+    <input type="text" id="land" name="input5" placeholder="State/land of residence..."/>
+<!--en submit button för att skicka iväg all info-->     
+<button type="submit" class="btn btn-default d-block">Submit</button></div>
+    </form><br><br>
+<!--next button-->        
+     <div id="next"><a href="paymentdone.html">Pay</a></div>
+
+                   
+					</body>
+					</html>
+        
+       

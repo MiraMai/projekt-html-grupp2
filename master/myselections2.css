@@ -1,0 +1,102 @@
+/* inehåller två divar som ligger i toppen av sidan (stages, line) */
+.status {
+    display:flex;
+    flex-direction: column;
+    flex:1 1 auto;
+    width:90%;
+    margin: auto;
+    margin-bottom: 70px;
+}
+/* linjen högst upp. Den inehåller fyra divar*/
+.line {
+    display: flex;
+    flex-direction: row;    
+    flex: 1 1 auto;
+    height: 6px;
+    background-color: #99ffff;
+}
+/* alla numrerade line ligger i line-diven*/
+.line1 {
+    flex:1;
+}
+.line2 {
+    flex:1;
+}
+.line3 {
+    flex:1;
+}
+.line4{
+    flex:1;
+}
+/* id som man anger när man vill att färgen ska va mörkare*/
+#active {
+    background-color: #009999;
+}
+/* den första diven på sidan högst upp. Innehåller 4 divar */
+.stages {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+}
+/* 4 divar som ligger i stages */
+.choices {
+    flex:1;
+}
+.book {
+    flex: 1;
+}
+.confirm {
+    flex: 1;
+}
+.pay {
+    flex: 1;
+}
+
+h3 {
+    text-align: center;
+}
+h4 {
+    font-size: 200%;
+    border-bottom: 1px solid #009999;
+
+}
+div[class=text-center] {
+    font-weight: bold;
+}
+
+
+/*gör att diven visas som en table*/
+.table {
+    display:table;
+	padding:10px;
+    width: 95%;
+    
+    
+}
+/*gör att diven visas som en table*/
+.table > div {
+	display:table-row;
+
+}
+/*ger egenskaper till alla cells*/
+.table > div > div {
+    flex:1 1 auto;
+	display:table-cell;
+    padding: 20px;
+	text-align:center;
+    vertical-align: middle;
+    border-bottom: 1px solid #009999;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    
+}
+
+button {
+    display: block;
+    float: right;
+    clear: right;
+}
+.extra {
+    border-top: 1px solid gray;
+    font-size: 0.8em;
+    margin-top: 10px;
+}

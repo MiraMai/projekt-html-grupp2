@@ -1,0 +1,174 @@
+/* inehåller två divar som ligger i toppen av sidan (stages, line) */
+.status {
+    display:flex;
+    flex-direction: column;
+    flex:1 1 auto;
+    width:90%;
+    margin: auto;
+    margin-bottom: 70px;
+}
+/* linjen högst upp. Den inehåller fyra divar*/
+.line {
+    display: flex;
+    flex-direction: row;    
+    flex: 1 1 auto;
+    height: 6px;
+    background-color: #99ffff;
+}
+@media (max-width:600px) {
+    .line {
+        display: none;
+    }
+}
+/* alla numrerade line ligger i line-diven*/
+.line1 {
+    flex:1;
+}
+.line2 {
+    flex:1;
+}
+.line3 {
+    flex:1;
+}
+.line4{
+    flex:1;
+}
+/* id som man anger när man vill att färgen ska va mörkare*/
+#active {
+    background-color: #009999;
+}
+/* den första diven på sidan högst upp. Innehåller 4 divar */
+.stages {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+}
+@media (max-width:600px) {
+    .stages {
+        display: none;
+    }
+}
+/* 4 divar som ligger i stages */
+.choices {
+    flex:1;
+}
+.book {
+    flex: 1;
+}
+.confirm {
+    flex: 1;
+}
+.pay {
+    flex: 1;
+}
+/*visas bara i större skärm*/
+h3 {
+    text-align: center;
+}
+/*visas bara i mindre skärm*/
+h4 {
+    border-bottom: 1px solid #009999;
+
+}
+@media (max-width:600px) {
+    h4 {
+        display: none;
+    }
+}
+
+/*gör att diven visas som en table*/
+.table {
+    display:table;
+	padding:10px;
+    width: 95%;
+}
+
+/*gör att diven visas som en table*/
+.table > div {
+	display:table-row;
+
+}
+/*gör att första rowen inte visas i mindre skärmar*/
+@media (max-width:950px) {
+    .table > div:first-child {
+        display: none;
+    }
+}
+/*ger egenskaper till alla cells*/
+.table > div > div {
+    flex:1 1 auto;
+	display:table-cell;
+    padding: 20px;
+	text-align:center;
+    vertical-align: middle;
+    border-bottom: 1px solid #009999;
+}
+/*gör att alla celler visas på rad*/
+@media (max-width:950px) {
+    .table > div >div {
+        display: block;
+        padding: 0px;
+    }
+}
+/*gör att alla bottom-borders utom 8th child blir dotted*/
+@media (max-width:950px) {
+    .table > div > div:first-child,.table > div > div:nth-child(2), .table > div > div:nth-child(3),.table > div > div:nth-child(4),.table > div > div:nth-child(5),.table > div > div:nth-child(6),.table > div > div:nth-child(7) {
+
+        border-bottom: 1px dotted #009999;
+    }
+}
+/*göt att sista child i liten skärm har margin och border*/
+@media (max-width:950px) {
+    .table > div > div:nth-child(8) {
+        margin-bottom: 50px;
+        border:1px solid  #009999;
+    }
+}
+/*så att submit-buttonska vara på höger sida*/
+button {
+    display: block;
+    float: right;
+    margin-top: 20px;  
+    margin-bottom: 50px;
+}
+/*texten längst ner på sidan*/
+.extra {
+    border-top: 1px solid gray;
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+/*rubrik som visas i toppen av sidan i mindre skärmar*/
+.special1 {
+    color:  #009999;
+
+}
+@media (min-width:600px) {
+    .special1 {
+        display: none;
+    }
+}
+/*en text som visas bara i mindre skärmar(I choose...)*/
+.special {
+    font-weight: bold;
+    color:  #009999;
+}
+@media (min-width:951px) {
+    .special {
+        display: none;
+    }
+}
+/*så att next button ska vara på höger sida*/
+#next {
+    display: block;
+    float: right;
+    margin: 20 20 50 0px;  
+    border: 2px solid gray;
+    padding: 2px;
+    border-radius: 5px;
+    background-color: lightgray;
+}
+a {
+    text-decoration: none;
+    font-weight: bold;
+	color:white;
+}
