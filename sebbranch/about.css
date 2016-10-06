@@ -1,0 +1,190 @@
+#section {
+	width: auto;
+	margin: auto;
+    
+}
+
+
+.table {
+	 display: table;
+	 padding: 10px;
+     width: 60%;
+     margin: auto;
+    	 
+}
+
+.table > div {
+	display:table-row;	
+	border: 2px solid white;
+	
+}
+
+
+.table > div > div {
+    flex:1 1 auto;
+	display:table-cell;
+	text-align:left;
+    vertical-align: middle;
+	width: 50%;
+    padding: 7px;
+	border-bottom: 3px solid gray;
+
+}
+@media (max-width:1000px) {
+	.table > div > div {
+	width: 90%;
+    margin: auto;	
+	}
+}
+.table > div > div > div {
+	display: table-row;
+	border: 3px solid white;
+	padding: 5px;
+
+}
+.table-2 {
+	 display: table;
+	 padding: 10px;
+     width: 75%;
+     margin: auto;
+}
+.table-2 > div {
+	display:table-row;	
+	width: 33%;
+	border: 2px solid white;
+}
+.table-2 > div > div {
+    flex:1 1 auto;
+	display:table-cell;
+	text-align:left;
+    vertical-align: middle;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	width: 33%;
+	border: 3px solid white;
+}
+.table-2 > div > div > div {
+	display: table-row;
+	border: 3px solid white;
+
+}
+.text {
+	background-color: #ffcc66;
+	font-size: 100%;
+	padding: 8px;	
+	font-weight: bold;
+}
+
+
+.images8 {
+	background-image: url ('bild6.jpg');
+	background-size: cover;
+	width: 100%;
+	height: auto;
+}
+.images1 {
+	background-image: url ('bild1.jpg');
+	background-size: cover;
+	width: 100%;
+	height: auto;
+} 
+.images6 {	
+	background-size: cover;
+	background-image: url ('bild3.jpg');
+    width: 100%;
+	height: auto;	
+}
+.images2 {
+	background-image: url ('bild2.jpg');
+	background-size: cover;
+	width: 100%;
+	height: auto;
+}
+.images9 {
+	background-image: url ('bild9.jpeg');
+	background-size: cover;
+	width: 100%;
+	height: auto;
+}
+.images10 {
+	background-image: url ('bild5.jpg');
+	background-size: cover;	
+	width: 100%;
+	height: auto;
+}
+.images3 {
+	background-image: url ('bild3.jpg');
+	background-size: cover;
+	width: 100%;
+	height: auto;
+}
+.cimg {
+	background-image: url ('me.jpg');
+	background-size: cover;
+	width: 100%;
+	height: auto;
+	
+}
+.simg {
+	background-image: url ('profil.jpg');
+	background-size: cover;
+	width: 100%;
+	height: auto;
+
+}
+.mimg {
+	background-image: url('DSC_0091.JPG');
+	background-size: cover;
+	width: 100%;
+	height: auto;
+
+}
+p {
+	font-style: italic;
+	font-family: sans-serif;
+	font-size: 1.5em;
+}
+h1 {
+	color: #4d4d4d ;
+	font-family: sans-serif;
+	text-align: center;
+	
+}
+h2 {
+	font-family: sans-serif;
+	color: #4d4d4d ;
+	text-align: center;
+}
+
+@media (max-width:800px) {
+	.table-2 > div > div {
+	width: auto;	
+	}
+}
+
+@media (max-width:800px) {
+	.table-2 > div > div:first-child,.table > div > div:nth-child(3){
+	width: 20%;	
+	}
+}
+
+.table > div > div:first-child,.table > div > div:nth-child(3) {
+    width:20%;
+}
+
+@media (max-width:800px) {
+	.table > div > div {
+		display: block;
+		padding: 0px;
+	}
+	
+}
+@media (max-width:800px) {
+    .table > div > div:first-child,.table > div > div:nth-child(2) {
+        width: 80%;
+		margin: auto;
+    }
+}
+
+body {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
