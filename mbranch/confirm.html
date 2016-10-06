@@ -3,23 +3,23 @@
 <head>
     <link rel="stylesheet" type="text/css" href="confirm.css">
     <link rel="stylesheet" href="header.css">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <meta charset="utf-8">
-    <title>Booking</title>
+    <title>Confirm</title>
 </head>
 <body>
 <!-- div med all innehåll av sidan-->
-    <div class="section">
+    <div class="container-fluid">
      <!--logo -->
-    <div id="box"><img src="logo06.jpg"/></div>   
+    <div id="box"><img src="logo06.jpg" alt="logo"/></div>   
 <!-- div med 2 divar som ligger högst upp på sidan-->           
         <div class="status">
 <!--1a div som inehåller 4 divar-->
             <div class="stages">
-                <div class="choices"><p>My preferances</p></div>
-                <div class="book"><p>Book</p></div>
-                <div class="confirm"><p>Confirm</p></div>
-                <div class="pay"><p>Payment</p></div>
+                <div class="choices"><h3>My selections</h3></div>
+                <div class="book"><h3>Book</h3></div>
+                <div class="confirm"><h3>Confirm</h3></div>
+                <div class="pay"><h3>Payment</h3></div>
             </div>
 <!--2a div som inehåller 4 divar-->            
             <div class="line">
@@ -30,14 +30,13 @@
             </div>
         </div>
 <!--div som inehåller titeln-confirm och linjet under-->
-    <div>
-        <div class="title">Confirm</div>
-        <div class="titleline"></div>
-        </div>    
+    <div class="special1"><h3>Confirm >></h3></div>
+        <h4>Confirm</h4>
+<!--härr börjar tabellen-->        
    <form> 
     <div class="table">
         <div>
-            <div><figure><img src="confirm.jpg" class="item"/></figure></div>
+            <div><figure><img src="confirm.jpg" class="item" alt="beach"/></figure></div>
             <div>From: <i>2016-08-06</i><br>
                 To: <i>2016-08-26</i></div>
             <div>4 Bedrooms<br>
@@ -56,7 +55,7 @@
        </div></form>
         
 
- <div class="button"><button><a href="pay.html">Next >></a></button></div>
+  <div id="next"><a href="pay.html">Next >></a></div>
     </div>
     </body>
 </html>

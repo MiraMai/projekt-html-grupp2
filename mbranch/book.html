@@ -1,30 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="book.css">
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <meta charset="utf-8">
     <title>Book</title>
 </head>
 <body>
 <!--all didans inehåll-->
-    <div class="section">
+    <div class="container-fluid">
+        <!--logo -->
+    <div id="box"><img src="logo06.jpg" alt="logo"/></div>
 <!--div som innehåller 2 divar-->         
         <div class="status">
-            <!--logo -->
-    <div id="box"><img src="logo06.jpg"/></div>
+            <br><br>
   <!--1a div i status som innehåller 4 divar-->
             <div class="stages">
      <!--4 divar i stages-->
-                <div class="choices"><p>My preferances</p>
-                </div>
-                <div class="book"><p>Book</p>
-                </div>
-                <div class="confirm"><p>Confirm</p>
-                </div>
-                <div class="pay"><p>Payment</p>
-                </div>
+                <div class="choices"><h3>My selections</h3></div>
+                <div class="book"><h3>Book</h3></div>
+                <div class="confirm"><h3>Confirm</h3></div>
+                <div class="pay"><h3>Payment</h3></div>
             </div>
  <!--2a div i status som inehåller 4 divar-->            
             <div class="line">
@@ -37,38 +35,39 @@
                 <div class="line4"></div>
             </div>
         </div>
-<!--div som inehåller titeln-book och linjet under-->
-    <div>
-        <div class="title">Book</div>
-        <div class="titleline"></div>
-        </div>    
+<!--titeln-book och linjet under sampt titlen för mindre skärmar-->
+    <div class="special1"><h3>Book >></h3></div>
+        <h4>Book</h4>
 
 <!--formulär som ska skickas till en annan webbsida (back-end)--> 
 <div>        
 <form action="#" method="get">
 <!--första input med sin titel-->    
   <label for="fname">First name</label>
-  <input type="text" id="fname" name="input2"/>
+  <input type="text" id="fname" name="input2" placeholder="Write your first name here..."/>
 <!--2a input med sin titel-->    
   <label for="lname">Last name</label>
-  <input type="text" id="lname" name="input2"/>
+  <input type="text" id="lname" name="input2" placeholder="Write your last name here..."/>
 <!--3e input med sin titel-->
     <label for="email">email</label>
-    <input type="text" id="email" name="input2"/>
+    <input type="text" id="email" name="input2" placeholder="Write your email here..."/>
 <!--4e input med sin titel-->
     <label for="phone">phonenumber</label>
-    <input type="text" id="phone" name="input2"/>
+    <input type="text" id="phone" name="input2" placeholder="Write your phonenumber here..."/>
 <!--5e input med sin titel-->
     <label for="land">State/country of residence</label> 
-    <input type="text" id="land" name="input2"/>
+    <input type="text" id="land" name="input2" placeholder="State/land of residence..."/>
 <!--en submit button för att skicka iväg all info-->     
 <input type="submit"><br>
 <!--sista input-->
     <label for="id">Id number</label>
-    <input type="text" id="id" name="input3"/>
+    <input type="text" id="id" name="input3" placeholder="Id number..."/>
 <!--en till submit-->
     <input type="submit"/>
     </form>
 <!--next button-->        
-    <div class="button"><button><a href="confirm.html">Next >></a></button></div>
+    <div id="next"><a href="confirm.html">Next >></a></div>    
+        </div>
                     </div>
+					</body>
+					</html>

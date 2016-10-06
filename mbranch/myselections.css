@@ -5,6 +5,7 @@
     flex:1 1 auto;
     width:90%;
     margin: auto;
+    margin-bottom: 70px;
 }
 /* linjen högst upp. Den inehåller fyra divar*/
 .line {
@@ -13,6 +14,11 @@
     flex: 1 1 auto;
     height: 6px;
     background-color: #99ffff;
+}
+@media (max-width:600px) {
+    .line {
+        display: none;
+    }
 }
 /* alla numrerade line ligger i line-diven*/
 .line1 {
@@ -37,6 +43,11 @@
     flex-direction: row;
     flex: 1 1 auto;
 }
+@media (max-width:600px) {
+    .stages {
+        display: none;
+    }
+}
 /* 4 divar som ligger i stages */
 .choices {
     flex:1;
@@ -50,130 +61,114 @@
 .pay {
     flex: 1;
 }
-.table {
-    margin: auto;
-    margin-top: 70px;
-    width:95%;
-}
-/* rubriken "My preferences" */
-caption {
-    text-align: left;
-    font-size: 1.4em;
-    padding: 20px;
-    border-bottom: 2px solid gray;
-    margin-bottom: 25px;
-    color: #737373;
-}
-/* alla header på tabellen */
-th {
-    font-size: 1.3em;
-}
-
-/* tabell body */
-td {
-    width:15%;
-    border-top: 1px solid lightgray;
-    border-right: 0.5px dotted   #d9d9d9;
-    padding-top: 8px;
-
-}
-/* alla bilder i tabellen
-.divimg {
-    width: 100%;
-    height:100%;
-    display: block;
-    object-fit: scale-down;
-    border-radius: 2%;
-}*/
-
-/* fonts, color och align till all text utom caption */
-p,th,td,button {
+/*visas bara i större skärm*/
+h3 {
     text-align: center;
-    color: #737373;
-    
+}
+/*visas bara i mindre skärm*/
+h4 {
+    border-bottom: 1px solid #009999;
+
+}
+@media (max-width:600px) {
+    h4 {
+        display: none;
+    }
 }
 
-/* text som ska vara betonad. Högsta raden som är ett p element som har parent en div, och caption*/
-div>p,caption {
-    font-weight: bold;
-    font-size:1.4em;
+/*gör att diven visas som en table*/
+.table {
+    display:table;
+	padding:10px;
+    width: 95%;
 }
-/* size för all text i tabellen */
-td {
-    font-size: 1em;
-}
-/* fonts size och style för 3e row i tabellen */
-td:nth-child(3) {
-    font-style: italic;
-    font-size: 1em;
-}
-/* bold text för 1a row i tabellen */
-td:first-child {
-    font-weight: 800;    
-}
-/*egenskaper för next button*/
 
+/*gör att diven visas som en table*/
+.table > div {
+	display:table-row;
+
+}
+/*gör att första rowen inte visas i mindre skärmar*/
+@media (max-width:950px) {
+    .table > div:first-child {
+        display: none;
+    }
+}
+/*ger egenskaper till alla cells*/
+.table > div > div {
+    flex:1 1 auto;
+	display:table-cell;
+    padding: 20px;
+	text-align:center;
+    vertical-align: middle;
+    border-bottom: 1px solid #009999;
+}
+/*gör att alla celler visas på rad*/
+@media (max-width:950px) {
+    .table > div >div {
+        display: block;
+        padding: 0px;
+    }
+}
+/*gör att alla bottom-borders utom 8th child blir dotted*/
+@media (max-width:950px) {
+    .table > div > div:first-child,.table > div > div:nth-child(2), .table > div > div:nth-child(3),.table > div > div:nth-child(4),.table > div > div:nth-child(5),.table > div > div:nth-child(6),.table > div > div:nth-child(7) {
+
+        border-bottom: 1px dotted #009999;
+    }
+}
+/*göt att sista child i liten skärm har margin och border*/
+@media (max-width:950px) {
+    .table > div > div:nth-child(8) {
+        margin-bottom: 50px;
+        border:1px solid  #009999;
+    }
+}
+/*så att submit-buttonska vara på höger sida*/
 button {
-      float: right;
-      display: block;
-   
+    display: block;
+    float: right;
+    margin-top: 20px;  
+    margin-bottom: 50px;
 }
-
-/*egenskaper för ikoner längst ner*/
+/*texten längst ner på sidan*/
 .extra {
-    font-size: 0.8em;
     border-top: 1px solid gray;
-    margin:20px;
-    padding-top:10px;
+    font-size: 0.8em;
+    margin-top: 10px;
 }
-/* Zebra striping */
-tr:nth-of-type(odd) { 
-  background: #eee; 
+/*rubrik som visas i toppen av sidan i mindre skärmar*/
+.special1 {
+    color:  #009999;
+
 }
-@media 
-only screen and (max-width: 760px),
-(min-device-width: 768px) and (max-device-width: 1024px)  {
-    table, thead, tbody, th, td, tr { 
-		display: block; 
-	}
-thead tr { 
-		position: absolute;
-		top: -9999px;
-		left: -9999px;
-	}
-	
-	tr { border: 1px solid #ccc; }
-    td { 
-		/* Behave  like a "row" */
-		border: none;
-		border-bottom: 1px solid #eee; 
-		position: relative;
-		padding-left: 50%; 
-	}
-	
-	td:before { 
-		/* Now like a table header */
-		position: absolute;
-		/* Top/left values mimic padding */
-		top: 6px;
-		left: 6px;
-		width: 45%; 
-		padding-right: 10px; 
-		white-space: nowrap;
-	}
-	
-	/*
-	Label the data
-	*/
-	td:nth-of-type(1):before { content: "First Name"; }
-	td:nth-of-type(2):before { content: "Last Name"; }
-	td:nth-of-type(3):before { content: "Job Title"; }
-	td:nth-of-type(4):before { content: "Favorite Color"; }
-	td:nth-of-type(5):before { content: "Wars of Trek?"; }
-	td:nth-of-type(6):before { content: "Porn Name"; }
-	td:nth-of-type(7):before { content: "Date of Birth"; }
-	td:nth-of-type(8):before { content: "Dream Vacation City"; }
-	td:nth-of-type(9):before { content: "GPA"; }
-	td:nth-of-type(10):before { content: "Arbitrary Data"; }
+@media (min-width:600px) {
+    .special1 {
+        display: none;
+    }
 }
- 
+/*en text som visas bara i mindre skärmar(I choose...)*/
+.special {
+    font-weight: bold;
+    color:  #009999;
+}
+@media (min-width:951px) {
+    .special {
+        display: none;
+    }
+}
+/*så att next button ska vara på höger sida*/
+#next {
+    display: block;
+    float: right;
+    margin: 20 20 50 0px;  
+    border: 2px solid gray;
+    padding: 2px;
+    border-radius: 5px;
+    background-color: lightgray;
+}
+a {
+    text-decoration: none;
+    font-weight: bold;
+	color:white;
+}

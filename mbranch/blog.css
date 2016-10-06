@@ -5,7 +5,7 @@
 }*/f
 /* gör att bilden sträcker sig ut i hela boxen och annpassar sig*/
 img {
-    width: 100%;
+    width: auto;
     height:auto;
 }
 .img1 { 

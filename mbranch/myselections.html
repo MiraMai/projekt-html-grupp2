@@ -1,28 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="myselections.css">
     <link rel="stylesheet" href="header.css">
     <script src="https://use.fontawesome.com/83ed0fc410.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <meta charset="utf-8">
-    <title>Booking</title>
+    <title>My Selections</title>
 </head>
 <body>
 <!-- div med all innehåll av sidan-->
     <div class="container-fluid">
    <!--logo -->
-    <div id="box"><img src="logo06.jpg"/></div>
+    <div id="box"><img src="logo06.jpg" alt="logo"/></div>
         
 <!-- div med 2 divar som ligger högst upp på sidan-->           
         <div class="status">
 <!--1a div som inehåller 4 divar-->
             <br><br>
             <div class="stages">
-                <div class="choices"><p>My preferances</p></div>
-                <div class="book"><p>Book</p></div>
-                <div class="confirm"><p>Confirm</p></div>
-                <div class="pay"><p>Payment</p></div>
+                <div class="choices"><h3>My selections</h3></div>
+                <div class="book"><h3>Book</h3></div>
+                <div class="confirm"><h3>Confirm</h3></div>
+                <div class="pay"><h3>Payment</h3></div>
             </div>
 <!--2a div som inehåller 4 divar-->            
             <div class="line">
@@ -32,43 +32,36 @@
                 <div class="line4"></div>
             </div>
         </div>
-        
-<!--här börjar tabellen-->        
-<div class="table"> 
-<table>
-<!-- tabellens titel-->
-   <caption>My preferences</caption>
-<!--tabellens headers-->
-        <thead>
-            <tr>
-                <th class="text-center">Accommondation</th>
-                <th class="text-center">Date</th>
-                <th class="text-center">Specifications</th>
-                <th class="text-center">Persons</th>
-                <th class="text-center">Accessibility</th>
-                <th class="text-center">Extras</th>
-                <th class="text-center">Price</th>
-                <th class="text-center">Choose</th>
-            </tr>
-        </thead>
-    
-<!--tabellens body-->
-        <tbody>
-            <tr><div class="row">
-<!--1a row med bild och text-->                
-                <td class="col-lg-1 col-md-1  col-sm-6 col-xs-6">Casa Coyaba<img src="house1.jpg"/></td>
-<!--2a row med dates-->
-                <td class="col-lg-1 col-md-1  col-sm-6 col-xs-6"><b>From:</b> 2016-08-06<br> 
-                    <b>To:</b> 2016-08-26</td>
-<!--3e row med specifications-->
-                <td class="col-lg-1 col-md-1  col-sm-6 col-xs-6">4 Bedrooms<br>
+    <!--titlar för större och mindre skärmar-->
+        <div class="special1"><h3>My Selections >></h3></div>
+        <h4>My Selections</h4>
+<!--här börjar tabellen-->
+        <div class="table">
+<!--1a row-tabellens headers-->
+            <div>
+ <!--cell 1-->  <div class="text-center">Accommondation</div>
+ <!--cell 2-->  <div class="text-center">Date</div>
+ <!--cell 3-->  <div class="text-center">Specifications</div>
+ <!--cell 4-->  <div class="text-center">Persons</div>
+ <!--cell 5-->  <div class="text-center">Accessibility</div>
+ <!--cell 6-->  <div class="text-center">Extras</div>
+ <!--cell 7-->  <div class="text-center">Price</div>
+ <!--cell 8-->  <div class="text-center">Choose</div>
+            </div>
+            
+<!--2a row-->     
+            <div>
+<!--1a cell-->   <div>Casa Coyaba<img src="house1.jpg" alt="beachhouse"/></div>
+<!--2a cell-->   <div><b>From:</b> 2016-08-06<br> 
+                    <b>To:</b> 2016-08-26</div>
+ <!--3e cell-->  <div>4 Bedrooms<br>
                     <span style="font-size:85%;">*2 double beds<br>
                     *4 single beds</span><br>
                     3 Bathrooms<br>
                     Swiming pool<br>
-                    Grill</td>
-<!--4e bootstrap input-->
-                <td class="col-lg-1 col-md-1  col-sm-6 col-xs-6"><form>
+                    Grill</div>
+  <!--4e cell-input bootstrap-->  
+                  <div>
     <div class="form-group">
       <label for="sel1">Adults:</label>
       <select class="form-control" id="sel1">
@@ -83,8 +76,8 @@
         <option>10</option>
         </select></div>
         <div class="form-group">
-      <label for="sel1">Children:</label>
-      <select class="form-control" id="sel1">
+      <label for="sel2">Children:</label>
+      <select class="form-control" id="sel2">
         <option>1</option>
         <option>2</option>
         <option>3</option>
@@ -96,47 +89,35 @@
         <option>10</option>
       </select>
         </div>
-        </td>
-<!--5e row med accessibilities-->                
-                <td class="col-lg-1 col-md-1  col-sm-6 col-xs-6">
-                <label for="allergy"><i class="fa fa-envira fa-2x" aria-hidden="true"></i>
-</label>
+        </div>
+ <!--5e cell-->   <div><label for="allergy"><i class="fa fa-envira fa-2x" aria-hidden="true"></i></label>
                 <input type="checkbox" id="allergy"/><br>
                 <label for="wheelchair"><i class="fa fa-wheelchair fa-2x" aria-hidden="true"></i>
 </label>
-                <input type="checkbox" id="wheelchair"></td>
-<!--6e row med extras-->                
-                <td class="col-lg-1 col-md-1  col-sm-6 col-xs-6">
-                <label for="crib">Crib</label>
+                <input type="checkbox" id="wheelchair">
+                  </div>
+ <!--6e cell--> <div><label for="crib">Crib</label>
                 <input type="radio" id="crib"/><br>
-                    <label for="buttler">Buttler</label><input type="radio" id="buttler"/><br><label for="honeymoon">Honeymoon</label><input type="radio" id="honeymoon"/></td></div>
-<!--7e row med price-->
-                <td>$ 3000/day
-                </td>
-<!--8e row med checkboxen-->
-                <td><input type="checkbox">
-                </td>
-            </tr> 
-<!--här börjar 2a column-->
-            <tr>
-<!--row 1-->
-                <td>Villa de Rosa<img src="house2.jpg"/>
-                </td>
-<!--row 2-->
-                <td><b>From:</b> 2016-08-06<br> 
-                    <b>To:</b> 2016-08-26</td>
-<!--row 3-->                
-                <td>3 Bedrooms<br>
+                    <label for="buttler">Buttler</label><input type="radio" id="buttler"/><br><label for="honeymoon">Honeymoon</label><input type="radio" id="honeymoon"/></div>
+  <!--7e cell-->  <div>$ 3000/day</div>
+  <!--8e cell-->  <div><span class="special">I choose Casa Coyaba </span> <input type="checkbox"></div>  
+                </div>
+    <!--3e row-->
+                <div>
+<!--1a cell-->   <div>Villa de Rosa<img src="house2.jpg" alt="beachhouse"/></div>
+<!--2a cell-->   <div><b>From:</b> 2016-08-06<br> 
+                    <b>To:</b> 2016-08-26</div>
+ <!--3e cell-->  <div>3 Bedrooms<br>
                     <span style="font-size:85%;">*2 double beds<br>
                     *4 single beds</span><br>
                     2 Bathrooms<br>
                     Swiming pool<br>
-                    Grill</td>
-<!--row 4 bootstrap input-->
-                <td>
+                    Grill</div>
+  <!--4e cell-input bootstrap-->  
+                  <div>
     <div class="form-group">
-      <label for="sel1">Adults:</label>
-      <select class="form-control" id="sel1">
+      <label for="sel3">Adults:</label>
+      <select class="form-control" id="sel3">
         <option>1</option>
         <option>2</option>
         <option>3</option>
@@ -148,8 +129,8 @@
         <option>10</option>
         </select></div>
         <div class="form-group">
-      <label for="sel1">Children:</label>
-      <select class="form-control" id="sel1">
+      <label for="sel4">Children:</label>
+      <select class="form-control" id="sel4">
         <option>1</option>
         <option>2</option>
         <option>3</option>
@@ -161,45 +142,36 @@
         <option>10</option>
       </select>
         </div>
-        </td>
-<!--row 5-->
-                <td><label for="allergy"><i class="fa fa-envira fa-2x" aria-hidden="true"></i>
+        </div>
+ <!--5e cell-->   <div><label for="allergy1"><i class="fa fa-envira fa-2x" aria-hidden="true"></i></label>
+                <input type="checkbox" id="allergy1"/><br>
+                <label for="wheelchair1"><i class="fa fa-wheelchair fa-2x" aria-hidden="true"></i>
 </label>
-                <input type="checkbox" id="allergy"/><br><label for="wheelchair"><i class="fa fa-wheelchair fa-2x" aria-hidden="true"></i>
-</label>
-                <input type="checkbox" id="wheelchair"/></td>
-<!--row 6-->                
-                <td><label for="crib">Crib</label>
-                <input type="radio" id="crib"/><br>
-                <label for="buttler">Buttler</label>
-                <input type="radio" id="buttler"/><br><label for="honeymoon">Honeymoon</label><input type="radio" id="honeymoon"/></td>
-<!--row 7-->                
-                <td>$ 2500
-                </td>
-<!--row 6-->                
-                <td><input type="checkbox">
-                </td>
-            </tr>
-<!-- här börjar column 3-->            
-            <tr>
-<!--row 1-->                
-                <td>Villa Paradiso<img src="house3.jpg"/></td>
-<!--row 2-->                
-                <td><b>From:</b> 2016-08-06<br> 
-                    <b>To:</b> 2016-08-26</td>
-<!--row 3-->                
-                <td>5 Bedrooms<br>
+                <input type="checkbox" id="wheelchair1">
+                  </div>
+ <!--6e cell--> <div><label for="crib1">Crib</label>
+                <input type="radio" id="crib1"/><br>
+                    <label for="buttler1">Buttler</label><input type="radio" id="buttler1"/><br>
+					<label for="honeymoon1">Honeymoon</label><input type="radio" id="honeymoon1"/></div>
+  <!--7e cell-->  <div>$ 2500/day</div>
+  <!--8e cell-->  <div><span class="special">I choose Villa de Rosa </span> <input type="checkbox"></div>  
+                </div>
+    <!--4e row-->
+                <div>
+ <!--1a cell-->   <div>Villa Paradiso<img src="house3.jpg" alt="beachhouse"/></div>
+<!--2a cell-->   <div><b>From:</b> 2016-08-06<br> 
+                    <b>To:</b> 2016-08-26</div>
+ <!--3e cell-->  <div>5 Bedrooms<br>
                     <span style="font-size:85%;">*3 double beds<br>
                     *6 single beds</span><br>
                     4 Bathrooms<br>
                     Swiming pool<br>
-                    Grill</td>
-<!--row 4 bootstrap input-->      
-                
-     <td>
+                    Grill</div>
+  <!--4e cell-input bootstrap-->  
+                  <div>
     <div class="form-group">
-      <label for="sel1">Adults:</label>
-      <select class="form-control" id="sel1">
+      <label for="sel5">Adults:</label>
+      <select class="form-control" id="sel5">
         <option>1</option>
         <option>2</option>
         <option>3</option>
@@ -211,8 +183,8 @@
         <option>10</option>
         </select></div>
         <div class="form-group">
-      <label for="sel1">Children:</label>
-      <select class="form-control" id="sel1">
+      <label for="sel6">Children:</label>
+      <select class="form-control" id="sel6">
         <option>1</option>
         <option>2</option>
         <option>3</option>
@@ -224,43 +196,34 @@
         <option>10</option>
       </select>
         </div>
-        </td>
-                    </form>
-                <!--<td>Adults<input type="number"/><br>         
-                    Children<input type="number"/></td>-->
-<!--row 5-->                
-               <td>                   
-                <label for="allergy"><i class="fa fa-envira fa-2x" aria-hidden="true"></i>
-</label>
-                <input type="checkbox" id="allergy"/><br>
-                <label for="wheelchair"><i class="fa fa-wheelchair fa-2x" aria-hidden="true"></i>
-</label>
-                <input type="checkbox" id="wheelchair"></td>
-<!--row 6-->                
-                <td>
-                <label for="crib">Crib</label>
-                <input type="radio" id="crib"/><br>
-                <label for="buttler">Buttler</label><input type="radio" id="buttler"/><br><label for="honeymoon">Honeymoon</label><input type="radio" id="honeymoon"/></td>
-<!--row 7-->                
-                <td>$ 3500/day
-                </td>
-<!--row 8-->                
-                <td><input type="checkbox">
-                </td>
-            </tr>            
-        </tbody>
-    </table>
-        
         </div>
-    <!--submit button bootstrap-->
-    <button type="submit" class="btn btn-default">Submit</button><br><br><br>
-    <a href="book.html"><button class="btn btn-info">Next >></button></a><br><br><br>
-
-<!--ikoner längst ner på sidan-->
-    <div class="extra">*<i class="fa fa-envira fa-lg" aria-hidden="true"></i>= allergy-friendly<br>
-        *<i class="fa fa-wheelchair fa-lg" aria-hidden="true"> = wheelchair-adapted
-        </i>
-    </div>
-    </div>   
-    </body>
-</html>
+ <!--5e cell-->   <div><label for="allergy2"><i class="fa fa-envira fa-2x" aria-hidden="true"></i></label>
+                <input type="checkbox" id="allergy2"/><br>
+                <label for="wheelchair2"><i class="fa fa-wheelchair fa-2x" aria-hidden="true"></i>
+</label>
+                <input type="checkbox" id="wheelchair2">
+                  </div>
+ <!--6e cell--> <div><label for="crib2">Crib</label>
+                <input type="radio" id="crib2"/><br>
+                    <label for="buttler2">Buttler</label><input type="radio" id="buttler2"/><br>
+					<label for="honeymoon2">Honeymoon</label><input type="radio" id="honeymoon2"/></div>
+  <!--7e cell-->  <div>$ 3500/day</div>
+  <!--8e cell-->  <div><span class="special">I choose Villa Paradiso </span> <input type="checkbox"></div>
+                
+                </div>  
+                    </div>
+                    
+        <!--submit och next button-bootstrap-->
+                
+                    <button type="submit" class="btn btn-default d-block">Submit</button>
+					<br><br>
+                      <div id="next"><a href="book.html">Next >></a></div>
+                    <br><br>
+                    
+                    <div class="extra"><i class="fa fa-envira fa-lg" aria-hidden="true"></i> =allergy friendly<br>
+                        <i class="fa fa-wheelchair fa-2x" aria-hidden="true"></i> =wheelchair-adapted
+                    </div>
+                    
+                </div>
+        </body>
+</html>		
