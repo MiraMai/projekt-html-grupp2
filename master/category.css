@@ -1,47 +1,14 @@
-
-
-/* Medium screens */
-
-@media all and (max-width: 800px) {
-    
-/* When on medium sized screens, we center it by evenly distributing empty space around items */
-    
-.navigation {flex-direction: space-around;}
-.main {flex-direction: space-around;}
-.flex-container { flex-direction: space-around;}
-.flex-container1 { flex-direction:space-around;}
-#box2 { flex-direction: space-around;}
-}
-
-/* Small screens */
-
-@media all and (max-width: 500px) {
-    
-/* On small screens, we are no longer using row direction but column */
-    
-.navigation {flex-direction: column; }
-.main {flex-direction: column;}
-.flex-container { flex-direction: column;}
-.flex-container1 { flex-direction: column;}
-#box2 { flex-direction: column;}
-}
-
-//**---------------------------------------------------------**//
-
-
 body {color:white;}
 
 .flex-container {                   //**for pictures**//
     display: -webkit-flex;
     display: flex;
     width: 100%;
-  flex-flow: row wrap;
+
+    background-color: ;
 
     -webkit-justify-content: center;
     justify-content: center;
-    
-    -webkit-flex-flow: row wrap;
-  justify-content: space-around;
 }
 
 .flex-container1 {                  //**for search options**//
@@ -52,13 +19,7 @@ body {color:white;}
 
     -webkit-justify-content: center;
     justify-content: center;
-    
-  -webkit-flex-flow: row wrap;
-  justify-content: space-around;
 }
-
-
-
 
 /////////////////////////////////////////////////////**/////////////////////////////////////////////////////////////////////////////////////////**////////////////////////////////////////
 
@@ -73,34 +34,29 @@ body {color:white;}
     background-image: url('beachfront.jpg');
     background-size: cover;
     width: 20%;
-    min-height: 15em;
-    min-width: 15em;
+    min-height: 11em;
     margin: 10px;
-    flex-flow: row wrap;
 }
  
 .flex-item02 { 
     background-image: url('beachview.jpg');
     background-size: cover;
     width: 20%;
-    min-height: 15em;
-    min-width: 15em;
+    min-height: 11em;
     margin: 10px;
 }
 .flex-item03 { 
     background-image: url('acrossfrombeach.jpg');
     background-size: cover;
     width: 20%;
-    min-height: 15em;
-    min-width: 15em;
+    min-height: 11em;
     margin: 10px;
 }
 .flex-item04 { 
     background-image: url('luxuryhome.jpg');
     background-size: cover;
     width: 20%;
-    min-height: 15em;
-    min-width: 15em;
+    min-height: 11em;
     margin: 10px;
 }
 
@@ -124,8 +80,7 @@ body {color:white;}
     background-image: url('beach1.jpg');
     background-size: cover;
     width: 23%;
-    min-height: 15em;
-    min-width: 15em;
+    min-height: 11em;
     margin: 10px;
 }
  
@@ -133,8 +88,7 @@ body {color:white;}
     background-image: url('beach2.jpg');
     background-size: cover;
     width: 23%;
-    min-height: 15em;
-    min-width: 15em;
+    min-height: 11em;
     margin: 10px;
 }
         
@@ -142,8 +96,7 @@ body {color:white;}
     background-image: url('beach3.jpg');
     background-size: cover;
     width: 23%;
-    min-height: 15em;
-    min-width: 15em;
+    min-height: 11em;
     margin: 10px;
 }
   
@@ -157,8 +110,7 @@ body {color:white;}
     background-image: url('beach4.jpg');
     background-size: cover;
     width: 23%;
-    min-height: 15em;
-    min-width: 15em;
+    min-height: 11em;
     margin: 10px;
 }
  
@@ -166,16 +118,14 @@ body {color:white;}
     background-image: url('beach5.jpg');
     background-size: cover;
     width: 23%;
-    min-height: 15em;
-    min-width: 15em;
+    min-height: 11em;
     margin: 10px;
 }
 .flex-item6 { 
-    background-image: url('beach14.jpg');
+    background-image: url('beach6.jpg');
     background-size: cover;
     width: 23%;
-    min-height: 15em;
-    min-width: 15em;
+    min-height: 11em;
     margin: 10px;
 }
 
@@ -188,8 +138,7 @@ body {color:white;}
     background-image: url('beach7.jpg');
     background-size: cover;
     width: 23%;
-    min-height: 15em;
-    min-width: 15em;
+    min-height: 11em;
     margin: 10px;
 }
  
@@ -197,16 +146,14 @@ body {color:white;}
     background-image: url('beach8.jpg');
     background-size: cover;
     width: 23%;
-    min-height: 15em;
-    min-width: 15em;
+    min-height: 11em;
     margin: 10px;
 }
 .flex-item9 { 
     background-image: url('beach9.jpg');
     background-size: cover;
     width: 23%;
-    min-height: 15em;
-    min-width: 15em;
+    min-height: 11em;
     margin: 10px;
 }
 
@@ -219,8 +166,7 @@ body {color:white;}
     background-image: url('beach10.jpg');
     background-size: cover;
     width: 23%;
-    min-height: 15em;
-    min-width: 15em;
+    min-height: 11em;
     margin: 10px;
 }
  
@@ -228,16 +174,14 @@ body {color:white;}
     background-image: url('beach11.jpg');
     background-size: cover;
     width: 23%;
-    min-height: 15em;
-    min-width: 15em;
+    min-height: 11em;
     margin: 10px;
 }
 .flex-item12 { 
     background-image: url('beach12.jpg');
     background-size: cover;
     width: 23%;
-    min-height: 15em;
-    min-width: 15em;
+    min-height: 11em;
     margin: 10px;
 }
 /////////////////////////////////////////////////////**/////////////////////////////////////////////////////////////////////////////////////////**////////////////////////////////////////
@@ -296,6 +240,9 @@ body {color:white;}
     padding: 3px;  
 } 
 
+.heart { 
+}
+
 .name1 {
     background-color: #009999; 
     color: white; 
@@ -305,34 +252,14 @@ body {color:white;}
     font-size: 1.2em;
     padding: 3px; 
 }
-
-/*VIEW text over The pictures on hover*/
         
-.text{
-	width:100%;
-	height:50%;
-    
-	background:#009999;
-	opacity:0;
-    margin-top: 25px;
-    
-}
-.view:hover .text
-{
-	opacity:0.6;
-	text-align:center;
-    vertical-align: middle;
-	color: white;
-	font-size:35px;
-	font-family:"Times New Roman", Times, serif;
-	
-}  
-
-.heart img {
-    margin-left: 82%;
-    margin-top: 1%;
-    
-}
+.view:hover {
+    background: url('view_button.gif'); //**this changes the picture on hover**//
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 10;
+}     
 
 /////////////////////////////////////////////////////**/////////////////////////////////////////////////////////////////////////////////////////**////////////////////////////////////////
 
@@ -412,25 +339,3 @@ float:left;
 .left_text {
     text-align: left;
 }
-
-
-
-
-
-/* för header bilden inte ska se konstig ut*/
-img {
-display: block;
-margin: auto;
-max-width: 100%;
-height: auto;
-position: relative;
-left: 0px;	
-}
-
-/*box med logo*/
-#box {
-    width:100%;
-    height: auto;
-    display: block;
-}
-

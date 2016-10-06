@@ -2,17 +2,10 @@
 .section {
     width:auto;
     margin:auto;
-<<<<<<< HEAD
-}
-/* gör att bilden sträcker sig ut i hela boxen och annpassar sig*/
-img {
-    width: 100%;
-=======
 }*/f
 /* gör att bilden sträcker sig ut i hela boxen och annpassar sig*/
 img {
     width: auto;
->>>>>>> origin/mbranch
     height:auto;
 }
 .img1 { 
@@ -49,26 +42,16 @@ p {
 h1 {
         font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
         color: #737373;
-<<<<<<< HEAD
-        text-align: center;
-=======
         border-radius: 5px;
         border:2px solid #737373;
     
->>>>>>> origin/mbranch
     
 }
 h2 {
         font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
         color: #737373;
-<<<<<<< HEAD
-    
-}
-
-=======
        
 }
->>>>>>> origin/mbranch
 /*gör att diven visas som en table*/
 .table {
     display:table;
@@ -126,21 +109,13 @@ h2 {
 /*gör att alla cells med bilder sträcker sig maximalt*/
 @media (max-width:1000px) {
     .table > div > div:first-child,.table > div > div:nth-child(3) {
-<<<<<<< HEAD
-        width:auto;
-=======
         width:80%;
         margin: auto;
->>>>>>> origin/mbranch
     }
 }
 /*border i slutet av varje artikel*/ 
 .table > div > div:nth-child(2) {
-<<<<<<< HEAD
-     border-right: 1px solid #009999;
-=======
      border-right: 1px dotted   #bfbfbf;
->>>>>>> origin/mbranch
 }
 @media (max-width:1000px) {
     .table > div > div:nth-child(2) {
