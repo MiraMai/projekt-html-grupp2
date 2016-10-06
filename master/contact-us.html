@@ -3,48 +3,136 @@
 <head>
 <meta charset="utf-8">
 <title>Contact</title>
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="contact-us.css">
+<link rel="stylesheet" type="text/css" href="header.css">
+<link rel="stylesheet" href="category.css">
+<link rel="stylesheet" href="vision.html">
+<link rel="stylesheet" href="vision.css">
 
-<style type="text/css">
-.header {font-family: sans-serif; font-size: 1.6em; text-align: center; color: white; }
-.form {
-  margin: auto;
-  width: 400px;
-  border: 2px solid gray;
-  padding: 13px;
-  border-radius: 10px;
-}
-input, textarea{
-  font-family: sans-serif;
-  font-size: 1.4em;
-  
-}
-#body {
-  background-image: url(karibien-strand-top.jpg); 
-  background-repeat: no-repeat;
-  background-attachment:fixed;
-  background-position:center center;
-  background-color: #09C1E6;
-}
-</style>
+
+<script src="https://use.fontawesome.com/1402425d63.js"></script>
 </head>
-<body id="body">
-<header class="header">
-<h2>Contact</h2>
-<h3>looking for something or have any suggestions about something <br>tell us about it.</br></h3>
-</header>
+<body>
+ 
+    <div id="box"><img src="logo06.jpg" alt="logo06.jpg"/></div>
+    
+	<nav class="nav">
+<ul>
+    
+    <li style="float:right">
+<form action="search.php" method="get">
+  <div style="overflow: hidden; padding-top:0.6em; padding-right: .3em; width:5em;">
+    <input type="text" name="term" style="width: 100%;" placeholder="Search"/>
+   </div>
+</form>
+    
+<li style="float:right"><a href="#">Contact us</a></li>
+<li style="float:right" class="dropdown"><a href="#" class="dropbtn">About us</a>
+    <div class="dropdown-content">
+      <a href="#">Our vision</a>
+	  </div></li>
+<li style="float:right"><a href="#">Blog</a></li>
+<li style="float:right"><a href="#blog">Home</a></li>
+<!--heart-->
+<li class="dropdown left"><a href="myselections.html"><img src="hearts.jpg" alt="heart"/></a></li>    
+    <li class="dropdown left">
+	<!-- here goes the dropdown menu-->
+    		<a href="#" class="dropbtn" target="_blank"><img src="cat_b.gif" alt="cat_b.gif"></a>
+    			<div class="dropdown-content iefix">
+      				<a href="categories.html" target="_blank">All Categories</a>
+     				<a href="#">Beachfront</a>
+      				<a href="#">Luxury homes</a>
+      				<a href="#">Family friendly</a>
+      				<a href="#">Honeymoon</a>
+      				<a href="#">Pet friendly</a>
+      				<a href="#">Private cottages</a>
+    			</div>
+  	</li><!-- END dropdown menu--> 
+</ul>
+</nav>
+<!--div med header img-->
+   
+	
+       <div>
+          <img class="img1" alt="background2.jpg" src="background2.jpg"/>
+       </div>
+  
+  <div id="all-content"> <!--allt innehåll i contact us-->
+  
+  
+   <div class="content2"> <!--här börjar screenshot-->
+   
+     <div class="img2"><img src="Screenshot.jpg" alt="screnshot.jpg"/></div>
+	 
+   </div>
+   
+ 
+      <div class="content1"> <!--rubrik för contact us och text-->
+	  
+      <div>
+          <p class="p"> We are here to answer any questions you may have about our Cayman <br>
+		      Paradise experiences. Reach out to us and we'll respond as soon as we <br>
+			  can. Even if there is something you have always wanted to experience<br> 
+			  and can't find it on cayman paradise, let us know and we <br>
+			  promise we'll do our best to find it for you and send you there.</p>
+	 </div>
+  
+  
 
-<section class="content">   
-   <div id="form_cont">
-    <form class="form">
-	<input type="text" name="firstname" placeholder="firstname"/>
-	<input type="text" name="lastname" placeholder="lastname"/>
-	<input type="email" name="email" placeholder="email"/>
-	<input type="text" name="phone" placeholder="phone"/>
-	<textarea name="comments" rows="5" cols="30" placeholder="comments"></textarea>
-	<input type="submit" name="send" value="send"/>
-	</form>
+   <div>
+   
+     <div class="form">
+	 
+      <form action="#" method="get"> <!--formulär -->
+	    <div class="contact-form">
+	     <label for="fname">Name:</label>
+	     <input type="text" id="fname" name="input2"/>
+	     </div>	  
+	     <div class="contect-form">
+	     <label for="email">Email:</label>
+	     <input type="text" id="email" name="input2"/>
+	     </div>	  
+	     <div class="contect-form">
+	     <label for="phone">Phone:</label>
+	     <input type="text" id="phone" name="input2" />
+	     </div>	  
+	     <div class="contact-form">
+	     <label for="comments">Comments:</label>
+	     <textarea name="comments" rows="5" cols="50" placeholder="comments"></textarea>
+	     </div>	  
+	     <div class="submit">
+	     <input type="Submit" name="send" value="send now"/>
+	     </div>
+	   </form>
+	   
+	  </div>
+	  
+    </div>
+  
+    <div class="content1"> <!-- info för contact med företaget-->
+  
+         		 
+           <div> <!-- div för företagets contact -->
+		  
+              <ul>
+			    <li class="contact-info">Office phone: 1.200.300.4000</li>
+			    <li class="contact-info">Email: Info.paradise@caymanparadise.com</li>
+			    <li class="contact-info">Adress: Lincoln drive, George Town, Cayman Islands.</li>
+			    <li><i class="fa fa-skype "></i> caymanparadise</li>
+			  </ul>
+               
+               
+          </div> <!-- slut div för företagets contact uppgifter-->
+ 
+    </div>
+ 
+  
+    </div>
+ 
    </div>
 
-</section>
+   
+
 </body>
 </html>
