@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 /* Medium screens */
@@ -434,3 +435,327 @@ left: 0px;
     display: block;
 }
 
+=======
+body {color:white;}
+
+.flex-container {                   //**for pictures**//
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+
+    background-color: ;
+
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.flex-container1 {                  //**for search options**//
+    display: -webkit-flex;
+    display: flex;
+
+    background-color: ;
+
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+/////////////////////////////////////////////////////**/////////////////////////////////////////////////////////////////////////////////////////**////////////////////////////////////////
+
+//**Category rows**//
+
+ //**row specials**//
+              
+.flex-itemx { 
+}
+        
+.flex-item01 { 
+    background-image: url('beachfront.jpg');
+    background-size: cover;
+    width: 20%;
+    min-height: 11em;
+    margin: 10px;
+}
+ 
+.flex-item02 { 
+    background-image: url('beachview.jpg');
+    background-size: cover;
+    width: 20%;
+    min-height: 11em;
+    margin: 10px;
+}
+.flex-item03 { 
+    background-image: url('acrossfrombeach.jpg');
+    background-size: cover;
+    width: 20%;
+    min-height: 11em;
+    margin: 10px;
+}
+.flex-item04 { 
+    background-image: url('luxuryhome.jpg');
+    background-size: cover;
+    width: 20%;
+    min-height: 11em;
+    margin: 10px;
+}
+
+//**row 1**//
+
+.empty {    background-image: url('');     //**empty**//
+    background-size: cover;
+    width: 23%;
+    min-height: 10em;
+}
+
+
+.flex-item100 {    
+    background-color: #009999;
+    width: 23%;
+    min-height: 1em;
+    margin: 10px;
+}
+        
+.flex-item1 { 
+    background-image: url('beach1.jpg');
+    background-size: cover;
+    width: 23%;
+    min-height: 11em;
+    margin: 10px;
+}
+ 
+.flex-item2 { 
+    background-image: url('beach2.jpg');
+    background-size: cover;
+    width: 23%;
+    min-height: 11em;
+    margin: 10px;
+}
+        
+.flex-item3 { 
+    background-image: url('beach3.jpg');
+    background-size: cover;
+    width: 23%;
+    min-height: 11em;
+    margin: 10px;
+}
+  
+        
+//**row 2**//
+              
+.flex-itemx { 
+}
+        
+.flex-item4 { 
+    background-image: url('beach4.jpg');
+    background-size: cover;
+    width: 23%;
+    min-height: 11em;
+    margin: 10px;
+}
+ 
+.flex-item5 { 
+    background-image: url('beach5.jpg');
+    background-size: cover;
+    width: 23%;
+    min-height: 11em;
+    margin: 10px;
+}
+.flex-item6 { 
+    background-image: url('beach6.jpg');
+    background-size: cover;
+    width: 23%;
+    min-height: 11em;
+    margin: 10px;
+}
+
+ //**row 3**//
+              
+.flex-itemx { 
+}
+        
+.flex-item7 { 
+    background-image: url('beach7.jpg');
+    background-size: cover;
+    width: 23%;
+    min-height: 11em;
+    margin: 10px;
+}
+ 
+.flex-item8 { 
+    background-image: url('beach8.jpg');
+    background-size: cover;
+    width: 23%;
+    min-height: 11em;
+    margin: 10px;
+}
+.flex-item9 { 
+    background-image: url('beach9.jpg');
+    background-size: cover;
+    width: 23%;
+    min-height: 11em;
+    margin: 10px;
+}
+
+ //**row 4**//
+              
+.flex-itemx { 
+}
+        
+.flex-item10 { 
+    background-image: url('beach10.jpg');
+    background-size: cover;
+    width: 23%;
+    min-height: 11em;
+    margin: 10px;
+}
+ 
+.flex-item11 { 
+    background-image: url('beach11.jpg');
+    background-size: cover;
+    width: 23%;
+    min-height: 11em;
+    margin: 10px;
+}
+.flex-item12 { 
+    background-image: url('beach12.jpg');
+    background-size: cover;
+    width: 23%;
+    min-height: 11em;
+    margin: 10px;
+}
+/////////////////////////////////////////////////////**/////////////////////////////////////////////////////////////////////////////////////////**////////////////////////////////////////
+
+//**inside the picture boxes**//
+
+.test{}
+
+.category_header{
+    color: black; 
+    width: 100%;
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+
+    text-align: center; 
+    border:1px solid black;
+    font-size: 2em;
+    padding: 3px;
+    }
+
+.category_header2{
+    color: black; 
+    width: 100%;
+    margin-bottom: 3em;
+    margin-top: em;
+
+    text-align: center; 
+    border:0px solid black;
+    font-size: 1em;
+    padding: 3px;
+    }
+
+.searchbar{
+    color: black; 
+    width: 100%;
+    text-align: center; 
+    border:1px solid black;
+    font-size: 0.9em;
+    }
+
+.search_name{
+    color: black; 
+    text-align: center; 
+    font-weight: bold;
+    font-size: 1em;
+    
+}
+
+.name {
+    background-color: #009999; 
+    color: white; 
+    opacity: 0.6; 
+    text-align: left; 
+    border: 1px solid black;
+    font-size: 1.2em;
+    padding: 3px;
+    
+} 
+
+.name1 {
+    background-color: #009999; 
+    color: white; 
+    opacity: 0.6; 
+    text-align: center; 
+    border: 1px solid black;
+    font-size: 1.2em;
+    padding: 3px; 
+}
+        
+.view:hover {
+    background: url('view_button.gif'); //**this changes the picture on hover**//
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 10;
+}     
+
+/////////////////////////////////////////////////////**/////////////////////////////////////////////////////////////////////////////////////////**////////////////////////////////////////
+
+//**Search formular**//
+
+.form1{
+    margin: 0px auto; 
+    max-width: 100%;
+    padding: 1px;
+    
+}
+
+form ul {
+    list-style-type: none;
+    margin: 2;
+    padding: 2;
+    overflow: hidden;
+}
+
+.form_box {
+    margin-top:10em ;
+    padding: 3px;
+}
+
+.formspace {margin: 8px;}
+
+/////////////////////////////////////////////////////**/////////////////////////////////////////////////////////////////////////////////////////**////////////////////////////////////////
+
+
+//**Footer**//
+
+.footer{   
+}
+
+.site-footer {
+  background: #009999;
+  z-index:1;
+  min-height: 5em;
+  padding: 10px;
+}
+
+#footer1{
+margin-left:2%;
+float:right;
+
+}
+#footer2{
+margin-right:2%;
+float:left;
+}
+
+/*float left - menu categories*/
+.left { float: left; }
+
+
+/*float right*/
+.right { float: left; }
+
+/*text left*/
+.left_text {
+    text-align: left;
+}
+>>>>>>> origin/mbranch

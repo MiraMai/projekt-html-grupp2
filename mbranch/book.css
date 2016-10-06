@@ -1,0 +1,163 @@
+
+/* inehåller två divar som ligger i toppen av sidan (stages, line) */
+.status {
+    display:flex;
+    flex-direction: column;
+    flex:1 1 auto;
+    width:90%;
+    margin: auto;
+    margin-bottom: 70px;
+}
+/* linjen högst upp. Den inehåller fyra divar*/
+.line {
+    display: flex;
+    flex-direction: row;    
+    flex: 1 1 auto;
+    height: 6px;
+    background-color: #99ffff;
+}
+@media (max-width:600px) {
+    .line {
+        display: none;
+    }
+}
+/* alla numrerade line ligger i line-diven*/
+.line1 {
+    flex:1;
+}
+.line2 {
+    flex:1;
+}
+.line3 {
+    flex:1;
+}
+.line4{
+    flex:1;
+}
+/* id som man anger när man vill att färgen ska va mörkare*/
+#active {
+    background-color: #009999;
+}
+/* diven i status */
+.stages {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+}
+@media (max-width:600px) {
+    .stages {
+        display: none;
+    }
+}
+/* 4 divar som ligger i stages */
+.choices {
+    flex:1;
+}
+.book {
+    flex: 1;
+}
+.confirm {
+    flex: 1;
+}
+.pay {
+    flex: 1;
+}
+/*visas bara i större skärm*/
+h3 {
+    text-align: center;
+}
+/*visas bara i mindre skärm*/
+h4 {
+    border-bottom: 1px solid #009999;
+
+}
+@media (max-width:600px) {
+    h4 {
+        display: none;
+    }
+}
+
+
+/*alla input boxars utseende*/
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+	border-radius: 4px;
+	background-color: #f8f8f8;
+    font-size: 19px;
+}
+input[type=text]:focus {
+    border: 2px solid #99ffff;
+}
+input[type=submit] {
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/*hela formuläret*/
+form {
+    width:30%;
+    margin:auto;
+    margin-top: 50px;
+}
+/*formulärets storlek när skärmen blir mindre*/
+@media (max-width:500px){
+   form {
+      width:100%;
+    }
+}
+@media (min-width:501px) and (max-width:700px) {
+   form {
+      width:80%;  
+    }
+}
+@media (min-width:701px) and (max-width:900px) {
+   form {
+      width:60%;  
+    }
+}
+@media (min-width:901px) and (max-width:1100px) {
+   form {
+      width:50%;  
+    }
+}
+@media (min-width:1101px) and (max-width:1300px) {
+   form {
+      width:40%;  
+    }
+}
+/*så att next button ska vara på höger sida*/
+button {
+    display: block;
+    float: right;
+    margin-top: 20px;  
+    margin-bottom: 50px;
+}
+
+/*rubrik som visas i toppen av sidan i mindre skärmar*/
+.special1 {
+    color:  #009999;
+
+}
+@media (min-width:600px) {
+    .special1 {
+        display: none;
+    }
+}
+/*så att next button ska vara på höger sida*/
+#next {
+    display: block;
+    float: right;
+    margin: 20 20 50 0px;  
+    border: 2px solid gray;
+    padding: 2px;
+    border-radius: 5px;
+    background-color: lightgray;
+}
+a {
+    text-decoration: none;
+    font-weight: bold;
+	color:white;
+}

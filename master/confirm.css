@@ -1,0 +1,166 @@
+/* inehåller två divar som ligger i toppen av sidan (stages, line) */
+.status {
+    display:flex;
+    flex-direction: column;
+    flex:1 1 auto;
+    width:90%;
+    margin: auto;
+    margin-bottom: 70px;
+}
+/* linjen högst upp. Den inehåller fyra divar*/
+.line {
+    display: flex;
+    flex-direction: row;    
+    flex: 1 1 auto;
+    height: 6px;
+    background-color: #99ffff;
+}
+@media (max-width:600px) {
+    .line {
+        display: none;
+    }
+}
+/* alla numrerade line ligger i line-diven*/
+.line1 {
+    flex:1;
+}
+.line2 {
+    flex:1;
+}
+.line3 {
+    flex:1;
+}
+.line4{
+    flex:1;
+}
+/* id som man anger när man vill att färgen ska va mörkare*/
+#active {
+    background-color: #009999;
+}
+/* diven i status */
+.stages {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+}
+@media (max-width:600px) {
+    .stages {
+        display: none;
+    }
+}
+/* 4 divar som ligger i stages */
+.choices {
+    flex:1;
+}
+.book {
+    flex: 1;
+}
+.confirm {
+    flex: 1;
+}
+.pay {
+    flex: 1;
+}
+/*visas bara i större skärm*/
+h3 {
+    text-align: center;
+}
+
+/*visas bara i mindre skärm*/
+h4 {
+    border-bottom: 1px solid #009999;
+
+}
+@media (max-width:600px) {
+    h4 {
+        display: none;
+    }
+}
+
+
+.main {
+    display: table-column;
+    flex-direction: row;
+}
+.villa {
+    flex:1 1 auto;
+}
+.description {
+    flex:1 1 auto;
+}
+img {
+  border: none;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  background: #ccc;
+ transition: transform .2s ease-in-out;
+}
+.item { 
+    background-image: url('confirm.jpg');
+    background-size: cover;
+}
+.table {
+    display:table;
+	margin: auto auto 50px auto;
+	padding:30px;
+    width: 90%;
+    
+    
+}
+.table > div {
+	display:table-row;
+    border:3px solid black
+
+}
+.table > div > div {
+	display:table-cell;
+	padding:10px;
+	text-align:center;
+    border-right: 1px solid lightgray;
+    vertical-align: middle;
+
+    
+}
+/*gör att alla celler visas på rad*/
+@media (max-width:1200px) {
+    .table > div >div {
+        display: block;
+        padding: 0px;
+        border-right: none;
+        border-bottom: 1px solid lightgray;
+        margin: 10px;
+        
+    }
+}
+.table > div > div:nth-child(7) {
+    font-weight: bold;
+    font-size: 120%;
+
+}
+/*rubrik som visas i toppen av sidan i mindre skärmar*/
+.special1 {
+    color:  #009999;
+
+}
+@media (min-width:600px) {
+    .special1 {
+        display: none;
+    }
+}
+/*så att next button ska vara på höger sida*/
+#next {
+    display: block;
+    float: right;
+    margin: 20 20 50 0px;  
+    border: 2px solid gray;
+    padding: 2px;
+    border-radius: 5px;
+    background-color: lightgray;
+}
+a {
+    text-decoration: none;
+    font-weight: bold;
+	color:white;
+}
+
